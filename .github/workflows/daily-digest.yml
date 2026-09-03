@@ -2,9 +2,7 @@ name: Daily AI Research Digest
 
 on:
   schedule:
-    # - cron: "0 12 * * *"   # 12:00 UTC = 7am/8am ET depending on DST — adjust as needed
-    - cron: "35 19 * * *"
-      timezone: "America/New_York"
+    - cron: "0 12 * * *"   # 12:00 UTC = 7am/8am ET depending on DST — adjust as needed
   workflow_dispatch: {}      # allows manual trigger from GitHub UI
 
 jobs:
