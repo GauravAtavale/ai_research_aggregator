@@ -15,7 +15,8 @@ import os
 
 HF_RSS_FEED = "https://papers.takara.ai/api/feed"   # community-maintained HF Daily Papers RSS
 ALPHAXIV_API = "https://api.alphaxiv.org/v2/papers/trending"  # check docs for exact params
-SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")  # optional
+# SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")  # optional
+SLACK_WEBHOOK_URL = None  # Set to None to disable Slack posting
 
 
 def fetch_hf_daily_papers(limit=10):
