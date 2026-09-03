@@ -11,6 +11,7 @@ Run via GitHub Actions: see .github/workflows/daily-digest.yml
 import requests
 import feedparser
 from datetime import datetime
+import os
 
 HF_RSS_FEED = "https://papers.takara.ai/api/feed"   # community-maintained HF Daily Papers RSS
 ALPHAXIV_API = "https://api.alphaxiv.org/v2/papers/trending"  # check docs for exact params
