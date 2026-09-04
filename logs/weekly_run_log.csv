@@ -1,0 +1,3 @@
+timestamp_utc,source,status,item_count,error
+2026-09-04 16:14:03 UTC,Curated Newsletters,ok,16,
+2026-09-04 16:14:03 UTC,Lab Blogs (weekly re-check),partial,30,Perplexity (Discover Daily podcast): object has no attribute 'link'
