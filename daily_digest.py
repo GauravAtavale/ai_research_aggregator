@@ -1,7 +1,8 @@
 """
 Daily AI Research Digest — Tier 1 "Firehose" automation
-Sources: HF Daily Papers, arXiv (cs.AI/cs.LG/cs.CL), Hacker News, Reddit r/MachineLearning,
-lab blogs (OpenAI, DeepMind, Anthropic, Thinking Machines, Perplexity, NVIDIA), GitHub Trending (AI repos via Search API).
+Sources: HF Daily Papers (official API, sort=trending), arXiv (cs.AI/cs.LG/cs.CL), Hacker News,
+Reddit r/MachineLearning, lab blogs (OpenAI, DeepMind, Anthropic, Thinking Machines, Perplexity,
+NVIDIA), GitHub Trending (AI repos via Search API).
 Outputs a single markdown digest (digest_latest.md), archives a dated copy to daily_digests/,
 optionally posts to Slack, and logs every run.
 
@@ -21,7 +22,7 @@ import requests
 import feedparser
 from datetime import datetime, timezone, timedelta
 
-HF_RSS_FEED = "https://papers.takara.ai/api/feed"
+HF_DAILY_PAPERS_API = "https://huggingface.co/api/daily_papers"
 ARXIV_API = "http://export.arxiv.org/api/query"
 ARXIV_QUERY = "cat:cs.AI OR cat:cs.LG OR cat:cs.CL"
 HN_API = "https://hn.algolia.com/api/v1/search_by_date"
@@ -49,16 +50,36 @@ REQUEST_HEADERS = {
 }
 
 
+def _extract_paper_fields(item):
+    """HF's daily_papers API nests paper metadata under an item['paper'] object in most
+    observed responses, but fall back to top-level keys defensively in case the shape differs."""
+    paper = item.get("paper", item) if isinstance(item, dict) else {}
+    title = paper.get("title") or item.get("title") or "Untitled"
+    arxiv_id = paper.get("id") or item.get("id") or ""
+    summary = paper.get("summary") or paper.get("abstract") or item.get("summary") or ""
+    link = f"https://huggingface.co/papers/{arxiv_id}" if arxiv_id else item.get("url", "")
+    upvotes = paper.get("upvotes") or item.get("upvotes")
+    summary_text = summary[:300]
+    if upvotes is not None:
+        summary_text = f"⬆ {upvotes} upvotes — {summary_text}"
+    return title, link, summary_text
+
+
 def fetch_hf_daily_papers(limit=10):
     items = []
     status, error = "ok", ""
     try:
-        feed = feedparser.parse(HF_RSS_FEED, request_headers=REQUEST_HEADERS)
-        for entry in feed.entries[:limit]:
-            items.append({"title": entry.title, "link": entry.link,
-                          "summary": getattr(entry, "summary", "")[:300], "source": "HF Daily Papers"})
+        params = {"limit": limit, "sort": "trending"}
+        resp = requests.get(HF_DAILY_PAPERS_API, params=params, headers=REQUEST_HEADERS, timeout=20)
+        resp.raise_for_status()
+        data = resp.json()
+        raw_items = data if isinstance(data, list) else data.get("results", data.get("papers", []))
+        for item in raw_items[:limit]:
+            title, link, summary = _extract_paper_fields(item)
+            items.append({"title": title, "link": link, "summary": summary, "source": "HF Daily Papers (trending)"})
         if not items:
             status = "empty"
+            error = f"0 items parsed; raw response keys: {list(data.keys()) if isinstance(data, dict) else type(data)}"
     except Exception as e:
         status, error = "failed", str(e)
         items.append({"title": f"[HF fetch failed: {e}]", "link": "", "summary": "", "source": "HF"})
