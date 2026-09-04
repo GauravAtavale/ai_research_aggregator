@@ -2,7 +2,8 @@
 Daily AI Research Digest — Tier 1 "Firehose" automation
 Sources: HF Daily Papers, arXiv (cs.AI/cs.LG/cs.CL), Hacker News, Reddit r/MachineLearning,
 lab blogs (OpenAI, DeepMind, Anthropic, Thinking Machines, Perplexity, NVIDIA), GitHub Trending (AI repos via Search API).
-Outputs a single markdown digest, optionally posts to Slack, and logs every run.
+Outputs a single markdown digest (digest_latest.md), archives a dated copy to digests/,
+optionally posts to Slack, and logs every run.
 
 Run manually:  python daily_digest.py
 Run via cron:  0 7 * * * /usr/bin/python3 /path/to/daily_digest.py
@@ -26,7 +27,7 @@ ARXIV_QUERY = "cat:cs.AI OR cat:cs.LG OR cat:cs.CL"
 HN_API = "https://hn.algolia.com/api/v1/search_by_date"
 REDDIT_URL = "https://www.reddit.com/r/MachineLearning/top.json"
 GITHUB_SEARCH_API = "https://api.github.com/search/repositories"
-GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")  # provided automatically by GitHub Actions
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
 
 LAB_BLOG_FEEDS = {
     "OpenAI": "https://openai.com/news/rss.xml",
@@ -41,6 +42,7 @@ LAB_BLOG_FEEDS = {
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")
 LOG_FILE = os.path.join("logs", "run_log.csv")
 LOG_FIELDS = ["timestamp_utc", "source", "status", "item_count", "error"]
+ARCHIVE_DIR = "digests"
 
 REQUEST_HEADERS = {
     "User-Agent": "ai-research-aggregator/1.0 (personal research digest bot; contact: github.com/GauravAtavale)"
@@ -231,6 +233,13 @@ def log_run(rows):
             writer.writerow(row)
 
 
+def archive_digest(digest_text):
+    os.makedirs(ARCHIVE_DIR, exist_ok=True)
+    today = datetime.now().strftime("%Y-%m-%d")
+    with open(os.path.join(ARCHIVE_DIR, f"{today}.md"), "w") as f:
+        f.write(digest_text)
+
+
 def main():
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
@@ -259,6 +268,7 @@ def main():
 
     with open("digest_latest.md", "w") as f:
         f.write(digest)
+    archive_digest(digest)
 
     post_to_slack(digest)
     print(digest)
