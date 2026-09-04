@@ -126,6 +126,24 @@
 - **[Building an Adaptive Agentic Cybersecurity System with NVIDIA Nemotron](https://developer.nvidia.com/blog/building-an-adaptive-agentic-cybersecurity-system-with-nvidia-nemotron/)**  
   <img alt="An illustration showing agentic security." class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/Agentic-Adaptive-Security-e1788211755260-768x432.webp" style="display: b
 
-## GitHub Trending
-- **[[GitHub fetch failed: 403 Client Error: rate limit exceeded for url: https://api.github.com/search/repositories?q=topic%3Aartificial-intelligence+created%3A%3E2026-08-28&sort=stars&order=desc&per_page=10]]()**  
-  
+## GitHub Trending (AI, new repos)
+- **[JoseAngelSolorzanoLuna/UFO-Cathedral-v6.4-FailSafe-Free-AI](https://github.com/JoseAngelSolorzanoLuna/UFO-Cathedral-v6.4-FailSafe-Free-AI)**  
+  ★ 13 — 100% Free, Offline, 8GB RAM Computer-Artificial Intelligence + Formal Safety (Gate + Ledger + Council + Shadow Mode) — Free alternative to $200/mo OpenAI Operator / Perplexity Computer / ClawBot / Cla
+- **[AlekseiUL/humanlike](https://github.com/AlekseiUL/humanlike)**  
+  ★ 12 — Humanlike — deterministic persona, context, memory and privacy controls for conversational AI agents · Детерминированное поведение ИИ-агентов
+- **[lucidrains/ccbp-pytorch](https://github.com/lucidrains/ccbp-pytorch)**  
+  ★ 10 — Implementation of the proposed CCBP (Continuous Continual BackProp) in Pytorch
+- **[Felix-Theodore-Zeng/eight-market-quant-ai](https://github.com/Felix-Theodore-Zeng/eight-market-quant-ai)**  
+  ★ 6 — Eight-market data collection, quantitative analytics, technical structure, and Hermes AI forecasting system
+- **[PanomaAI/panoma](https://github.com/PanomaAI/panoma)**  
+  ★ 6 — The local catalog of your projects — intelligent, always learning, for you and your agents
+- **[sanketpadhyal/RivoCode-Cli](https://github.com/sanketpadhyal/RivoCode-Cli)**  
+  ★ 3 — An autonomous AI coding assistant for developers. Write code, manage files, run terminal commands, and search the web directly from your terminal. Built with TypeScript and Bun as a modern, fast monor
+- **[TirupMehta/ModelRegistry](https://github.com/TirupMehta/ModelRegistry)**  
+  ★ 3 — ModelRegistry is a community-driven, machine-readable index tracking the state of foundational artificial intelligence.
+- **[Saganaki22/obs-dlss5-nr](https://github.com/Saganaki22/obs-dlss5-nr)**  
+  ★ 3 — Unofficial DLSS 5 Neural Rendering filter for OBS Studio.  runs NVIDIA DLSS 5 NR (NGX feature 18) on any video source (Game Capture, Media Source, Webcam, …) with a Default / Natural / Cinematic style
+- **[Anil-matcha/awesome-claude-fable-5-1](https://github.com/Anil-matcha/awesome-claude-fable-5-1)**  
+  ★ 2 — Curated Claude Fable 5.1 use cases, API migration notes, prompting patterns, integrations, demos, and benchmark evidence.
+- **[vineetshirode/Minesight-AI](https://github.com/vineetshirode/Minesight-AI)**  
+  ★ 2 — AI-powered manganese mining intelligence platform for data analysis, geospatial visualization, and decision support.
