@@ -45,29 +45,40 @@ REQUEST_HEADERS = {
 }
 
 
-def fetch_feed_group(feed_dict, limit_per_feed=8, source_prefix=""):
+def fetch_single_feed(name, url, limit, source_prefix, timeout=25):
+    """Fetch one feed and return (items, status, error) for that feed alone."""
     items = []
-    any_success = False
-    errors = []
-    for name, url in feed_dict.items():
-        try:
-            feed = feedparser.parse(url, request_headers=REQUEST_HEADERS)
-            entries = feed.entries[:limit_per_feed]
-            if entries:
-                any_success = True
-            for entry in entries:
-                items.append({
-                    "title": entry.title,
-                    "link": entry.link,
-                    "summary": getattr(entry, "summary", "")[:350],
-                    "source": f"{source_prefix}{name}",
-                })
-        except Exception as e:
-            errors.append(f"{name}: {e}")
-        time.sleep(1)
-    status = "ok" if any_success and not errors else ("failed" if not any_success else "partial")
-    error = "; ".join(errors)
+    status, error = "ok", ""
+    try:
+        resp = requests.get(url, headers=REQUEST_HEADERS, timeout=timeout)
+        resp.raise_for_status()
+        feed = feedparser.parse(resp.content)
+        entries = feed.entries[:limit]
+        for entry in entries:
+            items.append({
+                "title": entry.title,
+                "link": entry.link,
+                "summary": getattr(entry, "summary", "")[:350],
+                "source": f"{source_prefix}{name}",
+            })
+        if not items:
+            status = "empty"
+            bozo_reason = getattr(feed, "bozo_exception", None)
+            error = f"0 entries parsed (bozo={feed.bozo}, reason={bozo_reason})"
+    except Exception as e:
+        status, error = "failed", str(e)
     return items, status, error
+
+
+def fetch_feed_group(feed_dict, log_rows, timestamp, limit_per_feed=8, source_prefix=""):
+    all_items = []
+    for name, url in feed_dict.items():
+        items, status, error = fetch_single_feed(name, url, limit_per_feed, source_prefix)
+        all_items.extend(items)
+        log_rows.append({"timestamp_utc": timestamp, "source": f"{source_prefix}{name}",
+                          "status": status, "item_count": len(items), "error": error})
+        time.sleep(1)
+    return all_items
 
 
 def dedupe(items):
@@ -124,19 +135,13 @@ def archive_digest(digest_text):
 
 def main():
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+    log_rows = []
 
-    newsletter_items, nl_status, nl_error = fetch_feed_group(
-        CURATED_NEWSLETTER_FEEDS, limit_per_feed=8, source_prefix="Newsletter: ")
-    time.sleep(2)
-    lab_items, lab_status, lab_error = fetch_feed_group(
-        LAB_BLOG_FEEDS, limit_per_feed=5, source_prefix="Lab Blog: ")
+    newsletter_items = fetch_feed_group(
+        CURATED_NEWSLETTER_FEEDS, log_rows, timestamp, limit_per_feed=8, source_prefix="Newsletter: ")
+    lab_items = fetch_feed_group(
+        LAB_BLOG_FEEDS, log_rows, timestamp, limit_per_feed=5, source_prefix="Lab Blog: ")
 
-    log_rows = [
-        {"timestamp_utc": timestamp, "source": "Curated Newsletters", "status": nl_status,
-         "item_count": len(newsletter_items), "error": nl_error},
-        {"timestamp_utc": timestamp, "source": "Lab Blogs (weekly re-check)", "status": lab_status,
-         "item_count": len(lab_items), "error": lab_error},
-    ]
     log_run(log_rows)
 
     items = dedupe(newsletter_items + lab_items)
