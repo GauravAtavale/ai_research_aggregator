@@ -17,7 +17,7 @@ from datetime import datetime, timezone
 
 HF_RSS_FEED = "https://papers.takara.ai/api/feed"   # community-maintained HF Daily Papers RSS
 ARXIV_API = "http://export.arxiv.org/api/query"      # official, no auth required
-ARXIV_QUERY = "cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL"
+ARXIV_QUERY = "cat:cs.AI OR cat:cs.LG OR cat:cs.CL"   # use real spaces; let requests encode them
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")  # optional
 LOG_FILE = os.path.join("logs", "run_log.csv")
 LOG_FIELDS = ["timestamp_utc", "source", "status", "item_count", "error"]
@@ -72,12 +72,14 @@ def fetch_arxiv_recent(limit=10, max_retries=3):
                     "summary": getattr(entry, "summary", "")[:300].replace("\n", " "),
                     "source": "arXiv (cs.AI/cs.LG/cs.CL, recent)",
                 })
-            status = "ok" if items else "empty"
-            return items, status, ""
+            if items:
+                return items, "ok", ""
+            last_error = f"query returned 0 results (raw response length {len(resp.text)})"
+            break
         except Exception as e:
             last_error = e
             time.sleep(3)
-    items.append({"title": f"[arXiv fetch failed after {max_retries} attempts: {last_error}]", "link": "", "summary": "", "source": "arXiv"})
+    items.append({"title": f"[arXiv fetch returned no results: {last_error}]", "link": "", "summary": "", "source": "arXiv"})
     return items, "failed", str(last_error)
 
 
