@@ -43,3 +43,69 @@
   Explaining why a specific outcome occurred, and which inputs deserve the blame or credit, is central to philosophical, scientific, and policy analysis. Existing tools split into two camps. The theory of actual causality (AC) gives principled verdicts, but only for toy-sized models, because computing
 - **[Last Translation Benchmark](https://arxiv.org/abs/2609.04173v1)**  
   For scientific progress, we need benchmarks that test the limits of state-of-the-art models, and evaluation methods that inform us about failure cases. As models get stronger, standard benchmarks for machine translation are approaching saturation. Further, automatic translation metrics are unreliabl
+
+## Hacker News
+- **[Show HN: TERMy – A fast terminal assistant that does not use LLMs](https://github.com/gioblu/NPC-Forge/blob/main/docs/development.md)**  
+  1 points, 0 comments
+
+## Reddit
+- **[[Reddit fetch failed: 403 Client Error: Blocked for url: https://www.reddit.com/r/MachineLearning/top.json?limit=10&t=day]]()**  
+  
+
+## Lab Blog: OpenAI
+- **[Daybreak for Frontline Defenders: $1B to protect essential services](https://openai.com/index/daybreak-for-frontline-defenders)**  
+  OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.
+- **[Legora reviewed 41 documents in minutes with GPT-6 Astra](https://openai.com/index/legora-financial-statement-review-with-astra)**  
+  Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.
+- **[Playco cut manual fixes 50% prototyping games with GPT-6 Astra](https://openai.com/index/playco-game-prototyping-with-astra)**  
+  Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model.
+- **[Safety overview: GPT-6 Astra](https://openai.com/index/safety-overview-gpt-6-astra)**  
+  GPT-6 Astra is our most capable broadly deployed model and our first to reach the Critical level of cybersecurity capability under our Preparedness Framework.
+- **[ATV Big Air Tour turned 3 days of work into 3 hours with ChatGPT](https://openai.com/index/atv-big-air-tour)**  
+  ATV Big Air Tour uses ChatGPT Work to speed up marketing, merchandising, and more. It even turned merchandise photos into an inventory website in 15 minutes.
+
+## Lab Blog: DeepMind
+- **[Introducing WeatherNext 3, our most advanced and accurate global weather AI model](https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/)**  
+  
+- **[Proactive cyber defense for governments and enterprises](https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/)**  
+  
+- **[Introducing Gemini 3.8 Flash and 3.8 Flash Cyber](https://deepmind.google/blog/introducing-gemini-3-8-flash-and-38-flash-cyber/)**  
+  
+- **[Introducing agentic video understanding with Gemini](https://deepmind.google/blog/introducing-agentic-video-in-gemini/)**  
+  
+- **[Gemini Omni 1.1 Flash lets you build with more control](https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/)**  
+  
+
+## Lab Blog: Anthropic (unofficial mirror)
+- **[Developing Enterprise Frontier Safeguards with our customers](https://www.anthropic.com/news/enterprise-frontier-safeguards)**  
+  <article><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><div class="Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGO
+- **[Improving our alignment and security efforts](https://www.anthropic.com/news/improving-alignment-security-efforts)**  
+  <article><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><div class="Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGO
+- **[Previewing the Model Hardware Standard](https://www.anthropic.com/news/model-hardware-standard-research-preview)**  
+  <article><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"></div><div class="page-wrapper"><article><div class=""><div class="Body-module-scss-module__z40yvW__body"><div class="Body-module-scss-module__z40yvW__media-column Body-mo
+- **[Expanding our support for scientists](https://www.anthropic.com/news/expanding-support-for-scientists)**  
+  <article><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><div class="Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGO
+- **[Funding better evaluations of AI’s impact on wellbeing](https://www.anthropic.com/news/wellbeing-research-grants)**  
+  <article><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><div class="Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGO
+
+## GitHub Trending (AI, new repos)
+- **[JoseAngelSolorzanoLuna/UFO-Cathedral-v6.4-FailSafe-Free-AI](https://github.com/JoseAngelSolorzanoLuna/UFO-Cathedral-v6.4-FailSafe-Free-AI)**  
+  ★ 13 — 100% Free, Offline, 8GB RAM Computer-Artificial Intelligence + Formal Safety (Gate + Ledger + Council + Shadow Mode) — Free alternative to $200/mo OpenAI Operator / Perplexity Computer / ClawBot / Cla
+- **[AlekseiUL/humanlike](https://github.com/AlekseiUL/humanlike)**  
+  ★ 12 — Humanlike — deterministic persona, context, memory and privacy controls for conversational AI agents · Детерминированное поведение ИИ-агентов
+- **[lucidrains/ccbp-pytorch](https://github.com/lucidrains/ccbp-pytorch)**  
+  ★ 10 — Implementation of the proposed CCBP (Continuous Continual BackProp) in Pytorch
+- **[Felix-Theodore-Zeng/eight-market-quant-ai](https://github.com/Felix-Theodore-Zeng/eight-market-quant-ai)**  
+  ★ 6 — Eight-market data collection, quantitative analytics, technical structure, and Hermes AI forecasting system
+- **[PanomaAI/panoma](https://github.com/PanomaAI/panoma)**  
+  ★ 6 — The local catalog of your projects — intelligent, always learning, for you and your agents
+- **[TirupMehta/ModelRegistry](https://github.com/TirupMehta/ModelRegistry)**  
+  ★ 3 — ModelRegistry is a community-driven, machine-readable index tracking the state of foundational artificial intelligence.
+- **[sanketpadhyal/RivoCode-Cli](https://github.com/sanketpadhyal/RivoCode-Cli)**  
+  ★ 3 — An autonomous AI coding assistant for developers. Write code, manage files, run terminal commands, and search the web directly from your terminal. Built with TypeScript and Bun as a modern, fast monor
+- **[Saganaki22/obs-dlss5-nr](https://github.com/Saganaki22/obs-dlss5-nr)**  
+  ★ 3 — Unofficial DLSS 5 Neural Rendering filter for OBS Studio.  runs NVIDIA DLSS 5 NR (NGX feature 18) on any video source (Game Capture, Media Source, Webcam, …) with a Default / Natural / Cinematic style
+- **[Anil-matcha/awesome-claude-fable-5-1](https://github.com/Anil-matcha/awesome-claude-fable-5-1)**  
+  ★ 2 — Curated Claude Fable 5.1 use cases, API migration notes, prompting patterns, integrations, demos, and benchmark evidence.
+- **[vineetshirode/Minesight-AI](https://github.com/vineetshirode/Minesight-AI)**  
+  ★ 2 — AI-powered manganese mining intelligence platform for data analysis, geospatial visualization, and decision support.
