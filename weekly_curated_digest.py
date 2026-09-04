@@ -35,6 +35,14 @@ LAB_BLOG_FEEDS = {
     "NVIDIA Technical Blog": "https://developer.nvidia.com/blog/feed/",
 }
 
+# Feeds behind bot-protection (Substack/Cloudflare) that reject our identifying UA and need a
+# standard browser User-Agent instead. Add feed names here if other sources start 403'ing.
+BROWSER_UA_FEEDS = {"Import AI (Jack Clark)"}
+BROWSER_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+)
+
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")
 LOG_FILE = os.path.join("logs", "weekly_run_log.csv")
 LOG_FIELDS = ["timestamp_utc", "source", "status", "item_count", "error"]
@@ -49,8 +57,12 @@ def fetch_single_feed(name, url, limit, source_prefix, timeout=25):
     """Fetch one feed and return (items, status, error) for that feed alone."""
     items = []
     status, error = "ok", ""
+    headers = dict(REQUEST_HEADERS)
+    if name in BROWSER_UA_FEEDS:
+        headers["User-Agent"] = BROWSER_USER_AGENT
+        headers["Accept"] = "application/rss+xml, application/xml, text/xml, */*"
     try:
-        resp = requests.get(url, headers=REQUEST_HEADERS, timeout=timeout)
+        resp = requests.get(url, headers=headers, timeout=timeout)
         resp.raise_for_status()
         feed = feedparser.parse(resp.content)
         entries = feed.entries[:limit]
