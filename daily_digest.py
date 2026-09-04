@@ -1,12 +1,16 @@
 """
 Daily AI Research Digest — Tier 1 "Firehose" automation
 Sources: HF Daily Papers, arXiv (cs.AI/cs.LG/cs.CL), Hacker News, Reddit r/MachineLearning,
-lab blogs (OpenAI, DeepMind, Anthropic), GitHub Trending (AI repos via Search API).
+lab blogs (OpenAI, DeepMind, Anthropic, Thinking Machines, Perplexity), GitHub Trending (AI repos via Search API).
 Outputs a single markdown digest, optionally posts to Slack, and logs every run.
 
 Run manually:  python daily_digest.py
 Run via cron:  0 7 * * * /usr/bin/python3 /path/to/daily_digest.py
 Run via GitHub Actions: see .github/workflows/daily-digest.yml
+
+Note: Safe Superintelligence (SSI) has no blog or RSS feed — their entire public output is a
+static "Updates" page (ssi.inc/updates) updated only a few times a year. Not automatable via feed
+polling; check manually if needed.
 """
 
 import os
@@ -27,6 +31,8 @@ LAB_BLOG_FEEDS = {
     "OpenAI": "https://openai.com/news/rss.xml",
     "DeepMind": "https://deepmind.com/blog/feed/basic",
     "Anthropic (unofficial mirror)": "https://rsshub.bestblogs.dev/anthropic/news",
+    "Thinking Machines Lab": "https://thinkingmachines.ai/index.xml",
+    "Perplexity (Discover Daily podcast)": "https://feeds.buzzsprout.com/2302487.rss",
 }
 
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")
