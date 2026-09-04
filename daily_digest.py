@@ -1,8 +1,8 @@
 """
 Daily AI Research Digest — Tier 1 "Firehose" automation
-Sources: HF Daily Papers (official API, sort=trending), arXiv (cs.AI/cs.LG/cs.CL), Hacker News,
-Reddit r/MachineLearning, lab blogs (OpenAI, DeepMind, Anthropic, Thinking Machines, Perplexity,
-NVIDIA), GitHub Trending (AI repos via Search API).
+Sources: HF Daily Papers (official API — trending + today-by-upvotes), arXiv (cs.AI/cs.LG/cs.CL),
+Hacker News, Reddit r/MachineLearning, lab blogs (OpenAI, DeepMind, Anthropic, Thinking Machines,
+Perplexity, NVIDIA), GitHub Trending (AI repos via Search API).
 Outputs a single markdown digest (digest_latest.md), archives a dated copy to daily_digests/,
 optionally posts to Slack, and logs every run.
 
@@ -58,32 +58,60 @@ def _extract_paper_fields(item):
     arxiv_id = paper.get("id") or item.get("id") or ""
     summary = paper.get("summary") or paper.get("abstract") or item.get("summary") or ""
     link = f"https://huggingface.co/papers/{arxiv_id}" if arxiv_id else item.get("url", "")
-    upvotes = paper.get("upvotes") or item.get("upvotes")
-    summary_text = summary[:300]
-    if upvotes is not None:
-        summary_text = f"⬆ {upvotes} upvotes — {summary_text}"
-    return title, link, summary_text
+    upvotes = paper.get("upvotes") or item.get("upvotes") or 0
+    return title, link, summary, upvotes
 
 
-def fetch_hf_daily_papers(limit=10):
+def _fetch_hf(params, source_label, limit):
+    """Shared fetch/parse logic for the HF daily_papers API. Returns (items, status, error)."""
     items = []
     status, error = "ok", ""
     try:
-        params = {"limit": limit, "sort": "trending"}
         resp = requests.get(HF_DAILY_PAPERS_API, params=params, headers=REQUEST_HEADERS, timeout=20)
         resp.raise_for_status()
         data = resp.json()
         raw_items = data if isinstance(data, list) else data.get("results", data.get("papers", []))
-        for item in raw_items[:limit]:
-            title, link, summary = _extract_paper_fields(item)
-            items.append({"title": title, "link": link, "summary": summary, "source": "HF Daily Papers (trending)"})
+        parsed = []
+        for item in raw_items:
+            title, link, summary, upvotes = _extract_paper_fields(item)
+            parsed.append({"title": title, "link": link, "summary": summary, "upvotes": upvotes,
+                          "source": source_label})
+        if source_label.endswith("(Today, by Upvotes)"):
+            parsed.sort(key=lambda x: x["upvotes"], reverse=True)
+        for p in parsed[:limit]:
+            summary_text = p["summary"][:300]
+            if p["upvotes"]:
+                summary_text = f"⬆ {p['upvotes']} upvotes — {summary_text}"
+            items.append({"title": p["title"], "link": p["link"], "summary": summary_text, "source": source_label})
         if not items:
             status = "empty"
             error = f"0 items parsed; raw response keys: {list(data.keys()) if isinstance(data, dict) else type(data)}"
     except Exception as e:
         status, error = "failed", str(e)
-        items.append({"title": f"[HF fetch failed: {e}]", "link": "", "summary": "", "source": "HF"})
+        items.append({"title": f"[HF fetch failed: {e}]", "link": "", "summary": "", "source": source_label})
     return items, status, error
+
+
+def fetch_hf_daily_papers(limit=10):
+    """Two views of HF's Daily Papers: overall trending, and today's papers ranked by upvotes."""
+    trending_items, trending_status, trending_error = _fetch_hf(
+        {"limit": limit, "sort": "trending"}, "HF Daily Papers (Trending)", limit)
+
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    today_items, today_status, today_error = _fetch_hf(
+        {"date": today_str, "sort": "publishedAt"}, "HF Daily Papers (Today, by Upvotes)", limit)
+
+    if today_status == "empty":
+        today_items = [{"title": f"No papers indexed yet for {today_str} (HF submissions can lag up to 14 days behind arXiv)",
+                        "link": "", "summary": "", "source": "HF Daily Papers (Today, by Upvotes)"}]
+
+    items = trending_items + today_items
+    combined_status = "ok" if trending_status == "ok" else trending_status
+    combined_error = "; ".join(filter(None, [
+        f"trending: {trending_error}" if trending_error else "",
+        f"today: {today_error}" if today_error else "",
+    ]))
+    return items, combined_status, combined_error
 
 
 def fetch_arxiv_recent(limit=10, max_retries=3):
@@ -216,7 +244,7 @@ def dedupe(items):
     seen = set()
     out = []
     for it in items:
-        key = it["title"].strip().lower()
+        key = (it["source"], it["title"].strip().lower())
         if key not in seen:
             seen.add(key)
             out.append(it)
