@@ -26,6 +26,7 @@ ARXIV_QUERY = "cat:cs.AI OR cat:cs.LG OR cat:cs.CL"
 HN_API = "https://hn.algolia.com/api/v1/search_by_date"
 REDDIT_URL = "https://www.reddit.com/r/MachineLearning/top.json"
 GITHUB_SEARCH_API = "https://api.github.com/search/repositories"
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")  # provided automatically by GitHub Actions
 
 LAB_BLOG_FEEDS = {
     "OpenAI": "https://openai.com/news/rss.xml",
@@ -169,7 +170,11 @@ def fetch_github_trending(limit=10, days_back=7):
         since_date = (datetime.now(timezone.utc) - timedelta(days=days_back)).strftime("%Y-%m-%d")
         query = f"topic:artificial-intelligence created:>{since_date}"
         params = {"q": query, "sort": "stars", "order": "desc", "per_page": limit}
-        resp = requests.get(GITHUB_SEARCH_API, params=params, headers=REQUEST_HEADERS, timeout=15)
+        headers = dict(REQUEST_HEADERS)
+        if GITHUB_TOKEN:
+            headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
+        headers["Accept"] = "application/vnd.github+json"
+        resp = requests.get(GITHUB_SEARCH_API, params=params, headers=headers, timeout=15)
         resp.raise_for_status()
         data = resp.json()
         for repo in data.get("items", [])[:limit]:
