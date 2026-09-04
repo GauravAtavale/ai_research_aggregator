@@ -22,13 +22,14 @@ jobs:
       - name: Run digest script
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python daily_digest.py
 
-      - name: Commit digest and log to repo
+      - name: Commit digest, log, and archive to repo
         run: |
           git config user.name "digest-bot"
           git config user.email "digest-bot@users.noreply.github.com"
-          git add digest_latest.md logs/run_log.csv
+          git add digest_latest.md logs/run_log.csv digests/
           git commit -m "Daily digest $(date +%Y-%m-%d)" || echo "No changes"
           git pull --rebase origin main
           git push origin main
