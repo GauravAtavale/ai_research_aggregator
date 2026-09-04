@@ -9,6 +9,7 @@ Run via GitHub Actions: see .github/workflows/daily-digest.yml
 """
 
 import os
+import time
 import requests
 import feedparser
 from datetime import datetime
@@ -18,11 +19,15 @@ ARXIV_API = "http://export.arxiv.org/api/query"      # official, no auth require
 ARXIV_QUERY = "cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL"
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")  # optional
 
+REQUEST_HEADERS = {
+    "User-Agent": "ai-research-aggregator/1.0 (personal research digest bot; contact: github.com/GauravAtavale)"
+}
+
 
 def fetch_hf_daily_papers(limit=10):
     items = []
     try:
-        feed = feedparser.parse(HF_RSS_FEED)
+        feed = feedparser.parse(HF_RSS_FEED, request_headers=REQUEST_HEADERS)
         for entry in feed.entries[:limit]:
             items.append({
                 "title": entry.title,
@@ -35,27 +40,36 @@ def fetch_hf_daily_papers(limit=10):
     return items
 
 
-def fetch_arxiv_recent(limit=10):
+def fetch_arxiv_recent(limit=10, max_retries=3):
     items = []
-    try:
-        params = {
-            "search_query": ARXIV_QUERY,
-            "sortBy": "submittedDate",
-            "sortOrder": "descending",
-            "max_results": limit,
-        }
-        resp = requests.get(ARXIV_API, params=params, timeout=15)
-        resp.raise_for_status()
-        feed = feedparser.parse(resp.text)
-        for entry in feed.entries[:limit]:
-            items.append({
-                "title": entry.title.replace("\n", " ").strip(),
-                "link": entry.link,
-                "summary": getattr(entry, "summary", "")[:300].replace("\n", " "),
-                "source": "arXiv (cs.AI/cs.LG/cs.CL, recent)",
-            })
-    except Exception as e:
-        items.append({"title": f"[arXiv fetch failed: {e}]", "link": "", "summary": "", "source": "arXiv"})
+    params = {
+        "search_query": ARXIV_QUERY,
+        "sortBy": "submittedDate",
+        "sortOrder": "descending",
+        "max_results": limit,
+    }
+    last_error = None
+    for attempt in range(max_retries):
+        try:
+            resp = requests.get(ARXIV_API, params=params, headers=REQUEST_HEADERS, timeout=20)
+            if resp.status_code == 429:
+                wait = 5 * (attempt + 1)
+                time.sleep(wait)
+                continue
+            resp.raise_for_status()
+            feed = feedparser.parse(resp.text)
+            for entry in feed.entries[:limit]:
+                items.append({
+                    "title": entry.title.replace("\n", " ").strip(),
+                    "link": entry.link,
+                    "summary": getattr(entry, "summary", "")[:300].replace("\n", " "),
+                    "source": "arXiv (cs.AI/cs.LG/cs.CL, recent)",
+                })
+            return items
+        except Exception as e:
+            last_error = e
+            time.sleep(3)
+    items.append({"title": f"[arXiv fetch failed after {max_retries} attempts: {last_error}]", "link": "", "summary": "", "source": "arXiv"})
     return items
 
 
@@ -91,7 +105,9 @@ def post_to_slack(markdown_text):
 
 
 def main():
-    items = fetch_hf_daily_papers() + fetch_arxiv_recent()
+    items = fetch_hf_daily_papers()
+    time.sleep(3)
+    items += fetch_arxiv_recent()
     items = dedupe(items)
     digest = build_digest(items)
 
