@@ -21,3 +21,14 @@ timestamp_utc,source,status,item_count,error
 2026-09-04 16:30:48 UTC,Lab Blog: Perplexity (Discover Daily podcast),failed,0,object has no attribute 'link'
 2026-09-04 16:30:48 UTC,Lab Blog: NVIDIA Blog,ok,5,
 2026-09-04 16:30:48 UTC,Lab Blog: NVIDIA Technical Blog,ok,5,
+2026-09-04 16:43:55 UTC,Newsletter: The Batch (DeepLearning.AI),ok,8,
+2026-09-04 16:43:55 UTC,Newsletter: The Rundown AI,ok,8,
+2026-09-04 16:43:55 UTC,Newsletter: One Useful Thing (Ethan Mollick),ok,8,
+2026-09-04 16:43:55 UTC,Newsletter: MarkTechPost,failed,0,403 Client Error: Forbidden for url: https://www.marktechpost.com/feed/
+2026-09-04 16:43:55 UTC,Lab Blog: OpenAI,ok,5,
+2026-09-04 16:43:55 UTC,Lab Blog: DeepMind,ok,5,
+2026-09-04 16:43:55 UTC,Lab Blog: Anthropic (unofficial mirror),ok,5,
+2026-09-04 16:43:55 UTC,Lab Blog: Thinking Machines Lab,ok,5,
+2026-09-04 16:43:55 UTC,Lab Blog: Perplexity (Discover Daily podcast),failed,0,object has no attribute 'link'
+2026-09-04 16:43:55 UTC,Lab Blog: NVIDIA Blog,ok,5,
+2026-09-04 16:43:55 UTC,Lab Blog: NVIDIA Technical Blog,ok,5,

@@ -38,6 +38,24 @@ _Tier 2: curated newsletters + direct lab blog re-check. Use this to catch anyth
 - **[OpenAI's first AI chip brings the heat](https://therundownai.beehiiv.com/p/openai-first-ai-chip-brings-the-heat)**  
   PLUS: Build a website hands-free with Claude Voice
 
+## Newsletter: One Useful Thing (Ethan Mollick)
+- **[Agency and Agents](https://www.oneusefulthing.org/p/agency-and-agents)**  
+  From the Hugging Face Incident to Twilight Factories
+- **[An opinionated guide to which AI to use to do stuff](https://www.oneusefulthing.org/p/an-opinionated-guide-to-which-ai-b22)**  
+  The Summer 2026 Edition
+- **[The twilight of the chatbots](https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots)**  
+  How work changes along the exponential
+- **[What it feels like to work with Mythos](https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos)**  
+  Claude Fable represents another big jump in AI
+- **[Co-Existence and the End of Co-Intelligence](https://www.oneusefulthing.org/p/co-existence-and-the-end-of-co-intelligence)**  
+  Also: how pitch a book to an AI!
+- **[Choosing to Stay Human](https://www.oneusefulthing.org/p/choosing-to-stay-human)**  
+  If you go to your favorite social media site, you will find it full of posts that start to look suspiciously similar to each other:
+- **[Sign of the future: GPT-5.5](https://www.oneusefulthing.org/p/sign-of-the-future-gpt-55)**  
+  One impressive step on the curve
+- **[Claude Dispatch and the Power of Interfaces](https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of)**  
+  We often lack the tools for the job, even if the AI is capable enough
+
 ## Lab Blog: OpenAI
 - **[Daybreak for Frontline Defenders: $1B to protect essential services](https://openai.com/index/daybreak-for-frontline-defenders)**  
   OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.
@@ -114,3 +132,7 @@ _Tier 2: curated newsletters + direct lab blog re-check. Use this to catch anyth
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="431" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/keyboard_16x9-768x431.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="keyboard_16x9" width="768" />NVIDIA CUDA remains the foundation of GPU-accelerated computing, powering everything from sci
 - **[Co-Designing AI Models Using Speculative Decoding for Faster LLM Inference](https://developer.nvidia.com/blog/co-designing-ai-models-using-speculative-decoding-for-faster-llm-inference/)**  
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/llm-optimize-deploy-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="llm-optimize-deploy" width="768" />This post is the third in a series on AI model co-design. It explores how to acce
+
+## ⚠️ Manual Check Needed (not automatable)
+- **Import AI (Jack Clark)** — https://jack-clark.net/
+- **The Academic Digest** — https://www.theacademicdigest.app/ (personalized email service, no public feed — subscribe directly if wanted)
