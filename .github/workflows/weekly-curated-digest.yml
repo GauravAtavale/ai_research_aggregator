@@ -1,0 +1,34 @@
+name: Weekly Curated AI Digest
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"   # Every Monday, 13:00 UTC (~8-9am ET depending on DST)
+  workflow_dispatch: {}
+
+jobs:
+  run-weekly-digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests feedparser
+
+      - name: Run weekly curated digest script
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python weekly_curated_digest.py
+
+      - name: Commit weekly digest, log, and archive to repo
+        run: |
+          git config user.name "digest-bot"
+          git config user.email "digest-bot@users.noreply.github.com"
+          git add weekly_curated_digest_latest.md logs/weekly_run_log.csv weekly_digests/
+          git commit -m "Weekly curated digest $(date +%Y-%m-%d)" || echo "No changes"
+          git pull --rebase origin main
+          git push origin main
