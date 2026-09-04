@@ -2,7 +2,7 @@
 Daily AI Research Digest — Tier 1 "Firehose" automation
 Sources: HF Daily Papers, arXiv (cs.AI/cs.LG/cs.CL), Hacker News, Reddit r/MachineLearning,
 lab blogs (OpenAI, DeepMind, Anthropic, Thinking Machines, Perplexity, NVIDIA), GitHub Trending (AI repos via Search API).
-Outputs a single markdown digest (digest_latest.md), archives a dated copy to digests/,
+Outputs a single markdown digest (digest_latest.md), archives a dated copy to daily_digests/,
 optionally posts to Slack, and logs every run.
 
 Run manually:  python daily_digest.py
@@ -42,7 +42,7 @@ LAB_BLOG_FEEDS = {
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")
 LOG_FILE = os.path.join("logs", "run_log.csv")
 LOG_FIELDS = ["timestamp_utc", "source", "status", "item_count", "error"]
-ARCHIVE_DIR = "digests"
+ARCHIVE_DIR = "daily_digests"
 
 REQUEST_HEADERS = {
     "User-Agent": "ai-research-aggregator/1.0 (personal research digest bot; contact: github.com/GauravAtavale)"
