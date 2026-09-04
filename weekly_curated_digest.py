@@ -1,14 +1,25 @@
 """
 Weekly Curated AI Digest — Tier 2 automation
-Sources: Import AI (Jack Clark), The Batch (DeepLearning.AI), The Rundown AI —
-plus a direct re-check of primary lab blogs (OpenAI, DeepMind, Anthropic, Thinking Machines,
-Perplexity, NVIDIA) in case anything was missed during the week.
+Sources: The Batch (DeepLearning.AI), The Rundown AI, One Useful Thing (Ethan Mollick),
+MarkTechPost — plus a direct re-check of primary lab blogs (OpenAI, DeepMind, Anthropic,
+Thinking Machines, Perplexity, NVIDIA) in case anything was missed during the week.
 
 Intent: this is the curated filtering layer described in the Tier 2 research workflow —
 run weekly (not daily), producing a smaller, higher-signal digest than Tier 1's raw firehose.
 
 Run manually:  python weekly_curated_digest.py
 Run via GitHub Actions: see .github/workflows/weekly-curated-digest.yml
+
+Notes on sources NOT automated:
+- Import AI (importai.substack.com): Substack/Cloudflare blocks GitHub Actions' datacenter IPs
+  at the network level regardless of User-Agent (confirmed via testing both a custom bot UA and
+  a standard browser UA — both 403). Check https://jack-clark.net/ manually instead.
+- One Useful Thing is ALSO on Substack, so it carries the same risk. It's included below so the
+  per-feed logging can tell us definitively whether Substack blocks vary by publication; if it
+  403s the same way, move it to MANUAL_CHECK_REMINDERS.
+- The Academic Digest (theacademicdigest.app): a personalized, subscription-based email service
+  (you enter keywords, it emails *you* specifically). There is no generic public feed to poll —
+  nothing exists to automate. Subscribe directly via email if you want it.
 """
 
 import os
@@ -19,9 +30,15 @@ import feedparser
 from datetime import datetime, timezone
 
 CURATED_NEWSLETTER_FEEDS = {
-    "Import AI (Jack Clark)": "https://importai.substack.com/feed",
     "The Batch (DeepLearning.AI)": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_the_batch.xml",
     "The Rundown AI": "https://rss.beehiiv.com/feeds/2R3C6Bt5wj.xml",
+    "One Useful Thing (Ethan Mollick)": "https://www.oneusefulthing.org/feed",
+    "MarkTechPost": "https://www.marktechpost.com/feed/",
+}
+
+MANUAL_CHECK_REMINDERS = {
+    "Import AI (Jack Clark)": "https://jack-clark.net/",
+    "The Academic Digest": "https://www.theacademicdigest.app/ (personalized email service, no public feed — subscribe directly if wanted)",
 }
 
 # Same primary lab blogs as Tier 1 — re-checked weekly per the original Tier 2 spec
@@ -34,14 +51,6 @@ LAB_BLOG_FEEDS = {
     "NVIDIA Blog": "https://blogs.nvidia.com/feed/",
     "NVIDIA Technical Blog": "https://developer.nvidia.com/blog/feed/",
 }
-
-# Feeds behind bot-protection (Substack/Cloudflare) that reject our identifying UA and need a
-# standard browser User-Agent instead. Add feed names here if other sources start 403'ing.
-BROWSER_UA_FEEDS = {"Import AI (Jack Clark)"}
-BROWSER_USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
-)
 
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")
 LOG_FILE = os.path.join("logs", "weekly_run_log.csv")
@@ -57,12 +66,8 @@ def fetch_single_feed(name, url, limit, source_prefix, timeout=25):
     """Fetch one feed and return (items, status, error) for that feed alone."""
     items = []
     status, error = "ok", ""
-    headers = dict(REQUEST_HEADERS)
-    if name in BROWSER_UA_FEEDS:
-        headers["User-Agent"] = BROWSER_USER_AGENT
-        headers["Accept"] = "application/rss+xml, application/xml, text/xml, */*"
     try:
-        resp = requests.get(url, headers=headers, timeout=timeout)
+        resp = requests.get(url, headers=REQUEST_HEADERS, timeout=timeout)
         resp.raise_for_status()
         feed = feedparser.parse(resp.content)
         entries = feed.entries[:limit]
@@ -117,6 +122,11 @@ def build_digest(items):
         lines.append(f"## {source}")
         for e in entries:
             lines.append(f"- **[{e['title']}]({e['link']})**  \n  {e['summary']}")
+        lines.append("")
+    if MANUAL_CHECK_REMINDERS:
+        lines.append("## ⚠️ Manual Check Needed (not automatable)")
+        for name, note in MANUAL_CHECK_REMINDERS.items():
+            lines.append(f"- **{name}** — {note}")
         lines.append("")
     return "\n".join(lines)
 
