@@ -1,6 +1,6 @@
 """
 Daily AI Research Digest — Tier 1 "Firehose" automation
-Fetches: Hugging Face Trending/Daily Papers, alphaXiv trending papers.
+Fetches: Hugging Face Trending/Daily Papers, arXiv recent cs.AI/cs.LG submissions.
 Outputs a single markdown digest, optionally posts to Slack.
 
 Run manually:  python daily_digest.py
@@ -8,15 +8,15 @@ Run via cron:  0 7 * * * /usr/bin/python3 /path/to/daily_digest.py
 Run via GitHub Actions: see .github/workflows/daily-digest.yml
 """
 
+import os
 import requests
 import feedparser
 from datetime import datetime
-import os
 
 HF_RSS_FEED = "https://papers.takara.ai/api/feed"   # community-maintained HF Daily Papers RSS
-ALPHAXIV_API = "https://api.alphaxiv.org/v2/papers/trending"  # check docs for exact params
-# SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")  # optional
-SLACK_WEBHOOK_URL = None  # Set to None to disable Slack posting
+ARXIV_API = "http://export.arxiv.org/api/query"      # official, no auth required
+ARXIV_QUERY = "cat:cs.AI+OR+cat:cs.LG+OR+cat:cs.CL"
+SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")  # optional
 
 
 def fetch_hf_daily_papers(limit=10):
@@ -35,21 +35,27 @@ def fetch_hf_daily_papers(limit=10):
     return items
 
 
-def fetch_alphaxiv_trending(limit=10):
+def fetch_arxiv_recent(limit=10):
     items = []
     try:
-        resp = requests.get(ALPHAXIV_API, params={"limit": limit}, timeout=15)
+        params = {
+            "search_query": ARXIV_QUERY,
+            "sortBy": "submittedDate",
+            "sortOrder": "descending",
+            "max_results": limit,
+        }
+        resp = requests.get(ARXIV_API, params=params, timeout=15)
         resp.raise_for_status()
-        data = resp.json()
-        for p in data.get("papers", data.get("data", []))[:limit]:
+        feed = feedparser.parse(resp.text)
+        for entry in feed.entries[:limit]:
             items.append({
-                "title": p.get("title", "Untitled"),
-                "link": p.get("url", p.get("link", "")),
-                "summary": (p.get("abstract") or "")[:300],
-                "source": "alphaXiv Trending",
+                "title": entry.title.replace("\n", " ").strip(),
+                "link": entry.link,
+                "summary": getattr(entry, "summary", "")[:300].replace("\n", " "),
+                "source": "arXiv (cs.AI/cs.LG/cs.CL, recent)",
             })
     except Exception as e:
-        items.append({"title": f"[alphaXiv fetch failed: {e}]", "link": "", "summary": "", "source": "alphaXiv"})
+        items.append({"title": f"[arXiv fetch failed: {e}]", "link": "", "summary": "", "source": "arXiv"})
     return items
 
 
@@ -85,7 +91,7 @@ def post_to_slack(markdown_text):
 
 
 def main():
-    items = fetch_hf_daily_papers() + fetch_alphaxiv_trending()
+    items = fetch_hf_daily_papers() + fetch_arxiv_recent()
     items = dedupe(items)
     digest = build_digest(items)
 
