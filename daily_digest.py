@@ -1,7 +1,7 @@
 """
 Daily AI Research Digest — Tier 1 "Firehose" automation
 Sources: HF Daily Papers, arXiv (cs.AI/cs.LG/cs.CL), Hacker News, Reddit r/MachineLearning,
-lab blogs (OpenAI, DeepMind, Anthropic, Thinking Machines, Perplexity), GitHub Trending (AI repos via Search API).
+lab blogs (OpenAI, DeepMind, Anthropic, Thinking Machines, Perplexity, NVIDIA), GitHub Trending (AI repos via Search API).
 Outputs a single markdown digest, optionally posts to Slack, and logs every run.
 
 Run manually:  python daily_digest.py
@@ -33,6 +33,8 @@ LAB_BLOG_FEEDS = {
     "Anthropic (unofficial mirror)": "https://rsshub.bestblogs.dev/anthropic/news",
     "Thinking Machines Lab": "https://thinkingmachines.ai/index.xml",
     "Perplexity (Discover Daily podcast)": "https://feeds.buzzsprout.com/2302487.rss",
+    "NVIDIA Blog": "https://blogs.nvidia.com/feed/",
+    "NVIDIA Technical Blog": "https://developer.nvidia.com/blog/feed/",
 }
 
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")
