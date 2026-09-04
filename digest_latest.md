@@ -21,7 +21,3 @@
   Machine-learnt corrections can complement numerical weather prediction only if they adapt to the evolving model state while preserving dynamical consistency and numerical stability. To test this within a global forecasting model, we couple the Met Office (UKMO) Unified Model (UM) with distributed RL
 - **[TAME: Temporal-Aware Mixture-of-Experts for Text-Video Retrieval](https://tldr.takara.ai/p/2609.02204)**  
   Text-Video Retrieval (TVR) retrieves videos that match a natural-language query, but extending image-text models such as CLIP to videos is fundamentally limited by the lack of temporal modeling. Videos exhibit frame-wise heterogeneity in appearance and motion, and compressing all frames into a singl
-
-## arXiv
-- **[[arXiv fetch failed: 429 Client Error: Unknown Error for url: https://export.arxiv.org/api/query?search_query=cat%3Acs.AI%2BOR%2Bcat%3Acs.LG%2BOR%2Bcat%3Acs.CL&sortBy=submittedDate&sortOrder=descending&max_results=10]]()**  
-  
