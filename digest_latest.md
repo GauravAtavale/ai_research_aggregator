@@ -145,5 +145,5 @@
   ★ 3 — Unofficial DLSS 5 Neural Rendering filter for OBS Studio.  runs NVIDIA DLSS 5 NR (NGX feature 18) on any video source (Game Capture, Media Source, Webcam, …) with a Default / Natural / Cinematic style
 - **[Anil-matcha/awesome-claude-fable-5-1](https://github.com/Anil-matcha/awesome-claude-fable-5-1)**  
   ★ 2 — Curated Claude Fable 5.1 use cases, API migration notes, prompting patterns, integrations, demos, and benchmark evidence.
-- **[vineetshirode/Minesight-AI](https://github.com/vineetshirode/Minesight-AI)**  
-  ★ 2 — AI-powered manganese mining intelligence platform for data analysis, geospatial visualization, and decision support.
+- **[Pokee-AI/claude-pokee](https://github.com/Pokee-AI/claude-pokee)**  
+  ★ 2 — Official Pokee Isaac integration for Claude Code — model routing, MCP tools, and an offline-tested Python client.
