@@ -22,6 +22,6 @@
 - **[TAME: Temporal-Aware Mixture-of-Experts for Text-Video Retrieval](https://tldr.takara.ai/p/2609.02204)**  
   Text-Video Retrieval (TVR) retrieves videos that match a natural-language query, but extending image-text models such as CLIP to videos is fundamentally limited by the lack of temporal modeling. Videos exhibit frame-wise heterogeneity in appearance and motion, and compressing all frames into a singl
 
-## alphaXiv
-- **[[alphaXiv fetch failed: 404 Client Error: Not Found for url: https://api.alphaxiv.org/v2/papers/trending?limit=10]]()**  
+## arXiv
+- **[[arXiv fetch failed: HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=15)]]()**  
   
