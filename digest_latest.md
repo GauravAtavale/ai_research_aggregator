@@ -1,6 +1,6 @@
 # AI Research Digest — 2026-09-04
 
-## HF Daily Papers (trending)
+## HF Daily Papers (Trending)
 - **[BDH-CQ: In-Context Learning with Recurrent Latent Reasoning](https://huggingface.co/papers/2608.09888)**  
   ⬆ 772 upvotes — We introduce BDH-CQ, a reasoning model that combines in-context learning with recurrent latent reasoning. Inputs presented at inference time continuously update the model's recurrent memory; the model then solves a query through iterative computation in a high-dimensional latent space, without verba
 - **[FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution](https://huggingface.co/papers/2608.16157)**  
@@ -38,6 +38,28 @@ towa
 - **[Revisiting Local Context for Long-Horizon Streaming 3D Reconstruction](https://huggingface.co/papers/2608.27529)**  
   ⬆ 33 upvotes — Streaming 3D reconstruction from extremely long videos requires estimating camera motion and scene geometry online under bounded memory and computation. Early streaming models achieve causal, bounded-cost inference using finite context buffers or compact recurrent states, yet their estimates often d
 
+## HF Daily Papers (Today, by Upvotes)
+- **[Compile by Training: Turning Natural-Language Specifications into Local Neural Functions](https://huggingface.co/papers/2609.04199)**  
+  ⬆ 211 upvotes — Many recurring text functions are easy to describe but difficult to implement with rules, while calling a large remote model for every input introduces repeated cost, latency, and dependency on a provider. We present compile by training, which turns a natural-language specification into a reusable n
+- **[Terminal-Universe: Turning Agent Trajectories into Scalable Terminal Environments](https://huggingface.co/papers/2609.04148)**  
+  ⬆ 204 upvotes — As terminal-based code agents become prevalent, agent trajectories have accumulated at scale, while realistic, executable environments remain scarce. However, environments are what agent post-training actually requires: each can be re-queried into many verifiable tasks and provides execution feedbac
+- **[LLaDA-Image: Building Strong Image Generators with Fully Open Training Recipes](https://huggingface.co/papers/2609.03796)**  
+  ⬆ 171 upvotes — We introduce LLaDA-Image, a unified framework that pairs a 6B Diffusion Transformer (DiT) trained from scratch with a frozen vision-language understanding module built on the LLaDA2.0-Mini diffusion language model backbone. Instead of relying heavily on paired image-text data from the beginning, we 
+- **[Knowing When Not to Reuse: Conditional Experience Transfer in Autonomous LLM Post-Training](https://huggingface.co/papers/2608.26730)**  
+  ⬆ 139 upvotes — Large language models offer broad capabilities, but adapting them to evolving domains, tools, and requirements often entails repeated post-training. Autonomous systems automate parts of this process by proposing updates, training candidates, and using evaluation feedback to select subsequent proposa
+- **[Random Attention: Rethinking KV Cache Eviction for Efficient Reasoning](https://huggingface.co/papers/2609.03430)**  
+  ⬆ 103 upvotes — Large language models achieve superior performance on tasks that require extended reasoning, but long chains of thought make the KV cache a severe memory bottleneck. Existing KV cache compression methods share one paradigm: score each cached token by some estimate of how much it will matter later, a
+- **[LatentPress: Context Compression Beyond Text and Vision](https://huggingface.co/papers/2609.01507)**  
+  ⬆ 101 upvotes — Compressed context is usually carried as human-readable text or as rendered images that must be decoded, even when its consumer is a language model. We introduce LatentPress, which writes conversational histories and long documents into a third representation: continuous memory tokens that a frozen 
+- **[Why Gated DeltaNet Survives 4-Bit Quantization: NVFP4 W4A4 for the Recurrent Half of a Hybrid 27B LLM](https://huggingface.co/papers/2609.04098)**  
+  ⬆ 65 upvotes — Hybrid LLMs pair softmax attention with linear-attention layers such as Gated DeltaNet (GDN), whose recurrent state summarizes the context in fixed size. Early community 4-bit quantizations of Qwen3.8-27B (48 GDN layers, 16 attention layers) left the GDN block in 8- or 16-bit precision -- especially
+- **[Rethinking On-Policy Distillation of Large Language Models II: One Training Example](https://huggingface.co/papers/2609.04172)**  
+  ⬆ 63 upvotes — On-policy distillation (OPD) combines student-generated rollouts with dense token-level supervision from a teacher. Existing work has mainly studied its algorithmic behavior, leaving the role of training data unclear. We examine this role at the data-minimal limit by training on a single query. One-
+- **[Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States](https://huggingface.co/papers/2609.04196)**  
+  ⬆ 56 upvotes — We propose Puffin-World, a unified multimodal architecture that integrates physical understanding, spatial simulation, and 3D world generation and reconstruction without relying on external offline modules. To reliably construct and interact with 3D worlds, our framework jointly models three native 
+- **[Scal3R: Learning Efficient Multi-Relative Pose Query for Scalable Online 3D Reconstruction](https://huggingface.co/papers/2609.04201)**  
+  ⬆ 31 upvotes — Online 3D reconstruction models perform poorly on long videos. This happens because regressing poses relative to a fixed first-frame anchor forces extrapolation far beyond the training distribution. Small drifts accumulate and amplify into significant geometric collapse. However, we observe that per
+
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
 - **[Compile by Training: Turning Natural-Language Specifications into Local Neural Functions](https://arxiv.org/abs/2609.04199v1)**  
   Many recurring text functions are easy to describe but difficult to implement with rules, while calling a large remote model for every input introduces repeated cost, latency, and dependency on a provider. We present compile by training, which turns a natural-language specification into a reusable n
@@ -62,7 +84,7 @@ towa
 
 ## Hacker News
 - **[Show HN: TERMy – A fast terminal assistant that does not use LLMs](https://github.com/gioblu/NPC-Forge/blob/main/docs/development.md)**  
-  1 points, 0 comments
+  11 points, 1 comments
 
 ## Reddit
 - **[[Reddit fetch failed: 403 Client Error: Blocked for url: https://www.reddit.com/r/MachineLearning/top.json?limit=10&t=day]]()**  
@@ -131,6 +153,8 @@ towa
   NVIDIA’s Gamescom announcements are revealing what’s next for GeForce NOW, with new ways to play, more supported devices and platforms, and even more big PC games headed to the cloud. New NVIDIA DLSS 4.5 technology controls give members more ways to 
 
 ## Lab Blog: NVIDIA Technical Blog
+- **[Building a Memory-Driven Agent with NVIDIA NemoClaw](https://developer.nvidia.com/blog/building-a-memory-driven-agent-with-nvidia-nemoclaw/)**  
+  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/ai-agent-skills-768x432.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="ai-agent-skills" wid
 - **[Frontier Reasoning Reaches the Edge: How to Deploy and Optimize Models on NVIDIA Jetson](https://developer.nvidia.com/blog/frontier-reasoning-reaches-the-edge-how-to-deploy-and-optimize-models-on-nvidia-jetson/)**  
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/image2-3-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="image2" width="768" />Runni
 - **[How to Carry User Identity Across Federated Kubernetes and AI Platforms](https://developer.nvidia.com/blog/how-to-carry-user-identity-across-federated-kubernetes-and-ai-platforms/)**  
@@ -139,8 +163,6 @@ towa
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/nvidia-pair-virtual-inference-router-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title=
 - **[The Modern CUDA Toolbox in Practice: A Step-by-Step Optimization Walkthrough](https://developer.nvidia.com/blog/the-modern-cuda-toolbox-in-practice-a-step-by-step-optimization-walkthrough/)**  
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="431" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/keyboard_16x9-768x431.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="keyboard_16x9" width="
-- **[Co-Designing AI Models Using Speculative Decoding for Faster LLM Inference](https://developer.nvidia.com/blog/co-designing-ai-models-using-speculative-decoding-for-faster-llm-inference/)**  
-  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/llm-optimize-deploy-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="llm-optimize-dep
 
 ## GitHub Trending (AI, new repos)
 - **[JoseAngelSolorzanoLuna/UFO-Cathedral-v6.4-FailSafe-Free-AI](https://github.com/JoseAngelSolorzanoLuna/UFO-Cathedral-v6.4-FailSafe-Free-AI)**  
@@ -157,9 +179,9 @@ towa
   ★ 3 — An autonomous AI coding assistant for developers. Write code, manage files, run terminal commands, and search the web directly from your terminal. Built with TypeScript and Bun as a modern, fast monor
 - **[TirupMehta/ModelRegistry](https://github.com/TirupMehta/ModelRegistry)**  
   ★ 3 — ModelRegistry is a community-driven, machine-readable index tracking the state of foundational artificial intelligence.
+- **[shinomakoi/dungeon-bench](https://github.com/shinomakoi/dungeon-bench)**  
+  ★ 3 — Testing LLM performance at playing simple games
 - **[Saganaki22/obs-dlss5-nr](https://github.com/Saganaki22/obs-dlss5-nr)**  
   ★ 3 — Unofficial DLSS 5 Neural Rendering filter for OBS Studio.  runs NVIDIA DLSS 5 NR (NGX feature 18) on any video source (Game Capture, Media Source, Webcam, …) with a Default / Natural / Cinematic style
 - **[Anil-matcha/awesome-claude-fable-5-1](https://github.com/Anil-matcha/awesome-claude-fable-5-1)**  
   ★ 2 — Curated Claude Fable 5.1 use cases, API migration notes, prompting patterns, integrations, demos, and benchmark evidence.
-- **[wajidmir23/AI-resume-analyzer](https://github.com/wajidmir23/AI-resume-analyzer)**  
-  ★ 2 — AI-powered resume analyzer that calculates ATS scores, extracts skills, detects missing keywords, and provides improvement suggestion
