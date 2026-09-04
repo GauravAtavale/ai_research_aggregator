@@ -88,24 +88,44 @@
 - **[Funding better evaluations of AI’s impact on wellbeing](https://www.anthropic.com/news/wellbeing-research-grants)**  
   <article><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><div class="Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGO
 
-## GitHub Trending (AI, new repos)
-- **[JoseAngelSolorzanoLuna/UFO-Cathedral-v6.4-FailSafe-Free-AI](https://github.com/JoseAngelSolorzanoLuna/UFO-Cathedral-v6.4-FailSafe-Free-AI)**  
-  ★ 13 — 100% Free, Offline, 8GB RAM Computer-Artificial Intelligence + Formal Safety (Gate + Ledger + Council + Shadow Mode) — Free alternative to $200/mo OpenAI Operator / Perplexity Computer / ClawBot / Cla
-- **[AlekseiUL/humanlike](https://github.com/AlekseiUL/humanlike)**  
-  ★ 12 — Humanlike — deterministic persona, context, memory and privacy controls for conversational AI agents · Детерминированное поведение ИИ-агентов
-- **[lucidrains/ccbp-pytorch](https://github.com/lucidrains/ccbp-pytorch)**  
-  ★ 10 — Implementation of the proposed CCBP (Continuous Continual BackProp) in Pytorch
-- **[Felix-Theodore-Zeng/eight-market-quant-ai](https://github.com/Felix-Theodore-Zeng/eight-market-quant-ai)**  
-  ★ 6 — Eight-market data collection, quantitative analytics, technical structure, and Hermes AI forecasting system
-- **[PanomaAI/panoma](https://github.com/PanomaAI/panoma)**  
-  ★ 6 — The local catalog of your projects — intelligent, always learning, for you and your agents
-- **[TirupMehta/ModelRegistry](https://github.com/TirupMehta/ModelRegistry)**  
-  ★ 3 — ModelRegistry is a community-driven, machine-readable index tracking the state of foundational artificial intelligence.
-- **[sanketpadhyal/RivoCode-Cli](https://github.com/sanketpadhyal/RivoCode-Cli)**  
-  ★ 3 — An autonomous AI coding assistant for developers. Write code, manage files, run terminal commands, and search the web directly from your terminal. Built with TypeScript and Bun as a modern, fast monor
-- **[Saganaki22/obs-dlss5-nr](https://github.com/Saganaki22/obs-dlss5-nr)**  
-  ★ 3 — Unofficial DLSS 5 Neural Rendering filter for OBS Studio.  runs NVIDIA DLSS 5 NR (NGX feature 18) on any video source (Game Capture, Media Source, Webcam, …) with a Default / Natural / Cinematic style
-- **[Anil-matcha/awesome-claude-fable-5-1](https://github.com/Anil-matcha/awesome-claude-fable-5-1)**  
-  ★ 2 — Curated Claude Fable 5.1 use cases, API migration notes, prompting patterns, integrations, demos, and benchmark evidence.
-- **[vineetshirode/Minesight-AI](https://github.com/vineetshirode/Minesight-AI)**  
-  ★ 2 — AI-powered manganese mining intelligence platform for data analysis, geospatial visualization, and decision support.
+## Lab Blog: Thinking Machines Lab
+- **[A Safe Path to Open Weights](https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/)**  
+  <blockquote class="epigraph">
+<p><strong>Abstract:</strong> Safe open-weight models are public goods, as they put AI development and safety work in many hands and make training choices inspectable. Open models also carry real misuse risks, and releas
+- **[The Future Worth Building Is Human](https://thinkingmachines.ai/blog/the-future-worth-building-is-human/)**  
+  <p>The mission of Thinking Machines is to build AI that extends human will and judgment.</p>
+<p>Artificial intelligence can do more every day, but deciding what it should do is up to us: individuals, organizations, humanity as a whole. These decision
+- **[Interaction Models: A Scalable Approach to Human-AI Collaboration](https://thinkingmachines.ai/blog/interaction-models/)**  
+  <p>Today, we’re announcing a research preview of interaction models: models that handle interaction natively rather than through external scaffolding. We think interactivity should scale alongside intelligence; the way we work with AI should not be t
+- **[On-Policy Distillation](https://thinkingmachines.ai/blog/on-policy-distillation/)**  
+  <p>LLMs are capable of expert performance in focused domains, a result of several capabilities stacked together: perception of input, knowledge retrieval, plan selection, and reliable execution. This requires a stack of training approaches, which we 
+- **[LoRA Without Regret](https://thinkingmachines.ai/blog/lora/)**  
+  <p>Today’s leading language models contain upwards of a trillion parameters, pretrained on tens of trillions of tokens. Base model performance keeps improving with scale, as these trillions are necessary for learning and representing all the patterns
+
+## Lab Blog: NVIDIA Blog
+- **[Sparks Fly: NVIDIA Accelerates Local AI at IFA 2026](https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/)**  
+  Frontier intelligence is going local. At IFA 2026, NVIDIA, Microsoft and its partners are teaming up to provide faster inference and new tools that make agents easier to set up and run locally on NVIDIA hardware. New compact NVIDIA RTX Spark Windows 
+- **[‘NBA 2K27’ With NVIDIA DLSS 5 Leads 28 New Games Coming to GeForce NOW](https://blogs.nvidia.com/blog/geforce-now-thursday-september-2026-games-list/)**  
+  September is here with 28 more games streaming on GeForce NOW this month, led by a slam dunk: NBA 2K27 with the NVIDIA DLSS 5 3D-Guided Neural Rendering feature. Through NVIDIA’s close collaboration with Visual Concepts and 2K, DLSS 5 brings a new le
+- **[NVIDIA to Acquire Hugging Face](https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/)**  
+  I’m excited to announce that NVIDIA has agreed to acquire Hugging Face for $12,930,300,000. Together, we will scale Hugging Face’s platform, strengthen its infrastructure and expand access to AI for developers and institutions worldwide. Over the pas
+- **[NVIDIA and CrowdStrike Strengthen Agentic Cybersecurity Frontier](https://blogs.nvidia.com/blog/nvidia-crowdstrike-fal-con-2026/)**  
+  “We’re at an inflection point in cybersecurity,” Jensen Huang told a sold-out crowd at CrowdStrike’s Fal.Con 2026 in Las Vegas Tuesday. Attacks are now automated. Defense has to be, too.  The NVIDIA founder and CEO joined CrowdStrike CEO and founder 
+- **[GeForce NOW Gives Gamers More Ways to Play at Gamescom 2026](https://blogs.nvidia.com/blog/geforce-now-thursday-gamescom-2026/)**  
+  NVIDIA’s Gamescom announcements are revealing what’s next for GeForce NOW, with new ways to play, more supported devices and platforms, and even more big PC games headed to the cloud. New NVIDIA DLSS 4.5 technology controls give members more ways to 
+
+## Lab Blog: NVIDIA Technical Blog
+- **[How to Carry User Identity Across Federated Kubernetes and AI Platforms](https://developer.nvidia.com/blog/how-to-carry-user-identity-across-federated-kubernetes-and-ai-platforms/)**  
+  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/kai-scheduler-representation-768x432.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="kai-sch
+- **[NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network](https://developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network/)**  
+  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/nvidia-pair-virtual-inference-router-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title=
+- **[The Modern CUDA Toolbox in Practice: A Step-by-Step Optimization Walkthrough](https://developer.nvidia.com/blog/the-modern-cuda-toolbox-in-practice-a-step-by-step-optimization-walkthrough/)**  
+  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="431" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/keyboard_16x9-768x431.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="keyboard_16x9" width="
+- **[Co-Designing AI Models Using Speculative Decoding for Faster LLM Inference](https://developer.nvidia.com/blog/co-designing-ai-models-using-speculative-decoding-for-faster-llm-inference/)**  
+  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/llm-optimize-deploy-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="llm-optimize-dep
+- **[Building an Adaptive Agentic Cybersecurity System with NVIDIA Nemotron](https://developer.nvidia.com/blog/building-an-adaptive-agentic-cybersecurity-system-with-nvidia-nemotron/)**  
+  <img alt="An illustration showing agentic security." class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/Agentic-Adaptive-Security-e1788211755260-768x432.webp" style="display: b
+
+## GitHub Trending
+- **[[GitHub fetch failed: 403 Client Error: rate limit exceeded for url: https://api.github.com/search/repositories?q=topic%3Aartificial-intelligence+created%3A%3E2026-08-28&sort=stars&order=desc&per_page=10]]()**  
+  
