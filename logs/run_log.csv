@@ -51,3 +51,9 @@ timestamp_utc,source,status,item_count,error
 2026-09-04 18:23:02 UTC,Reddit,failed,1,403 Client Error: Blocked for url: https://www.reddit.com/r/MachineLearning/top.json?limit=10&t=day
 2026-09-04 18:23:02 UTC,Lab Blogs,ok,30,partial failures: Perplexity (Discover Daily podcast): object has no attribute 'link'
 2026-09-04 18:23:02 UTC,GitHub Trending,ok,10,
+2026-09-05 14:26:07 UTC,HF Daily Papers,ok,11,today: 0 items parsed; raw response keys: <class 'list'>
+2026-09-05 14:26:07 UTC,arXiv,failed,1,"HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=20)"
+2026-09-05 14:26:07 UTC,Hacker News,empty,0,
+2026-09-05 14:26:07 UTC,Reddit,failed,1,403 Client Error: Blocked for url: https://www.reddit.com/r/MachineLearning/top.json?limit=10&t=day
+2026-09-05 14:26:07 UTC,Lab Blogs,ok,30,partial failures: Perplexity (Discover Daily podcast): object has no attribute 'link'
+2026-09-05 14:26:07 UTC,GitHub Trending,ok,10,
