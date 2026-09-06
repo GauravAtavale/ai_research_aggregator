@@ -10,10 +10,14 @@ run weekly (not daily), producing a smaller, higher-signal digest than Tier 1's 
 Run manually:  python weekly_curated_digest.py
 Run via GitHub Actions: see .github/workflows/weekly-curated-digest.yml
 
+Note: The digest title and archive filename are computed in US/Eastern time, not the GitHub
+Actions runner's UTC clock — otherwise a run after 8pm ET (4pm during EST) gets labeled with
+tomorrow's date. Internal run logs still use UTC timestamps.
+
 Notes on sources NOT automated:
 - Import AI (importai.substack.com): Substack/Cloudflare blocks GitHub Actions' datacenter IPs
   at the network level regardless of User-Agent (confirmed via testing both a custom bot UA and
-  a standard browser UA — both 403). Check https://jack-clark.net/ manually instead.
+  a standard browser UA — both 403). Check [https://jack-clark.net/](https://jack-clark.net/) manually instead.
 - One Useful Thing is ALSO on Substack, so it carries the same risk. It's included below so the
   per-feed logging can tell us definitively whether Substack blocks vary by publication; if it
   403s the same way, move it to MANUAL_CHECK_REMINDERS.
@@ -28,6 +32,9 @@ import time
 import requests
 import feedparser
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
+
+LOCAL_TZ = ZoneInfo("America/New_York")
 
 CURATED_NEWSLETTER_FEEDS = {
     "The Batch (DeepLearning.AI)": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_the_batch.xml",
@@ -110,7 +117,7 @@ def dedupe(items):
 
 
 def build_digest(items):
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = datetime.now(LOCAL_TZ).strftime("%Y-%m-%d")
     lines = [f"# Weekly Curated AI Digest — week of {today}\n"]
     lines.append("_Tier 2: curated newsletters + direct lab blog re-check."
                  " Use this to catch anything Tier 1's daily firehose surfaced without enough context,"
@@ -150,7 +157,7 @@ def log_run(rows):
 
 def archive_digest(digest_text):
     os.makedirs(ARCHIVE_DIR, exist_ok=True)
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = datetime.now(LOCAL_TZ).strftime("%Y-%m-%d")
     with open(os.path.join(ARCHIVE_DIR, f"{today}.md"), "w") as f:
         f.write(digest_text)
 
