@@ -1,4 +1,4 @@
-# AI Research Digest — 2026-09-06
+# AI Research Digest — 2026-09-05
 
 ## HF Daily Papers (Trending)
 - **[BDH-CQ: In-Context Learning with Recurrent Latent Reasoning](https://huggingface.co/papers/2608.09888)**  
@@ -10,19 +10,17 @@
 Processing (NLP), we design a time-series foundation model for forecasting
 whose out-of-the-box zero-shot performance on a variety of public datasets
 comes close to the accuracy of state-of-the-art supervised forecasting mode
-- **[AutoResearch: Insight In, Hallucination Out](https://huggingface.co/papers/2608.17906)**  
-  ⬆ 10 upvotes — Autonomous research systems are increasingly capable of executing long research workflows, yet automation alone does not ensure that the resulting process remains scientifically grounded. We introduce AutoResearch, a two-stage system that connects Idea Generation with Idea Execution to address both 
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
   ⬆ 127 upvotes — Significant progress has been made in automated problem-solving using
 societies of agents powered by large language models (LLMs). In finance,
 efforts have largely focused on single-agent systems handling specific tasks or
 multi-agent frameworks independently gathering data. However, the multi-agent
+- **[AutoResearch: Insight In, Hallucination Out](https://huggingface.co/papers/2608.17906)**  
+  ⬆ 10 upvotes — Autonomous research systems are increasingly capable of executing long research workflows, yet automation alone does not ensure that the resulting process remains scientifically grounded. We introduce AutoResearch, a two-stage system that connects Idea Generation with Idea Execution to address both 
 - **[Prime Agent: A Self-Improving RLM Harness](https://huggingface.co/papers/2608.23552)**  
-  ⬆ 48 upvotes — Language models are sequential processors, but long-horizon agency requires external information and computation beyond model weights and active context. Prime Agent is an open-source harness for long-horizon evaluation and coding-agent workflows. A persistent IPython REPL follows the Recursive Lang
+  ⬆ 49 upvotes — Language models are sequential processors, but long-horizon agency requires external information and computation beyond model weights and active context. Prime Agent is an open-source harness for long-horizon evaluation and coding-agent workflows. A persistent IPython REPL follows the Recursive Lang
 - **[Apodex 1.1: Scaling Agentic Intelligence for Complex Work](https://huggingface.co/papers/2608.23283)**  
   ⬆ 205 upvotes — General-purpose language models can reason and synthesize knowledge, but complex work also requires sustained interaction with files, information sources, and executable code, together with state maintenance, failure recovery, and verifiable delivery. We call this working capability: sustained, veri
-- **[WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report](https://huggingface.co/papers/2608.24053)**  
-  ⬆ 70 upvotes — Universal multimodal embeddings are becoming a core component of modern AI systems, enabling heterogeneous content to be represented in a shared space for applications such as retrieval, recommendation, classification, and agentic systems. In this report, we present WeMM-Embedding, a family of unive
 - **[AgentScope 1.0: A Developer-Centric Framework for Building Agentic
   Applications](https://huggingface.co/papers/2508.16279)**  
   ⬆ 68 upvotes — Driven by rapid advancements of Large Language Models (LLMs), agents are
@@ -35,9 +33,16 @@ towa
 applying multi-agent systems in very large-scale simulations. However, there
 remain several challenges when conducting multi-agent simulations with existing
 platforms, such as limited scalability and low efficiency, unsatisf
+- **[OpenDevin: An Open Platform for AI Software Developers as Generalist
+  Agents](https://huggingface.co/papers/2407.16741)**  
+  ⬆ 85 upvotes — Software is one of the most powerful tools that we humans have at our
+disposal; it allows a skilled programmer to interact with the world in complex
+and profound ways. At the same time, thanks to improvements in large language
+models (LLMs), there has also been a rapid development in AI agents that
+
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[[HF fetch failed: 400 Client Error: Bad Request for url: https://huggingface.co/api/daily_papers?date=2026-09-06&sort=publishedAt]]()**  
+- **[No papers indexed yet for 2026-09-05 (HF submissions can lag up to 14 days behind arXiv)]()**  
   
 
 ## arXiv
@@ -130,7 +135,7 @@ platforms, such as limited scalability and low efficiency, unsatisf
 - **[lucidrains/ccbp-pytorch](https://github.com/lucidrains/ccbp-pytorch)**  
   ★ 10 — Implementation of the proposed CCBP (Continuous Continual BackProp) in Pytorch
 - **[Felix-Theodore-Zeng/eight-market-quant-ai](https://github.com/Felix-Theodore-Zeng/eight-market-quant-ai)**  
-  ★ 8 — Eight-market data collection, quantitative analytics, technical structure, and Hermes AI forecasting system
+  ★ 9 — Eight-market data collection, quantitative analytics, technical structure, and Hermes AI forecasting system
 - **[PanomaAI/panoma](https://github.com/PanomaAI/panoma)**  
   ★ 7 — The local catalog of your projects — intelligent, always learning, for you and your agents
 - **[Saganaki22/obs-dlss5-nr](https://github.com/Saganaki22/obs-dlss5-nr)**  
