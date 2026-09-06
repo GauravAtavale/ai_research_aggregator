@@ -10,6 +10,10 @@ Run manually:  python daily_digest.py
 Run via cron:  0 7 * * * /usr/bin/python3 /path/to/daily_digest.py
 Run via GitHub Actions: see .github/workflows/daily-digest.yml
 
+Note: All user-facing dates (digest title, archive filename, "today" for HF papers) are computed
+in US/Eastern time, not the GitHub Actions runner's UTC clock — otherwise any run after 8pm ET
+(4pm during EST) gets labeled with tomorrow's date. Internal run logs still use UTC timestamps.
+
 Note: Safe Superintelligence (SSI) has no blog or RSS feed — their entire public output is a
 static "Updates" page (ssi.inc/updates) updated only a few times a year. Not automatable via feed
 polling; check manually if needed.
@@ -21,6 +25,7 @@ import time
 import requests
 import feedparser
 from datetime import datetime, timezone, timedelta
+from zoneinfo import ZoneInfo
 
 HF_DAILY_PAPERS_API = "https://huggingface.co/api/daily_papers"
 ARXIV_API = "http://export.arxiv.org/api/query"
@@ -29,6 +34,8 @@ HN_API = "https://hn.algolia.com/api/v1/search_by_date"
 REDDIT_URL = "https://www.reddit.com/r/MachineLearning/top.json"
 GITHUB_SEARCH_API = "https://api.github.com/search/repositories"
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
+
+LOCAL_TZ = ZoneInfo("America/New_York")
 
 LAB_BLOG_FEEDS = {
     "OpenAI": "https://openai.com/news/rss.xml",
@@ -97,7 +104,7 @@ def fetch_hf_daily_papers(limit=10):
     trending_items, trending_status, trending_error = _fetch_hf(
         {"limit": limit, "sort": "trending"}, "HF Daily Papers (Trending)", limit)
 
-    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    today_str = datetime.now(LOCAL_TZ).strftime("%Y-%m-%d")
     today_items, today_status, today_error = _fetch_hf(
         {"date": today_str, "sort": "publishedAt"}, "HF Daily Papers (Today, by Upvotes)", limit)
 
@@ -252,7 +259,7 @@ def dedupe(items):
 
 
 def build_digest(items):
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = datetime.now(LOCAL_TZ).strftime("%Y-%m-%d")
     lines = [f"# AI Research Digest — {today}\n"]
     by_source = {}
     for it in items:
@@ -284,7 +291,7 @@ def log_run(rows):
 
 def archive_digest(digest_text):
     os.makedirs(ARCHIVE_DIR, exist_ok=True)
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = datetime.now(LOCAL_TZ).strftime("%Y-%m-%d")
     with open(os.path.join(ARCHIVE_DIR, f"{today}.md"), "w") as f:
         f.write(digest_text)
 
