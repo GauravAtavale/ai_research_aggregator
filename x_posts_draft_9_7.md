@@ -1,0 +1,37 @@
+# X post drafts — Lab Blog: OpenAI
+
+## An Alien Mind
+An Alien Mind — Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination. https://openai.com/index/an-alien-mind
+
+_(211 chars)_
+
+---
+
+## Research acceleration: The view inside OpenAI
+Research acceleration: The view inside OpenAI — Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration. https://openai.com/index/research-acceleration-view-inside-openai
+
+_(269 chars)_
+
+---
+
+## Daybreak for Frontline Defenders: $1B to protect essential services
+Daybreak for Frontline Defenders: $1B to protect essential services — OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential… https://openai.com/index/daybreak-for-frontline-defenders
+
+_(277 chars)_
+
+---
+
+## Legora reviewed 41 documents in minutes with GPT-6 Astra
+Legora reviewed 41 documents in minutes with GPT-6 Astra — Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this… https://openai.com/index/legora-financial-statement-review-with-astra
+
+_(264 chars)_
+
+---
+
+## Playco cut manual fixes 50% prototyping games with GPT-6 Astra
+Playco cut manual fixes 50% prototyping games with GPT-6 Astra — Using GPT-6 Astra, Playco built three themed game prototypes from one grey box foundation and reported 50% fewer manual fixes than with the previous model. https://openai.com/index/playco-game-prototyping-with-astra
+
+_(280 chars)_
+
+---
+

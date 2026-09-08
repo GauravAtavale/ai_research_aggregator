@@ -1,0 +1,6 @@
+# env files
+.env
+
+
+# notebooks used for testing
+testing.ipynb
