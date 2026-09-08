@@ -75,3 +75,9 @@ timestamp_utc,source,status,item_count,error
 2026-09-07 00:26:09 UTC,Reddit,failed,1,403 Client Error: Blocked for url: https://www.reddit.com/r/MachineLearning/top.json?limit=10&t=day
 2026-09-07 00:26:09 UTC,Lab Blogs,ok,30,partial failures: Perplexity (Discover Daily podcast): object has no attribute 'link'
 2026-09-07 00:26:09 UTC,GitHub Trending,ok,10,
+2026-09-08 00:46:44 UTC,HF Daily Papers,ok,20,
+2026-09-08 00:46:44 UTC,arXiv,ok,10,
+2026-09-08 00:46:44 UTC,Hacker News,empty,0,
+2026-09-08 00:46:44 UTC,Reddit,failed,1,403 Client Error: Blocked for url: https://www.reddit.com/r/MachineLearning/top.json?limit=10&t=day
+2026-09-08 00:46:44 UTC,Lab Blogs,ok,30,partial failures: Perplexity (Discover Daily podcast): object has no attribute 'link'
+2026-09-08 00:46:44 UTC,GitHub Trending,ok,10,
