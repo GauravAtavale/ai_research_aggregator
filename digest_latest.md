@@ -1,22 +1,20 @@
-# AI Research Digest — 2026-10-09
+# AI Research Digest — 2026-10-10
 
 ## HF Daily Papers (Trending)
 - **[The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction](https://huggingface.co/papers/2609.18063)**  
   ⬆ 26 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
 - **[nanoMuse: An Open-Source Personal Agent for Every Device You Own](https://huggingface.co/papers/2610.08699)**  
-  ⬆ 98 upvotes — Assistants from 2011 answered and waited, and agents from 2023 did a task and stopped. In September 2026 Meta's Muse showed an agent for one person, with accounts, devices, memory and a conversation that lasts, closed, in a vendor's cloud, in one country. Such an agent is expected to act on a person
-- **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
-  ⬆ 150 upvotes — Significant progress has been made in automated problem-solving using
-societies of agents powered by large language models (LLMs). In finance,
-efforts have largely focused on single-agent systems handling specific tasks or
-multi-agent frameworks independently gathering data. However, the multi-agent
-- **[Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation](https://huggingface.co/papers/2610.05608)**  
-  ⬆ 160 upvotes — We present Kandinsky 6.0 Video, a family of foundation diffusion models for synchronized text-to-audio-video generation, comprising Kandinsky 6.0 Video Lite (3B parameters) and Kandinsky 6.0 Video Pro (29B parameters). Both models generate 5-second video clips with synchronized 44 kHz audio, includi
+  ⬆ 101 upvotes — Assistants from 2011 answered and waited, and agents from 2023 did a task and stopped. In September 2026 Meta's Muse showed an agent for one person, with accounts, devices, memory and a conversation that lasts, closed, in a vendor's cloud, in one country. Such an agent is expected to act on a person
 - **[Geometric Context Transformer for Streaming 3D Reconstruction](https://huggingface.co/papers/2604.14141)**  
   ⬆ 39 upvotes — Streaming 3D reconstruction aims to recover 3D information, such as camera poses and point clouds, from a video stream, which necessitates geometric accuracy, temporal
   consistency, and computational efficiency. Motivated by the principles of Simultaneous Localization and Mapping (SLAM), we introdu
+- **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
+  ⬆ 151 upvotes — Significant progress has been made in automated problem-solving using
+societies of agents powered by large language models (LLMs). In finance,
+efforts have largely focused on single-agent systems handling specific tasks or
+multi-agent frameworks independently gathering data. However, the multi-agent
 - **[VisionHOPE: Visual Backbones as Self-Modifying Learning Systems](https://huggingface.co/papers/2609.33325)**  
-  ⬆ 253 upvotes — Visual backbones have evolved from Convolutional Neural Networks (CNNs) with local aggregation to Vision Transformers (ViTs) with global interactions, State-Space Models (SSMs) with input-dependent state transitions, and Test-Time Training (TTT) layers that adapt an inner learner while processing an
+  ⬆ 308 upvotes — Visual backbones have evolved from Convolutional Neural Networks (CNNs) with local aggregation to Vision Transformers (ViTs) with global interactions, State-Space Models (SSMs) with input-dependent state transitions, and Test-Time Training (TTT) layers that adapt an inner learner while processing an
 - **[OpenDevin: An Open Platform for AI Software Developers as Generalist
   Agents](https://huggingface.co/papers/2407.16741)**  
   ⬆ 90 upvotes — Software is one of the most powerful tools that we humans have at our
@@ -24,39 +22,30 @@ disposal; it allows a skilled programmer to interact with the world in complex
 and profound ways. At the same time, thanks to improvements in large language
 models (LLMs), there has also been a rapid development in AI agents that
 
-- **[SuperNav: An Agentic Navigation System for Any Task in Any Scene](https://huggingface.co/papers/2610.12126)**  
-  ⬆ 63 upvotes — General-purpose service robots need navigation systems that can handle diverse human requests in unfamiliar environments, combining task generality with scene generality. Some existing methods fine-tune multimodal large language models (MLLMs) to predict navigation actions, making their behavior dep
-- **[Iris-3B: Going Beyond the Latent with Pixel-Space Diffusion Training, Conversion and Fine-Tuning](https://huggingface.co/papers/2610.09450)**  
-  ⬆ 9 upvotes — Pixel-space diffusion models avoid the lossy VAE of latent models, which suggests an advantage on downstream tasks where fine-grained detail matters. We test this claim along both routes to a pixel-space backbone. We pretrain Iris-3B, a 3B-parameter pixel-space text-to-image transformer, from scratc
+- **[Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation](https://huggingface.co/papers/2610.05608)**  
+  ⬆ 162 upvotes — We present Kandinsky 6.0 Video, a family of foundation diffusion models for synchronized text-to-audio-video generation, comprising Kandinsky 6.0 Video Lite (3B parameters) and Kandinsky 6.0 Video Pro (29B parameters). Both models generate 5-second video clips with synchronized 44 kHz audio, includi
 - **[Efficient Memory Management for Large Language Model Serving with
   PagedAttention](https://huggingface.co/papers/2309.06180)**  
-  ⬆ 76 upvotes — High throughput serving of large language models (LLMs) requires batching
+  ⬆ 77 upvotes — High throughput serving of large language models (LLMs) requires batching
 sufficiently many requests at a time. However, existing systems struggle
 because the key-value cache (KV cache) memory for each request is huge and
 grows and shrinks dynamically. When managed inefficiently, this memory can be
 
+- **[Kronos: A Foundation Model for the Language of Financial Markets](https://huggingface.co/papers/2508.02739)**  
+  ⬆ 59 upvotes — The success of large-scale pre-training paradigm, exemplified by Large
+Language Models (LLMs), has inspired the development of Time Series Foundation
+Models (TSFMs). However, their application to financial candlestick (K-line)
+data remains limited, often underperforming non-pre-trained architectures
+- **[PyTorch Distributed: Experiences on Accelerating Data Parallel Training](https://huggingface.co/papers/2006.15704)**  
+  ⬆ 13 upvotes — This paper presents the design, implementation, and evaluation of the PyTorch
+distributed data parallel module. PyTorch is a widely-adopted scientific
+computing package used in deep learning research and applications. Recent
+advances in deep learning argue for the value of large datasets and large
+m
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[AgentGarten: Code Worlds for Evolving Agents](https://huggingface.co/papers/2610.12374)**  
-  ⬆ 132 upvotes — Interactive virtual worlds allow agents to learn through exploration and interaction. What agents can learn is bounded by the environments they practice in, which must be faithful, with consistent state, rules, and dynamics, and realistic, with observations that follow the real-world visual distribu
-- **[TokenRouter: Efficient Serving System for Token-Level LLM Routing](https://huggingface.co/papers/2610.12242)**  
-  ⬆ 106 upvotes — Large language model (LLM) routing distributes inference work across different models, advancing the cost-quality Pareto frontier of LLM serving. While coarse-grained routing at the session or query level has been widely adopted in production systems, recent algorithmic work shows that fine-grained 
-- **[Learn2Play Bench: How Well Do LLM Agents Learn from Experience in Unfamiliar Environments?](https://huggingface.co/papers/2610.08215)**  
-  ⬆ 99 upvotes — Learning from experience is essential for LLM agents to adapt to unfamiliar and dynmaic environments. Evaluating this ability is therefore important for understanding how effectively agents acquire and use new knowledge. Existing benchmarks have sought to evaluate this ability, but they primarily ev
-- **[From Traces to Agentic Worlds: Agentic Language World Models for Interactive Environment Simulation](https://huggingface.co/papers/2610.06100)**  
-  ⬆ 98 upvotes — Realistic environment replicas are increasingly valuable for training and evaluating LLM agents, yet the original systems may be inaccessible or impractical to reproduce. We explore agentic language world modeling: rather than rebuilding an executable environment, a world model agent serves as the e
-- **[SuperNav: An Agentic Navigation System for Any Task in Any Scene](https://huggingface.co/papers/2610.12126)**  
-  ⬆ 63 upvotes — General-purpose service robots need navigation systems that can handle diverse human requests in unfamiliar environments, combining task generality with scene generality. Some existing methods fine-tune multimodal large language models (MLLMs) to predict navigation actions, making their behavior dep
-- **[MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement](https://huggingface.co/papers/2610.11959)**  
-  ⬆ 58 upvotes — Reinforcement learning (RL) is the central training paradigm for advancing large foundation models towards self-improvement. This report introduces the MiMo-V2.6 series, an omni-modal family that pushes the frontier of model intelligence by scaling RL compute. Prior to RL, we conduct mid-training on
-- **[Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction](https://huggingface.co/papers/2610.12299)**  
-  ⬆ 44 upvotes — Egocentric world models predict first-person observations conditioned on an agent's actions, but most focus on a single agent. Real embodied settings often involve multiple agents that act and interact within a shared environment. Existing multi-agent world models rely on coarse actions like locomot
-- **[In-context Robot Learning Made Simple: A Democratized Recipe for Manipulation Tasks](https://huggingface.co/papers/2609.38173)**  
-  ⬆ 41 upvotes — We study robotic in-context learning (ICL), an emerging paradigm that enables robots to infer and execute tasks from visual demonstrations. Despite its growing promise, the problem itself remains under-defined: a visual demonstration simultaneously conveys action trajectories, object semantics, mani
-- **[DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training](https://huggingface.co/papers/2610.12468)**  
-  ⬆ 34 upvotes — We present DreamTrue, a multi-view, cross-embodiment robot world model for action-faithful and physically plausible video prediction. Training such a model on existing robot datasets faces two obstacles: imprecise calibration can impair action following, while limited coverage of unsuccessful intera
-- **[Beyond Spatio-Temporal Priors: A Generalizable Approach for Dense Correspondence Matching](https://huggingface.co/papers/2610.12421)**  
-  ⬆ 32 upvotes — Dense correspondence matching has historically been bounded by simplifying spatio-temporal priors, such as smooth motion and rigid geometry. While effective for classical tasks, these assumptions break down in image editing and reference-guided generation (IEG), where transformations can preserve vi
+- **[No papers indexed yet for 2026-10-10 (HF submissions can lag up to 14 days behind arXiv)]()**  
+  
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
 - **[CSF: Contextual Safety Filtering for Motion Generators](https://arxiv.org/abs/2610.12467v1)**  
@@ -160,22 +149,22 @@ grows and shrinks dynamically. When managed inefficiently, this memory can be
 
 ## GitHub Trending (AI, new repos)
 - **[PkLavc/Autotrader](https://github.com/PkLavc/Autotrader)**  
-  ★ 19 — Autonomous AI trading system powered by Kronos. Forecasts markets, builds portfolios and paper-trades automatically with GitHub Actions.
+  ★ 22 — Autonomous AI trading system powered by Kronos. Forecasts markets, builds portfolios and paper-trades automatically with GitHub Actions.
 - **[lel-media/electrocheck-engine](https://github.com/lel-media/electrocheck-engine)**  
   ★ 6 — The Electrocheck fact-checker
+- **[SamurAIGPT/Text-To-Video-AI](https://github.com/SamurAIGPT/Text-To-Video-AI)**  
+  ★ 3 — Generate video from text using AI
 - **[Kingsmichaei/oyago](https://github.com/Kingsmichaei/oyago)**  
   ★ 3 — OyaGO: Lagos bus directions with Gemma + Backboard RAG and memory
+- **[arish096/resumeforge-ai](https://github.com/arish096/resumeforge-ai)**  
+  ★ 2 — AI-powered resume builder for students, freshers & professionals with professional templates, live preview, PDF export, ATS analysis, and job-specific tailoring.
 - **[Tykillita/Umbral](https://github.com/Tykillita/Umbral)**  
   ★ 2 — Evidence-backed news agenda for Panama: ranks five topics for editorial review with transparent scoring, sources, and human-controlled drafts.
 - **[shashikantdev3/attention-span](https://github.com/shashikantdev3/attention-span)**  
   ★ 2 — Daily AI news, fact-checked and traced back to its roots. A source-checked history of AI since 1943, a glossary with lineage, and the labs and people behind it. Open data, built nightly on free Gemini
-- **[arish096/resumeforge-ai](https://github.com/arish096/resumeforge-ai)**  
-  ★ 2 — AI-powered resume builder for students, freshers & professionals with professional templates, live preview, PDF export, ATS analysis, and job-specific tailoring.
-- **[valorisa/AI-Frontier-Watcher](https://github.com/valorisa/AI-Frontier-Watcher)**  
-  ★ 2 — Veille documentaro-informationnelle sur les modèles d’IA de pointe : disponibilité, évolutions, accès, API, plateformes et concurrents, avec un suivi renforcé de GPT-6 Astra.
 - **[A220man/human-approval-console-ryan-vo](https://github.com/A220man/human-approval-console-ryan-vo)**  
   ★ 2 — Ryan Vo | Review AI agent actions with atomic approval receipts, search the receipt ledger, verify its complete hash chain, and export audit evidence.
-- **[zhizheng-wang/StateDyne](https://github.com/zhizheng-wang/StateDyne)**  
-  ★ 2 — A working AI implementation of the StateDyne Method—specification, evolving system models, prediction, intervention, and feedback.
 - **[devyash0010/yolo-mcp-vision](https://github.com/devyash0010/yolo-mcp-vision)**  
   ★ 2 — YOLO real-time object detection dashboard with MCP integration
+- **[KathiriyaHardik/ai-lab](https://github.com/KathiriyaHardik/ai-lab)**  
+  ★ 1 — Hardik's AI Lab — practical AI agents for real work, built in public and explained simply. One project at a time.
