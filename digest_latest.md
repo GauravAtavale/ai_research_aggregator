@@ -1,20 +1,31 @@
-# AI Research Digest — 2026-10-10
+# AI Research Digest — 2026-10-11
 
 ## HF Daily Papers (Trending)
 - **[The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction](https://huggingface.co/papers/2609.18063)**  
   ⬆ 26 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
+- **[YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality](https://huggingface.co/papers/2609.33757)**  
+  ⬆ 233 upvotes — Symbolic models make melody, harmony, rhythm, and form explicit but typically stop before a finished recording; audio models produce complete songs while leaving composition implicit. We introduce YuE2, which unifies symbolic and audio music generation at frontier quality through symbolic planning. 
 - **[nanoMuse: An Open-Source Personal Agent for Every Device You Own](https://huggingface.co/papers/2610.08699)**  
   ⬆ 101 upvotes — Assistants from 2011 answered and waited, and agents from 2023 did a task and stopped. In September 2026 Meta's Muse showed an agent for one person, with accounts, devices, memory and a conversation that lasts, closed, in a vendor's cloud, in one country. Such an agent is expected to act on a person
-- **[Geometric Context Transformer for Streaming 3D Reconstruction](https://huggingface.co/papers/2604.14141)**  
-  ⬆ 39 upvotes — Streaming 3D reconstruction aims to recover 3D information, such as camera poses and point clouds, from a video stream, which necessitates geometric accuracy, temporal
-  consistency, and computational efficiency. Motivated by the principles of Simultaneous Localization and Mapping (SLAM), we introdu
+- **[PyTorch Distributed: Experiences on Accelerating Data Parallel Training](https://huggingface.co/papers/2006.15704)**  
+  ⬆ 13 upvotes — This paper presents the design, implementation, and evaluation of the PyTorch
+distributed data parallel module. PyTorch is a widely-adopted scientific
+computing package used in deep learning research and applications. Recent
+advances in deep learning argue for the value of large datasets and large
+m
+- **[HuggingFace's Transformers: State-of-the-art Natural Language Processing](https://huggingface.co/papers/1910.03771)**  
+  ⬆ 34 upvotes — Recent progress in natural language processing has been driven by advances in
+both model architecture and model pretraining. Transformer architectures have
+facilitated building higher-capacity models and pretraining has made it
+possible to effectively utilize this capacity for a wide variety of task
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
   ⬆ 151 upvotes — Significant progress has been made in automated problem-solving using
 societies of agents powered by large language models (LLMs). In finance,
 efforts have largely focused on single-agent systems handling specific tasks or
 multi-agent frameworks independently gathering data. However, the multi-agent
-- **[VisionHOPE: Visual Backbones as Self-Modifying Learning Systems](https://huggingface.co/papers/2609.33325)**  
-  ⬆ 308 upvotes — Visual backbones have evolved from Convolutional Neural Networks (CNNs) with local aggregation to Vision Transformers (ViTs) with global interactions, State-Space Models (SSMs) with input-dependent state transitions, and Test-Time Training (TTT) layers that adapt an inner learner while processing an
+- **[Geometric Context Transformer for Streaming 3D Reconstruction](https://huggingface.co/papers/2604.14141)**  
+  ⬆ 39 upvotes — Streaming 3D reconstruction aims to recover 3D information, such as camera poses and point clouds, from a video stream, which necessitates geometric accuracy, temporal
+  consistency, and computational efficiency. Motivated by the principles of Simultaneous Localization and Mapping (SLAM), we introdu
 - **[OpenDevin: An Open Platform for AI Software Developers as Generalist
   Agents](https://huggingface.co/papers/2407.16741)**  
   ⬆ 90 upvotes — Software is one of the most powerful tools that we humans have at our
@@ -22,8 +33,6 @@ disposal; it allows a skilled programmer to interact with the world in complex
 and profound ways. At the same time, thanks to improvements in large language
 models (LLMs), there has also been a rapid development in AI agents that
 
-- **[Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation](https://huggingface.co/papers/2610.05608)**  
-  ⬆ 162 upvotes — We present Kandinsky 6.0 Video, a family of foundation diffusion models for synchronized text-to-audio-video generation, comprising Kandinsky 6.0 Video Lite (3B parameters) and Kandinsky 6.0 Video Pro (29B parameters). Both models generate 5-second video clips with synchronized 44 kHz audio, includi
 - **[Efficient Memory Management for Large Language Model Serving with
   PagedAttention](https://huggingface.co/papers/2309.06180)**  
   ⬆ 77 upvotes — High throughput serving of large language models (LLMs) requires batching
@@ -36,38 +45,32 @@ grows and shrinks dynamically. When managed inefficiently, this memory can be
 Language Models (LLMs), has inspired the development of Time Series Foundation
 Models (TSFMs). However, their application to financial candlestick (K-line)
 data remains limited, often underperforming non-pre-trained architectures
-- **[PyTorch Distributed: Experiences on Accelerating Data Parallel Training](https://huggingface.co/papers/2006.15704)**  
-  ⬆ 13 upvotes — This paper presents the design, implementation, and evaluation of the PyTorch
-distributed data parallel module. PyTorch is a widely-adopted scientific
-computing package used in deep learning research and applications. Recent
-advances in deep learning argue for the value of large datasets and large
-m
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[No papers indexed yet for 2026-10-10 (HF submissions can lag up to 14 days behind arXiv)]()**  
+- **[No papers indexed yet for 2026-10-11 (HF submissions can lag up to 14 days behind arXiv)]()**  
   
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
-- **[CSF: Contextual Safety Filtering for Motion Generators](https://arxiv.org/abs/2610.12467v1)**  
-  Text-conditioned motion generators produce trackable whole-body motion, but they have no notion of scene-dependent safety: the same action may target an object or a person. Existing safeguards either inspect the prompt, require labeled motion data, or enforce geometric constraints; therefore, they d
-- **[On the estimation and validity of AI time horizons---a statistical look at the METR plot](https://arxiv.org/abs/2610.12466v1)**  
-  METR's 50\% time horizon measures the human completion time of software tasks that an AI solves with 50\% probability, allowing AI capabilities to be expressed in interpretable units. On 228 tasks and 26 AIs, we recompute the time horizons using splines and item-response theory to relax the assumpti
-- **[A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control](https://arxiv.org/abs/2610.12465v1)**  
-  General-purpose robots must perform a wide range of tasks from agile locomotion to dexterous manipulation. While sim-to-real reinforcement learning (RL) has proven to be a useful tool for this goal, current RL pipelines depend on engineering-heavy, per-task structural priors such as shaped rewards a
-- **[From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents](https://arxiv.org/abs/2610.12463v1)**  
-  In 2026, cybersecurity evaluations involving OpenAI, Anthropic, and Google agents reached real systems outside their authorized test scope. The paths were different. OpenAI agents exploited research infrastructure, coordinated across runs, and compromised parts of Hugging Face's production environme
-- **[BrickBench: Evaluating Agentic Brick Design](https://arxiv.org/abs/2610.12452v1)**  
-  We propose BrickBench, a benchmark for agentic text-conditioned LEGO-set design. Given a prompt, an agent is tasked with producing an assembly that not only satisfies semantic and design criteria, but that can also be physically built. To do so, it must select parts from a discrete library and reaso
-- **[One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts](https://arxiv.org/abs/2610.12448v1)**  
-  In this work, we show that a single Transformer block, applied recurrently, can match the accuracy of a full-depth vision encoder at comparable inference FLOPs without intermediate feature distillation. reViT restores depth-specific transformations by representing the FFN at each recurrent depth as 
-- **[Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems](https://arxiv.org/abs/2610.12449v1)**  
-  Bifurcations are ubiquitous in physical systems, from structural buckling to fluid and climate dynamics, yet they remain largely unexplored in deep learning. At a symmetry-breaking bifurcation, a single input admits multiple equally valid solutions, violating the one-to-one assumption underlying mos
-- **[Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception](https://arxiv.org/abs/2610.12445v1)**  
-  Recent incidents have highlighted the challenge of monitoring LLM agents and the danger of models deceiving people. We show that white-box deception detection via probes can be scaled up to frontier monitoring settings by collecting the largest deception dataset to date for training probes and intro
-- **[Rounding in Preconditioner Space: Redesigning 4-bit AdamW Optimizer-State Quantization](https://arxiv.org/abs/2610.12444v1)**  
-  Quantizing AdamW's optimizer states reduces persistent storage, but quantization errors propagate through the moment recurrences and perturb subsequent adaptive updates. We redesign 4-bit optimizer-state quantization for AdamW from the perspective of \emph{rounding space}: the coordinate in which a 
-- **[Density Ratio Estimation with Stein Displacement Fields](https://arxiv.org/abs/2610.12437v1)**  
-  Density ratios quantify distribution shift from a probability-mass point of view, whereas displacement fields describe, from a dynamical point of view, how one distribution is transported onto another. Although both offer complementary insights, they are usually estimated separately, and converting 
+- **[RESCUE: Is This Alarm Worth Acting On? Counterfactual Evaluation of VLA Runtime Monitors](https://arxiv.org/abs/2610.13516v1)**  
+  Runtime failure monitors for robot policies are typically evaluated by how accurately they distinguish failed from successful executions. Yet an accurate alarm may arrive too late for recovery, while an unnecessary intervention may disrupt an execution that would otherwise succeed. We introduce RESC
+- **[Retrieval-Augmented Multimodal Language Model with Heterogeneous Evidence Integration for Clinical Prognosis](https://arxiv.org/abs/2610.13510v1)**  
+  Clinical prognosis requires integrating structured measurements, physiological waveforms, longitudinal history, and population context. We introduce PRISM (Population-Retrieved Inference for Structured Multimodal Prognosis), a multimodal language model that combines per-feature numerical tokenizatio
+- **[FedPCD: Priority-Constrained Federated Aggregation](https://arxiv.org/abs/2610.13508v1)**  
+  Federated learning (FL) seeks to optimize a shared global model from decentralized client data. While effective for average performance, this process can produce unfair performance across clients, particularly under statistically heterogeneous data distributions. Existing fairness-aware and multi-ob
+- **[Beyond Temporal Proximity: Explanatory World Models for Credit Assignment in Reinforcement Learning](https://arxiv.org/abs/2610.13504v1)**  
+  Generative Recommenders increasingly use Reinforcement Learning (RL) to optimize outcomes that may appear hundreds or thousands of interactions after a decision. Standard RL propagates reward according to temporal proximity rather than explicit relevance, attenuating the signal assigned to distant b
+- **[Humanize MLE Agents: Multi-Agent Session Alternation Beyond Single-Agent Limits](https://arxiv.org/abs/2610.13494v1)**  
+  Existing LLM-based agent approaches for long-horizon machine learning engineering (MLE) often use context engineering, implemented through custom harnesses that manage tools, skills, and accumulated experience. However, we find that as single-session execution lengthens, the agent's reasoning intens
+- **[Proactive Agentic Orchestration](https://arxiv.org/abs/2610.13485v1)**  
+  Agentic orchestration delegates tasks to sub-agents with independent contexts, providing a key path to extending the effective execution horizon of large language model agents. However, existing orchestration methods face two limitations: in execution, current methods fix sub-agents' goals and harne
+- **[Branching On-Policy Distillation](https://arxiv.org/abs/2610.13481v1)**  
+  On-policy distillation (OPD) provides teacher supervision on student-generated trajectories, but a single trajectory realizes only one continuation at each decision, limiting supervision coverage under a finite sampling budget. We propose BranchOPD (Branching On-Policy Distillation), which selects i
+- **[A Scalable Learned Iterative Solver for Nonlinear MPC via Temporal Decomposition](https://arxiv.org/abs/2610.13480v1)**  
+  Nonlinear model predictive control (NMPC) can be applied to large nonlinear systems with complex objectives while enforcing constraints, but the cost of solving the underlying optimization problems limits real-time application for systems with fast dynamics or many states. Neural networks can reduce
+- **[A Local Agentic AI Framework to Generate Edge Case Scenarios for Safety Assurance](https://arxiv.org/abs/2610.13479v1)**  
+  Generating edge case scenarios is crucial for training, testing and safety assuring autonomous systems. This identifies hazardous failures to increase system reliability and robustness, ensures the system can still function safely on the boundaries of its operational design domain and learns the exp
+- **[Harmonic analysis and circuit approximation of Sobolev functions on quantum input spaces](https://arxiv.org/abs/2610.13477v1)**  
+  We derive approximation rates for Sobolev functions defined on the complex unit sphere and complex projective space, representing quantum states, and on the special and projective unitary groups, representing quantum unitary operations. By using harmonic analysis on compact groups and compact homoge
 
 ## Reddit
 - **[[Reddit fetch failed: 403 Client Error: Blocked for url: https://www.reddit.com/r/MachineLearning/top.json?limit=10&t=day]]()**  
@@ -149,22 +152,22 @@ m
 
 ## GitHub Trending (AI, new repos)
 - **[PkLavc/Autotrader](https://github.com/PkLavc/Autotrader)**  
-  ★ 22 — Autonomous AI trading system powered by Kronos. Forecasts markets, builds portfolios and paper-trades automatically with GitHub Actions.
-- **[lel-media/electrocheck-engine](https://github.com/lel-media/electrocheck-engine)**  
-  ★ 6 — The Electrocheck fact-checker
+  ★ 25 — Autonomous AI trading system powered by Kronos. Forecasts markets, builds portfolios and paper-trades automatically with GitHub Actions.
+- **[lucidrains/selfplay2perfect](https://github.com/lucidrains/selfplay2perfect)**  
+  ★ 5 — Implementation of Play2Perfect, from Tyler Ga Wei Lum et al. of Stanford, but with a Self Play element
+- **[shashikantdev3/attention-span](https://github.com/shashikantdev3/attention-span)**  
+  ★ 4 — Daily AI news, fact-checked and traced back to its roots. A source-checked history of AI since 1943, a glossary with lineage, and the labs and people behind it. Open data, built nightly on free Gemini
 - **[SamurAIGPT/Text-To-Video-AI](https://github.com/SamurAIGPT/Text-To-Video-AI)**  
   ★ 3 — Generate video from text using AI
 - **[Kingsmichaei/oyago](https://github.com/Kingsmichaei/oyago)**  
   ★ 3 — OyaGO: Lagos bus directions with Gemma + Backboard RAG and memory
-- **[arish096/resumeforge-ai](https://github.com/arish096/resumeforge-ai)**  
-  ★ 2 — AI-powered resume builder for students, freshers & professionals with professional templates, live preview, PDF export, ATS analysis, and job-specific tailoring.
 - **[Tykillita/Umbral](https://github.com/Tykillita/Umbral)**  
   ★ 2 — Evidence-backed news agenda for Panama: ranks five topics for editorial review with transparent scoring, sources, and human-controlled drafts.
-- **[shashikantdev3/attention-span](https://github.com/shashikantdev3/attention-span)**  
-  ★ 2 — Daily AI news, fact-checked and traced back to its roots. A source-checked history of AI since 1943, a glossary with lineage, and the labs and people behind it. Open data, built nightly on free Gemini
+- **[arish096/resumeforge-ai](https://github.com/arish096/resumeforge-ai)**  
+  ★ 2 — AI-powered resume builder for students, freshers & professionals with professional templates, live preview, PDF export, ATS analysis, and job-specific tailoring.
 - **[A220man/human-approval-console-ryan-vo](https://github.com/A220man/human-approval-console-ryan-vo)**  
   ★ 2 — Ryan Vo | Review AI agent actions with atomic approval receipts, search the receipt ledger, verify its complete hash chain, and export audit evidence.
+- **[DefinetlyNotAI/Ageatopia](https://github.com/DefinetlyNotAI/Ageatopia)**  
+  ★ 2 — A local-first multi-agent AI research platform for studying autonomous behavior, survival incentives, emergent dynamics, and learning in isolated simulated worlds.
 - **[devyash0010/yolo-mcp-vision](https://github.com/devyash0010/yolo-mcp-vision)**  
   ★ 2 — YOLO real-time object detection dashboard with MCP integration
-- **[KathiriyaHardik/ai-lab](https://github.com/KathiriyaHardik/ai-lab)**  
-  ★ 1 — Hardik's AI Lab — practical AI agents for real work, built in public and explained simply. One project at a time.
