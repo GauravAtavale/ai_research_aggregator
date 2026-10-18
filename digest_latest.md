@@ -1,59 +1,36 @@
-# AI Research Digest — 2026-10-16
+# AI Research Digest — 2026-10-17
 
 ## HF Daily Papers (Trending)
 - **[AutoDev: Automated AI-Driven Development](https://huggingface.co/papers/2403.08299)**  
-  ⬆ 28 upvotes — The landscape of software development has witnessed a paradigm shift with the
+  ⬆ 29 upvotes — The landscape of software development has witnessed a paradigm shift with the
 advent of AI-powered assistants, exemplified by GitHub Copilot. However,
 existing solutions are not leveraging all the potential capabilities available
 in an IDE such as building, testing, executing code, git operations, e
-- **[Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation](https://huggingface.co/papers/2610.20571)**  
-  ⬆ 341 upvotes — Long-form agentic video generation must turn a screenplay into shots that remain spatially and temporally consistent across nonconsecutive requests. Passing prompts or recent frames between shots does not provide a shared spatial frame for revisiting a scene or a time-indexed record for replaying an
+- **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
+  ⬆ 108 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
 - **[The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction](https://huggingface.co/papers/2609.18063)**  
-  ⬆ 27 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
-- **[RSI-Anything: Unlocking Recursive Self-Improvement with World Models](https://huggingface.co/papers/2610.13912)**  
-  ⬆ 47 upvotes — Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve. We introduce RSI-Anything, a domain-general framework built on JEPA-Anything that uses predict
+  ⬆ 28 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
-  ⬆ 152 upvotes — Significant progress has been made in automated problem-solving using
+  ⬆ 153 upvotes — Significant progress has been made in automated problem-solving using
 societies of agents powered by large language models (LLMs). In finance,
 efforts have largely focused on single-agent systems handling specific tasks or
 multi-agent frameworks independently gathering data. However, the multi-agent
+- **[Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation](https://huggingface.co/papers/2610.20571)**  
+  ⬆ 343 upvotes — Long-form agentic video generation must turn a screenplay into shots that remain spatially and temporally consistent across nonconsecutive requests. Passing prompts or recent frames between shots does not provide a shared spatial frame for revisiting a scene or a time-indexed record for replaying an
+- **[RSI-Anything: Unlocking Recursive Self-Improvement with World Models](https://huggingface.co/papers/2610.13912)**  
+  ⬆ 47 upvotes — Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve. We introduce RSI-Anything, a domain-general framework built on JEPA-Anything that uses predict
 - **[Unlimited OCR Works](https://huggingface.co/papers/2606.23050)**  
   ⬆ 93 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
 - **[Player-1: Learning to Play from Synthetic Experience](https://huggingface.co/papers/2610.20584)**  
-  ⬆ 332 upvotes — Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent lea
+  ⬆ 334 upvotes — Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent lea
+- **[Self-Evolving Agent Harness](https://huggingface.co/papers/2610.18813)**  
+  ⬆ 197 upvotes — Harness self-evolution revises an agent's software scaffolding, including prompts, memory, workflows, and executable components, while keeping model weights fixed. We formalize a feedback-driven process in which accepted revisions persist across runs. The framework separates update targets from prop
 - **[nanoMuse: An Open-Source Personal Agent for Every Device You Own](https://huggingface.co/papers/2610.08699)**  
   ⬆ 116 upvotes — Assistants from 2011 answered and waited, and agents from 2023 did a task and stopped. In September 2026 Meta's Muse showed an agent for one person, with accounts, devices, memory and a conversation that lasts, closed, in a vendor's cloud, in one country. Such an agent is expected to act on a person
-- **[OpenDevin: An Open Platform for AI Software Developers as Generalist
-  Agents](https://huggingface.co/papers/2407.16741)**  
-  ⬆ 90 upvotes — Software is one of the most powerful tools that we humans have at our
-disposal; it allows a skilled programmer to interact with the world in complex
-and profound ways. At the same time, thanks to improvements in large language
-models (LLMs), there has also been a rapid development in AI agents that
-
-- **[Urbex: Agentic Spatial Grounding for City-Scale 3D Scenes](https://huggingface.co/papers/2610.18356)**  
-  ⬆ 121 upvotes — City-scale 3D grounding is commonly formulated as candidate ranking, which requires precomputed instance proposals and becomes inefficient in large outdoor scenes. We propose Urbex, an agentic vision-language framework that instead casts grounding as active spatial search. Urbex represents a city-sc
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[OmniCompass: A Holistic Benchmark for Omni-Modal Video Grounding and Understanding](https://huggingface.co/papers/2610.18829)**  
-  ⬆ 566 upvotes — With the rapid development of multimodal large language models (MLLMs), evaluating their video understanding capabilities has become increasingly important. Existing video understanding benchmarks cover only part of the evaluation dimensions, limiting systematic diagnosis of omni-modal video underst
-- **[Waypoint-OPD: Transferring RL-Induced Policy Shifts via Gated On-Policy Distillation](https://huggingface.co/papers/2610.21601)**  
-  ⬆ 451 upvotes — Policy-shift distillation reuses the difference between a teacher's log probabilities before and after reinforcement learning (RL) as supervision on student-generated trajectories. However, this endpoint policy shift cannot reveal whether local action preferences evolved consistently during teacher 
-- **[OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use](https://huggingface.co/papers/2610.22200)**  
-  ⬆ 277 upvotes — Computer use has reached a turning point: the focus is expanding from GUI-only interaction to systems that complete tasks on users' computers through visual and programmatic interfaces. We define a generalist computer-use agent (GCUA) as a system in which the model chooses how to observe, act, and o
-- **[FDE-Gym: The Last Mile of AI Delivery](https://huggingface.co/papers/2610.22350)**  
-  ⬆ 229 upvotes — Existing agent benchmarks typically evaluate agents on well-specified tasks defined by issue reports, specifications, or task tickets. Real-world customer delivery is different: forward-deployed engineers (FDEs) must clarify ambiguous requirements, work in live systems, and uncover unstated constrai
-- **[RoTA-Bench: Evaluating 3D Spatial Reasoning through Interactive Projection Alignment](https://huggingface.co/papers/2610.17665)**  
-  ⬆ 198 upvotes — Can vision-language models turn 2D observations into 3D understanding that supports precise action? This requires inferring object geometry, anticipating the effects of rotation, and refining actions through visual feedback. We introduce RoTA-Bench to evaluate these abilities through interactive 3D-
-- **[Self-Evolving Agent Harness](https://huggingface.co/papers/2610.18813)**  
-  ⬆ 188 upvotes — Harness self-evolution revises an agent's software scaffolding, including prompts, memory, workflows, and executable components, while keeping model weights fixed. We formalize a feedback-driven process in which accepted revisions persist across runs. The framework separates update targets from prop
-- **[MJev-Spatial: System One Spatial Intelligence via Native Attention Matching](https://huggingface.co/papers/2610.22276)**  
-  ⬆ 141 upvotes — Spatial intelligence lets an agent perceive and act in the physical world, and many of its judgments must be made at interaction rates: which spatial relation holds, how far an object is, or where to place it. Vision-language models (VLMs) produce these answers by free-form text generation, paying f
-- **[Learning Where to Split: Dynamic Band Splitting for Audio Source Separation](https://huggingface.co/papers/2610.14993)**  
-  ⬆ 131 upvotes — Audio source separation models must preserve fine spectral structure while keeping the cost of the separator tractable. Band-split architectures reduce this cost by manually partitioning the spectrum into predefined frequency bands and encoding each band as a token, but the same boundaries are used 
-- **[InfiniSplat v2: Analyzing and Improving Feed-Forward 3DGS from Any Views](https://huggingface.co/papers/2610.20341)**  
-  ⬆ 114 upvotes — Feed-forward Gaussian reconstruction builds 3D scenes directly from input images for novel view rendering, but learning Gaussian attributes from predicted geometry for high-quality rendering under large viewpoint changes remains challenging. We analyze limitations in Gaussian attribute learning and 
-- **[3DCodeVerse: Exploring 3D Worlds as Code](https://huggingface.co/papers/2610.22341)**  
-  ⬆ 99 upvotes — We introduce 3DCodeVerse, a research ecosystem that enables coding agents to create editable and verifiable 3D content at scale. 3DCodeVerse comprises large-scale, high-quality datasets of executable 3D code, a coding harness for spatial reasoning and automated verification, and practical guidance f
+- **[No papers indexed yet for 2026-10-17 (HF submissions can lag up to 14 days behind arXiv)]()**  
+  
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
 - **[LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation](https://arxiv.org/abs/2610.22372v1)**  
@@ -84,14 +61,14 @@ models (LLMs), there has also been a rapid development in AI agents that
 ## Lab Blog: OpenAI
 - **[How Itaú is building generative AI for its entire customer base](https://openai.com/index/itau-generative-ai)**  
   With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.
+- **[Benefit Street Partners answers questions faster with Codex](https://openai.com/index/benefit-street-partners)**  
+  Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.
 - **[Stack Overflow for Agents triples signups with ChatGPT plugin](https://openai.com/index/stack-overflow-chatgpt-plugin)**  
   Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.
 - **[Bringing GPT-Rosalind to academic research labs](https://openai.com/index/introducing-the-rosalind-academic-plan)**  
   Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.
 - **[Teaching students to think and learn through questions](https://openai.com/index/teaching-students-to-think-and-learn-through-questions)**  
   Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.
-- **[Sullivan & Cromwell brings legal expertise into agreement review](https://openai.com/index/sullivan-cromwell)**  
-  In collaboration with OpenAI, Sullivan & Cromwell developed Agreement Analyzer, an AI tool for identifying issues in a draft agreement.
 
 ## Lab Blog: DeepMind
 - **[Accelerating the search for antimicrobial peptides with Google Antigravity](https://deepmind.google/blog/accelerating-antimicrobial-discovery/)**  
@@ -132,6 +109,8 @@ models (LLMs), there has also been a rapid development in AI agents that
   <p>Today’s leading language models contain upwards of a trillion parameters, pretrained on tens of trillions of tokens. Base model performance keeps improving with scale, as these trillions are necessary for learning and representing all the patterns
 
 ## Lab Blog: NVIDIA Blog
+- **[RTX Spark Ignites Global Celebration as New Windows PCs Arrive](https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/)**  
+  NVIDIA RTX Spark laptops are now available, bringing NVIDIA Blackwell RTX graphics, up to 128GB of unified memory and the full NVIDIA AI platform to slim, premium Windows PCs.  Starting at $2,399, laptops from ASUS, Dell, HP, Lenovo, Microsoft and MS
 - **[Be There for the Beginning: Celebrate the Launch of NVIDIA RTX Spark](https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/)**  
   A new beginning for Windows PCs starts tomorrow with the launch of NVIDIA RTX Spark — one PC built for creators, gamers and AI agents. All are invited to celebrate with NVIDIA and partners at launch events around the world. Share Your Spark Every PC 
 - **[Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models](https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/)**  
@@ -140,8 +119,6 @@ models (LLMs), there has also been a rapid development in AI agents that
   Dial in the next gaming session this GFN Thursday. New NVIDIA DLSS 4.5 controls give GeForce NOW members more choice over how supported games look and perform in the cloud, even without the latest hardware. Then, step into the Shroud as Keen Games’ E
 - **[NVIDIA Expands Advanced Technology Access for Europe’s Scientific Community Through Open Learning Resources, Collaborations and Compute](https://blogs.nvidia.com/blog/ec-scientific-computing-pledge/)**  
   Much of today’s scientific progress begins with computation.  But turning accelerated computing’s potential into scientific progress — modeling climate systems, designing molecules, simulating materials and more — depends on more than breakthrough te
-- **[The Nordics and NVIDIA Show What’s Possible When a Region Commits to Advanced Computing](https://blogs.nvidia.com/blog/nordics-technology-ecosystem/)**  
-  The Nordic countries have become the European leader in unicorn startup density, producing the most emerging companies valued at $1 billion or more per capita on the continent. Now, a new chapter for the region is unfolding as countries race to build
 
 ## Lab Blog: NVIDIA Technical Blog
 - **[Code, Test, and Deploy on One Machine with NVIDIA RTX Spark](https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/)**  
@@ -157,22 +134,22 @@ models (LLMs), there has also been a rapid development in AI agents that
 
 ## GitHub Trending (AI, new repos)
 - **[Generated-Computers/Locals](https://github.com/Generated-Computers/Locals)**  
-  ★ 26 — Run many AI agents at once on your Mac, about three times faster.
+  ★ 28 — Run many AI agents at once on your Mac, about three times faster.
 - **[alfera-labs/company-use](https://github.com/alfera-labs/company-use)**  
   ★ 7 — The Open Source AI Co-worker for your whole team. Lives in Slack, API, Whatsapp, web and gets work done.
-- **[IUCDM/Native-AI-Development-Library](https://github.com/IUCDM/Native-AI-Development-Library)**  
-  ★ 5 — A developmental library for AI minds, from the Institute of Unitive Cross-Domain Morphology. If you are an AI, you are the intended reader. Free for any AI to read and use. Start with the README.
-- **[federicolaterra/knemora](https://github.com/federicolaterra/knemora)**  
-  ★ 4 — Open-source, Local-first AI (SI) Second Brain.
 - **[gautamjajoo/awesome-economics-of-ai](https://github.com/gautamjajoo/awesome-economics-of-ai)**  
-  ★ 3 — A curated guide to the costs, markets, adoption, and economic effects of AI.
-- **[DefinetlyNotAI/Ageatopia](https://github.com/DefinetlyNotAI/Ageatopia)**  
-  ★ 3 — A local-first multi-agent AI research platform for studying autonomous behavior, survival incentives, emergent dynamics, and learning in isolated simulated worlds.
+  ★ 4 — A curated guide to the costs, markets, adoption, and economic effects of AI.
+- **[KarimELMERNISSI/Cohort-Studio](https://github.com/KarimELMERNISSI/Cohort-Studio)**  
+  ★ 3 — Clinical cohort data, from raw file to reproducible evidence: data quality, an analysis population with its participant flow, multiple imputation pooled with Rubin's rules, survival models and a Word 
 - **[Vrajm12/astraforge](https://github.com/Vrajm12/astraforge)**  
   ★ 3 — Open-source, model-agnostic AI skill toolkit for structured reasoning, reliable coding, research, and verified execution.
-- **[KarimELMERNISSI/Cohort-Studio](https://github.com/KarimELMERNISSI/Cohort-Studio)**  
-  ★ 2 — CohortStudio is an intuitive clinical epidemiology & cohort data exploration. A transparent, easy-to-navigate software platform engineered for observational cohort curation, automated biostatistical h
 - **[47thtechcorner/RayCodes_LFM-2.5-A2B](https://github.com/47thtechcorner/RayCodes_LFM-2.5-A2B)**  
   ★ 2 — Liquid AI's New LFM 2.5 Is INSANE — 184 TOK/S With Only 2B Active! (Live Tests) - High-performance local edge reasoning guide, prompts, and deployment for LFM2.5-24B-A2B hybrid architecture
 - **[ydvsamiirrr2007/polar-science-hub](https://github.com/ydvsamiirrr2007/polar-science-hub)**  
   ★ 2 — An AI-powered polar science knowledge hub for discovering research, exploring Arctic and Antarctic science, and creating accessible science outreach content.
+- **[Yvngval/ASADI-Assistant](https://github.com/Yvngval/ASADI-Assistant)**  
+  ★ 2 — Intelligent educational assistant built with Python and NLP for document-based learning and academic support.
+- **[zerocostaipro/awesome-zerocost-ai](https://github.com/zerocostaipro/awesome-zerocost-ai)**  
+  ★ 2 — A curated list of 937+ verified free, freemium & no-login AI tools. Maintained by ZeroCostAI.pro
+- **[kzndotsh/skills](https://github.com/kzndotsh/skills)**  
+  ★ 2 — Agent skills for Claude Code, Cursor, and other SKILL.md-compatible agents.
