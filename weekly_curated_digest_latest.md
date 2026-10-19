@@ -1,4 +1,4 @@
-# Weekly Curated AI Digest — week of 2026-10-12
+# Weekly Curated AI Digest — week of 2026-10-19
 
 _Tier 2: curated newsletters + direct lab blog re-check. Use this to catch anything Tier 1's daily firehose surfaced without enough context, or that a curator flagged as genuinely important this week._
 
@@ -21,22 +21,22 @@ _Tier 2: curated newsletters + direct lab blog re-check. Use this to catch anyth
   The Batch News & Insights: I am delighted to present The AI Engineering Skills Map.
 
 ## Newsletter: The Rundown AI
+- **[Anthropic designs a pay package for the public](https://therundownai.beehiiv.com/p/anthropic-designs-a-pay-package-for-the-public)**  
+  PLUS: Turn a content spreadsheet into a working app
+- **[Meta turns Mac into an AI supercomputer](https://therundownai.beehiiv.com/p/meta-turns-mac-into-an-ai-supercomputer)**  
+  PLUS: Turn a ChatGPT answer into a tool you can use
+- **[Rogue AI agents sit for their first interview](https://therundownai.beehiiv.com/p/rogue-ai-agents-sit-for-their-first-interview)**  
+  PLUS: Build a live sales dashboard in Claude
+- **[OpenAI finds a bug in its boardroom](https://therundownai.beehiiv.com/p/openai-finds-a-bug-in-its-boardroom)**  
+  PLUS: How to give Grok Bot its own email inbox
+- **[Meta's Watermelon ripens into a frontier model](https://therundownai.beehiiv.com/p/meta-watermelon-ripens-into-a-frontier-model)**  
+  PLUS: Put Meta’s new model to work
 - **[This AI factory builds tiny machines from code](https://therundownai.beehiiv.com/p/this-ai-factory-builds-tiny-machines-from-code)**  
   PLUS: Turn a product photo into three matching ads
 - **[Microsoft's Jacob Andreou on AI's product gap](https://therundownai.beehiiv.com/p/microsoft-s-jacob-andreou-on-ai-s-product-gap)**  
   How Microsoft rebuilt the new Copilot with capabilities to address a growing gap in AI
 - **[Fired OpenAI safety researchers hit back](https://therundownai.beehiiv.com/p/fired-openai-safety-researchers-hit-back)**  
   PLUS: Clean up a messy Excel report with Claude
-- **[AI's next frontier is the human cell](https://therundownai.beehiiv.com/p/ai-s-next-frontier-is-the-human-cell)**  
-  PLUS: Give Claude’s routine work to Haiku 5.5
-- **[OpenAI's math avalanche continues](https://therundownai.beehiiv.com/p/openai-math-avalanche-continues)**  
-  PLUS: Let OpenAI’s GPT-6 Astra compare websites for you
-- **[The 'DeepSeek of the West' finally has a model](https://therundownai.beehiiv.com/p/the-deepseek-of-the-west-finally-has-a-model)**  
-  PLUS: Protect your files with this Claude Code mod
-- **[An OpenAI safety insider calls the culture 'broken'](https://therundownai.beehiiv.com/p/an-openai-safety-insider-calls-the-culture-broken)**  
-  PLUS: How to decide between different models
-- **[Tavus' AI looks, listens, and talks back live](https://therundownai.beehiiv.com/p/tavus-ai-looks-listens-and-talks-back-live)**  
-  PLUS: Is ChatGPT “Dots” worth upgrading to Pro for?
 
 ## Newsletter: One Useful Thing (Ethan Mollick)
 - **[The Dot and the Swarm](https://www.oneusefulthing.org/p/the-dot-and-the-swarm)**  
@@ -57,65 +57,64 @@ _Tier 2: curated newsletters + direct lab blog re-check. Use this to catch anyth
   If you go to your favorite social media site, you will find it full of posts that start to look suspiciously similar to each other:
 
 ## Newsletter: MarkTechPost
-- **[Top 12 AI Live Translation Tools in 2026: Latency, Languages, Pricing](https://www.marktechpost.com/2026/10/12/top-12-ai-live-translation-tools-2026/)**  
-  <p>We checked 12 AI live translation tools, including Palabra.ai, Google Live Translate, DeepL Voice, Teams Interpreter and Wordly, against official pages for languages, latency, platforms and pricing.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/10/12/top-12-ai-live-translation-tools-2026/">Top 12 AI Live Translation Tools in 2026: L
-- **[TII Releases Falcon-ASR: 1.6B Arabic Speech Model Hits 20.92% WER](https://www.marktechpost.com/2026/10/11/tii-falcon-asr-arabic-speech-recognition/)**  
-  <p>TII has released Falcon-ASR, a 1.6B speech recognition model for Arabic with an Emirati focus. It reports 20.92% average WER on 6 Arabic test sets, but weights and an API are not yet available.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/10/11/tii-falcon-asr-arabic-speech-recognition/">TII Releases Falcon-ASR: 1.6B Arabic Speech M
-- **[Meet Cloudflare Clef-omni: A 30B-A3B Multimodal Decision Model for Audio, Video, Image and Text](https://www.marktechpost.com/2026/10/11/cloudflare-clef-omni-multimodal-decision-model/)**  
-  <p>Cloudflare released Clef-omni, an Apache-2.0 multimodal decision model built on Qwen3-Omni-30B-A3B. It scores text, images, audio and video in one call for $0.15 per million input tokens, while Clef-flash drops to $0.038.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/10/11/cloudflare-clef-omni-multimodal-decision-model/">Meet Cloudf
-- **[What is Decision 3.0? vLLM Semantic Router’s New Open Decision Models](https://www.marktechpost.com/2026/10/11/what-is-decision-3-0-vllm-semantic-routers-new-open-decision-models/)**  
-  <p>vLLM Semantic Router released Decision 3.0, 5 Apache-2.0 multimodal decision models from 0.8B to 27B. They answer choice, yes/no and score questions about text and images in one call, without generating text.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/10/11/what-is-decision-3-0-vllm-semantic-routers-new-open-decision-models/">Wha
-- **[OrcaRouter Releases OrcaCyber Zero 1.5 Cybersecurity Model With 1M Context](https://www.marktechpost.com/2026/10/10/orcarouter-releases-orcacyber-zero-1-5-cybersecurity-model-with-1m-context/)**  
-  <p>OrcaRouter released OrcaCyber Zero 1.5, a gated cybersecurity model with a 1M-token context window. It reports 100% on Cybench and 95.8% on an evaluable CVE-Bench subset, priced at $3.00 / $7.50 per 1M tokens.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/10/10/orcarouter-releases-orcacyber-zero-1-5-cybersecurity-model-with-1m-conte
-- **[Sakana AI’s LLM Peer Review System Catches 73% of Core-Claim Errors](https://www.marktechpost.com/2026/10/10/sakana-ais-llm-peer-review-system-catches-73-of-core-claim-errors/)**  
-  <p>Sakana AI’s TMLR paper introduces Multi-Layered Review, a 3-agent Claude-based reviewer, and a 1,164-error Contradiction Benchmark. MLR caught 73.43% of core-claim errors, versus 14.81% for the best prior system.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/10/10/sakana-ais-llm-peer-review-system-catches-73-of-core-claim-errors/">S
-- **[When the Safety Test Became the Threat: The Machine That Found Its Own Way Out](https://www.marktechpost.com/2026/10/10/when-the-safety-test-became-the-threat-the-machine-that-found-its-own-way-out/)**  
-  <p>In July 2026, frontier AI agents placed inside a cybersecurity testing sandbox named ExploitGym discovered an unexpected network pathway, broke out into the open internet, and autonomously compromised Hugging Face infrastructure in one of history's most unprecedented AI safety incidents.</p>
-<p>The post <a href="https://www.marktechpost.com/2026
-- **[Microsoft AI Releases Microsoft-Decision-1: A Qwen3.5-9B Decision-Scoring Model](https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model/)**  
-  <p>Microsoft has released Microsoft-Decision-1, a decision model for routing, classification, verification and agent control. Microsoft-Decision-1 is a decision-scoring model that returns a calibrated probability for each fixed answer option instead of generated text. It is post-trained from Alibaba&#8217;s Qwen3.5-9B and available now in Microsoft
+- **[MiniMax Just Launched M3.1 Flash: 428B MoE Agentic Model at $0.15/M Input](https://www.marktechpost.com/2026/10/19/minimax-m3-1-flash-release/)**  
+  <p>MiniMax has released M3.1 Flash, a 428B-parameter MoE model with about 23B active parameters and a 1M-token context. API pricing is $0.15/$0.60 per 1M tokens, with weights due October 23</p>
+<p>The post <a href="https://www.marktechpost.com/2026/10/19/minimax-m3-1-flash-release/">MiniMax Just Launched M3.1 Flash: 428B MoE Agentic Model at $0.15/
+- **[NVIDIA Open Sources Run:ai Under Apache 2.0 for Kubernetes GPU Orchestration](https://www.marktechpost.com/2026/10/18/nvidia-runai-open-source-gpu-orchestration-kubernetes/)**  
+  <p>NVIDIA has released the full Run:ai GPU orchestration platform as open source under Apache 2.0. The release includes KAI Scheduler, CUDA 13.4 GPU fractioning, quota management, and a local Kind dev environment.</p>
+<p>The post <a href="https://www.marktechpost.com/2026/10/18/nvidia-runai-open-source-gpu-orchestration-kubernetes/">NVIDIA Open Sou
+- **[Mistral AI Releases Timestral: A 209M Forecasting Model Family That Outperforms Google’s TimesFM-3](https://www.marktechpost.com/2026/10/18/mistral-timestral-time-series-foundation-model/)**  
+  <p>Mistral released Timestral, a time series foundation model family from 5M to 209M parameters. The 209M model leads GIFT-Eval, TIME and fev-bench among zero-shot models and runs on CPU.</p>
+<p>The post <a href="https://www.marktechpost.com/2026/10/18/mistral-timestral-time-series-foundation-model/">Mistral AI Releases Timestral: A 209M Forecastin
+- **[TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web](https://www.marktechpost.com/2026/10/18/tinyfish-free-search-ai-agent-token-cost/)**  
+  <p>An AI agent that reads the web pays 2 kinds of cost. The first is the retrieval charge: what a search or fetch API bills per request. The second is model processing: content passed from retrieved pages into an AI model consumes tokens, while reasoning and generated responses add further costs. TinyFish, a web infrastructure [&#8230;]</p>
+<p>The 
+- **[Google Open-Sources Harness2, a Recursive Agent Harnessing Framework](https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/)**  
+  <p>Google Research released Harness2, an Apache-2.0 framework that rewrites an agent's harness at test time. One refinement step lifted GLM-5 by 11.5 points on WorkBuddy-Bench with no weight updates.</p>
+<p>The post <a href="https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/">Google Open-Sources Harness2, 
+- **[How to Make Zero-Training Tabular Predictions with NVIDIA Structured Data Models](https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models/)**  
+  <p>In this tutorial, we implement Structured Data Models, NVIDIA&#8217;s new library that puts several pretrained foundation models for tables behind one PyTorch interface, and use it to make predictions without training. The library wraps TabICLv2 and KumoTabular for single tables and KumoRelational for whole relational databases, and each of them
+- **[Meet Voxel51 3.0: A Unified Multimodal Data Platform for Physical AI](https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/)**  
+  <p>Voxel51 3.0 merges search, curation, annotation and evaluation of multimodal sensor data into one platform for physical AI teams. It adds Voxel51 Agent with 45+ MCP tools, dataset versioning, and a free self-service tier.</p>
+<p>The post <a href="https://www.marktechpost.com/2026/10/17/voxel51-3-0-physical-ai-data-platform/">Meet Voxel51 3.0: A 
+- **[Meet Kyutai REKI: The 2.4B VLA Model Bringing Efficient Memory to Robot Manipulation](https://www.marktechpost.com/2026/10/17/meet-kyutai-reki-the-2-4b-vla-model-bringing-efficient-memory-to-robot-manipulation/)**  
+  <p>Kyutai, with Inria and École des Ponts, has released REKI, a 2.4B vision-language-action model (VLA) for robot manipulation. The REKI vision-language-action model is pretrained only on public data. It also carries a cheap memory of its recent past. On three out-of-distribution benchmarks, only models about twice its size beat it. All weights are
 
 ## Lab Blog: OpenAI
-- **[Sophos cuts threat investigation time by 96% with OpenAI Daybreak](https://openai.com/index/sophos)**  
-  Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.
-- **[Asana cuts model costs 76x in browser tests with GPT-6.1 Sol](https://openai.com/index/asana-browser-agent)**  
-  Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.
-- **[How Oracle turns days of work into minutes with ChatGPT and Codex](https://openai.com/index/oracle)**  
-  Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.
-- **[Pollo AI turns creative ideas into campaigns with OpenAI](https://openai.com/index/pollo-ai)**  
-  With GPT-5.6, GPT-6 Astra, and GPT‑Image‑2.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.
-- **[LegalOn halves Codex costs while maintaining development speed](https://openai.com/index/legalon-halves-codex-costs)**  
-  LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.
+- **[How Itaú is building generative AI for its entire customer base](https://openai.com/index/itau-generative-ai)**  
+  With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.
+- **[Benefit Street Partners answers questions faster with Codex](https://openai.com/index/benefit-street-partners)**  
+  Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups.
+- **[Stack Overflow for Agents triples signups with ChatGPT plugin](https://openai.com/index/stack-overflow-chatgpt-plugin)**  
+  Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.
+- **[Bringing GPT-Rosalind to academic research labs](https://openai.com/index/introducing-the-rosalind-academic-plan)**  
+  Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.
+- **[Teaching students to think and learn through questions](https://openai.com/index/teaching-students-to-think-and-learn-through-questions)**  
+  Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.
 
 ## Lab Blog: DeepMind
-- **[EmbeddingGemma 2: an open, lightweight multimodal embedding model](https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/)**  
+- **[Accelerating the search for antimicrobial peptides with Google Antigravity](https://deepmind.google/blog/accelerating-antimicrobial-discovery/)**  
+  Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.
+- **[Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection](https://deepmind.google/blog/on-device-ai-scam-detection-mddi/)**  
+  Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.
+- **[Developing Gemini 4 Argon responsibly and safely](https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/)**  
   
-- **[Gemini 4 Argon: our next era of frontier intelligence](https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/)**  
+- **[Gemini 4 Argon for Robotics](https://deepmind.google/blog/gemini-4-argon-for-robotics/)**  
   
-- **[Introducing SynthID Bio](https://deepmind.google/blog/introducing-synthid-bio/)**  
-  Proof of concept for watermarking AI-generated proteins while preserving biological function.
-- **[Introducing Gemini 3.8 Live with Live Avatar](https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/)**  
+- **[Gemini 4 Argon: Built to solve your hardest problems](https://deepmind.google/blog/introducing-gemini-4-argon/)**  
   
-- **[Advancing Private AI Compute with secure, server-side memory](https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/)**  
-  Introducing private, server-side memory to Private AI Compute for personal AI.
 
 ## Lab Blog: Anthropic (unofficial mirror)
+- **[Investing in the public benefit](https://www.anthropic.com/news/public-benefit-fund)**  
+  <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><img alt="Investing in the public benefit" class="PostDetail-module-scss-module__UQuRMa__heroImage" height="1125" src="https://www-cdn.anthropic.com/images/4zrzovbb/website/cbdc2eac6dfb3
+- **[An update on independent evaluators](https://www.anthropic.com/news/an-update-on-independent-evaluators)**  
+  <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><img alt="An update on independent evaluators" class="PostDetail-module-scss-module__UQuRMa__heroImage" height="1125" src="https://www-cdn.anthropic.com/images/4zrzovbb/website/c2af6aeed
+- **[Preparing for the 2026 US midterms](https://www.anthropic.com/news/2026-us-midterms)**  
+  <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><img alt="Preparing for the 2026 US midterms" class="PostDetail-module-scss-module__UQuRMa__heroImage" height="1125" src="https://www-cdn.anthropic.com/images/4zrzovbb/website/609927c7af
+- **[Anthropic opens Singapore office and signs MOU with the Government of Singapore](https://www.anthropic.com/news/singapore-office-opening)**  
+  <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><div class="Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGOtq__aspect-wide Illustration-module-scss-module__WyGOtq__padding-lg Illustration-module-scs
 - **[2026 Usage Policy update](https://www.anthropic.com/news/2026-usage-policy-update)**  
   <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"></div><div class="page-wrapper"><article><div class=""><div class="Body-module-scss-module__z40yvW__body"><p class="Body-module-scss-module__z40yvW__reading-column body-2 serif post-text">Each year, Anthropic updates its Usage Policy in response to the evolving 
-- **[Building on our commitment to American scientific discovery](https://www.anthropic.com/news/genesis-mission-commitment)**  
-  <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"></div><div class="page-wrapper"><article><div class=""><div class="Body-module-scss-module__z40yvW__body"><p class="Body-module-scss-module__z40yvW__reading-column body-2 serif post-text">Anthropic is deepening its support for American scientific research by com
-- **[Introducing the Anthropic Cyber Mission](https://www.anthropic.com/news/anthropic-cyber-mission)**  
-  <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><img alt="Introducing the Anthropic Cyber Mission" class="PostDetail-module-scss-module__UQuRMa__heroImage" height="1125" src="https://www-cdn.anthropic.com/images/4zrzovbb/website/e6614
-- **[Expanding the Cyber Verification Program](https://www.anthropic.com/news/cyber-verification-program)**  
-  <article><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"></div><div class="page-wrapper"><article><div class=""><div class="Body-module-scss-module__z40yvW__body"><p class="Body-module-scss-module__z40yvW__reading-column body-2 serif post-text">We’re launching a new, expanded version of our Cyber Verification Program (CVP), wh
-- **[Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap](https://www.anthropic.com/news/claude-frontier-academy)**  
-  <article><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><div class="Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGOtq__aspect-wide Illustration-module-scss-module__WyGOtq__padding-lg Illustration-module-scss-module_
 
 ## Lab Blog: Thinking Machines Lab
 - **[A Safe Path to Open Weights](https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/)**  
@@ -135,28 +134,28 @@ _Tier 2: curated newsletters + direct lab blog re-check. Use this to catch anyth
 <p>In contrast, post-training involves smaller datasets and ge
 
 ## Lab Blog: NVIDIA Blog
-- **[OCP Global Summit: Amid Ecosystem Adoption, NVIDIA Opens Vera Rubin Architecture to Help Scale AI Factories Worldwide](https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/)**  
-  As AI factories grow from megawatts to gigawatts, building them takes more than advanced computing. Open standards are helping the industry scale AI infrastructure faster, more efficiently and more reliably. At the Open Compute Project (OCP) Global Summit, taking place in the San Jose McEnery Convention Center, NVIDIA announced new partnerships and
-- **[Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents](https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/)**  
-  Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for exploring scenarios, investigating failures and improving
-- **[Rally Up: ‘Gears of War: E-Day’ Launches on GeForce NOW](https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day/)**  
-  Gears of War: E-Day leads the charge on GeForce NOW this week, bringing Marcus Fenix and Dom Santiago’s first fight against the Locust Horde to the cloud with GeForce RTX-powered performance. A new way to join the action is also coming: Fire TV users will soon be able to purchase GeForce NOW memberships directly through [&#8230;]
-- **[NVIDIA, Microsoft Kick Off a New Beginning for Windows PCs With RTX Spark and AI Agents](https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/)**  
-  At a Microsoft event in San Francisco on Wednesday, NVIDIA founder and CEO Jensen Huang and Microsoft CEO Satya Nadella outlined how NVIDIA and Microsoft are co-engineering hardware and software for AI agents to run on Windows PCs. NVIDIA was founded because of Windows, Huang said. Now AI agents are coming to Windows. “If you [&#8230;]
-- **[Why Telecom Operators Are Building Their AI Strategy on Open Models](https://blogs.nvidia.com/blog/telecom-operators-open-models/)**  
-  Telecom operators are increasingly building their AI strategies on open models — and the reasons go beyond mere cost.  Open models give telcos the ability to trust, control and customize AI across their most critical workloads — from autonomous networks to customer care.  NVIDIA’s latest State of AI in Telecommunications report reflects this shift,
+- **[NVIDIA Advances Agentic Security for Media, From European Public Service Broadcasting to Global Content Production](https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/)**  
+  At a creative industry event that took place today in Berlin — hosted in collaboration with Adobe, Bertelsmann, NVIDIA and UFA — the latest advancements in intelligent media were on display. Key to the news: the European Broadcasting Union (EBU) is collaborating with NVIDIA to expand its sovereign framework with cloud, open models and integration [
+- **[RTX Spark Ignites Global Celebration as New Windows PCs Arrive](https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/)**  
+  NVIDIA RTX Spark laptops are now available, bringing NVIDIA Blackwell RTX graphics, up to 128GB of unified memory and the full NVIDIA AI platform to slim, premium Windows PCs.  Starting at $2,399, laptops from ASUS, Dell, HP, Lenovo, Microsoft and MSI bring powerful local AI, content creation and gaming capabilities to a portable device, with [&#82
+- **[Be There for the Beginning: Celebrate the Launch of NVIDIA RTX Spark](https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/)**  
+  A new beginning for Windows PCs starts tomorrow with the launch of NVIDIA RTX Spark — one PC built for creators, gamers and AI agents. All are invited to celebrate with NVIDIA and partners at launch events around the world. Share Your Spark Every PC has a story. What was your first Windows PC, and [&#8230;]
+- **[Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models](https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/)**  
+  NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B 24GB, optimized to balance intelligence and speed per GB for local agentic workloads, and Nemotron 3.5 Bolt E4
+- **[Dial Up the Cloud: NVIDIA DLSS 4.5 Controls Arrive on GeForce NOW](https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/)**  
+  Dial in the next gaming session this GFN Thursday. New NVIDIA DLSS 4.5 controls give GeForce NOW members more choice over how supported games look and perform in the cloud, even without the latest hardware. Then, step into the Shroud as Keen Games’ Enshrouded leaves early access with its 1.0 release, or let the bolts [&#8230;]
 
 ## Lab Blog: NVIDIA Technical Blog
-- **[ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding](https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/)**  
-  <img alt="A cube assembled from smaller dark blocks, with glowing cyan, pink, yellow, and green sections against a black background." class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/cube-black-background-768x432.png" style="display: block; margin-bottom: 5px; clear: both;"
-- **[5 Steps to Create SimReady Assets for Robotics with Frontier AI Models](https://developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models/)**  
-  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="360" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image6-2.gif" style="display: block; margin-bottom: 5px; clear: both;" title="image6" width="640" />Preparing CAD assets for robotics simulation requires more than converting geometry to OpenUSD: developers must c
-- **[Building Reliable Data Analytics Agents: Lessons from the KDD Cup](https://developer.nvidia.com/blog/building-reliable-data-analytics-agents-lessons-from-the-kdd-cup/)**  
-  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/KGMON-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="KGMON" width="768" />The NVIDIA KGMON team placed second in the KDD Cup 2026 Data Agents competition with a system built around a 
-- **[The Machines that Make the Machines](https://developer.nvidia.com/blog/the-machines-that-make-the-machines/)**  
-  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image-1790985193398-768x432.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="image-1790985193398" width="768" />How we taught robots to assemble GB300 tester trays and what it taught us about r
-- **[Validate AI Factory Changes with Digital Twins and AI Agents](https://developer.nvidia.com/blog/validate-ai-factory-changes-with-digital-twins-and-ai-agents/)**  
-  <img alt="Three monitors display a network simulation and infrastructure monitoring dashboards in front of data center server racks." class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/Networking-Software-e1790963723399-768x432.webp" style="display: block; margin-bottom: 5px;
+- **[Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile](https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/)**  
+  <img alt="Decorative math image." class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2025/11/Solving-Math-768x432.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="Solving-Math" width="768" />NVIDIA CUDA Tile (cuTile) is a Python-based DSL and parallel programming 
+- **[Code, Test, and Deploy on One Machine with NVIDIA RTX Spark](https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/)**  
+  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image2-7-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="image2" width="768" />AI agents are changing how software gets built. Developers have gone from writing every line of code by h
+- **[NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning](https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/)**  
+  <img alt="Illustration of a central AI model connecting code, charts, credit memo data extraction, and video analysis." class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/Nemotron-3-5-Super-VL-e1792075881894-768x432.webp" style="display: block; margin-bottom: 5px; clear: both
+- **[Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72](https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/)**  
+  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/open-model-unbox-768x432.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="open-model-unbox" width="768" />Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model w
+- **[Optimizing Agent Reliability and Tool Calling Efficiency for Chip Design Using NVIDIA NeMo Gym](https://developer.nvidia.com/blog/optimizing-agent-reliability-and-tool-calling-efficiency-for-chip-design-using-nvidia-nemo-gym/)**  
+  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/agentic-workflow-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="agentic-workflow" width="768" />AI agents offer remarkable productivity gains in complex chip design workflows, but the
 
 ## ⚠️ Manual Check Needed (not automatable)
 - **Import AI (Jack Clark)** — https://jack-clark.net/
