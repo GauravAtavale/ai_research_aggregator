@@ -1,13 +1,8 @@
-# AI Research Digest — 2026-10-17
+# AI Research Digest — 2026-10-18
 
 ## HF Daily Papers (Trending)
-- **[AutoDev: Automated AI-Driven Development](https://huggingface.co/papers/2403.08299)**  
-  ⬆ 29 upvotes — The landscape of software development has witnessed a paradigm shift with the
-advent of AI-powered assistants, exemplified by GitHub Copilot. However,
-existing solutions are not leveraging all the potential capabilities available
-in an IDE such as building, testing, executing code, git operations, e
 - **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
-  ⬆ 108 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
+  ⬆ 115 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
 - **[The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction](https://huggingface.co/papers/2609.18063)**  
   ⬆ 28 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
@@ -18,18 +13,30 @@ multi-agent frameworks independently gathering data. However, the multi-agent
 - **[Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation](https://huggingface.co/papers/2610.20571)**  
   ⬆ 343 upvotes — Long-form agentic video generation must turn a screenplay into shots that remain spatially and temporally consistent across nonconsecutive requests. Passing prompts or recent frames between shots does not provide a shared spatial frame for revisiting a scene or a time-indexed record for replaying an
 - **[RSI-Anything: Unlocking Recursive Self-Improvement with World Models](https://huggingface.co/papers/2610.13912)**  
-  ⬆ 47 upvotes — Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve. We introduce RSI-Anything, a domain-general framework built on JEPA-Anything that uses predict
+  ⬆ 49 upvotes — Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve. We introduce RSI-Anything, a domain-general framework built on JEPA-Anything that uses predict
 - **[Unlimited OCR Works](https://huggingface.co/papers/2606.23050)**  
   ⬆ 93 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
-- **[Player-1: Learning to Play from Synthetic Experience](https://huggingface.co/papers/2610.20584)**  
-  ⬆ 334 upvotes — Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent lea
-- **[Self-Evolving Agent Harness](https://huggingface.co/papers/2610.18813)**  
-  ⬆ 197 upvotes — Harness self-evolution revises an agent's software scaffolding, including prompts, memory, workflows, and executable components, while keeping model weights fixed. We formalize a feedback-driven process in which accepted revisions persist across runs. The framework separates update targets from prop
+- **[Efficient Memory Management for Large Language Model Serving with
+  PagedAttention](https://huggingface.co/papers/2309.06180)**  
+  ⬆ 77 upvotes — High throughput serving of large language models (LLMs) requires batching
+sufficiently many requests at a time. However, existing systems struggle
+because the key-value cache (KV cache) memory for each request is huge and
+grows and shrinks dynamically. When managed inefficiently, this memory can be
+
 - **[nanoMuse: An Open-Source Personal Agent for Every Device You Own](https://huggingface.co/papers/2610.08699)**  
   ⬆ 116 upvotes — Assistants from 2011 answered and waited, and agents from 2023 did a task and stopped. In September 2026 Meta's Muse showed an agent for one person, with accounts, devices, memory and a conversation that lasts, closed, in a vendor's cloud, in one country. Such an agent is expected to act on a person
+- **[OpenDevin: An Open Platform for AI Software Developers as Generalist
+  Agents](https://huggingface.co/papers/2407.16741)**  
+  ⬆ 90 upvotes — Software is one of the most powerful tools that we humans have at our
+disposal; it allows a skilled programmer to interact with the world in complex
+and profound ways. At the same time, thanks to improvements in large language
+models (LLMs), there has also been a rapid development in AI agents that
+
+- **[Internal Safety Collapse in Frontier Large Language Models](https://huggingface.co/papers/2603.23509)**  
+  ⬆ 31 upvotes — This work identifies a critical failure mode in frontier large language models (LLMs), which we term Internal Safety Collapse (ISC): under certain task conditions, models enter a state in which they continuously generate harmful content while executing otherwise benign tasks. We introduce TVD (Task,
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[No papers indexed yet for 2026-10-17 (HF submissions can lag up to 14 days behind arXiv)]()**  
+- **[No papers indexed yet for 2026-10-18 (HF submissions can lag up to 14 days behind arXiv)]()**  
   
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
@@ -83,6 +90,8 @@ multi-agent frameworks independently gathering data. However, the multi-agent
   
 
 ## Lab Blog: Anthropic (unofficial mirror)
+- **[Investing in the public benefit](https://www.anthropic.com/news/public-benefit-fund)**  
+  <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><img alt="Investing in the public benefit" class="PostDetail-module-scss-module__UQuRM
 - **[An update on independent evaluators](https://www.anthropic.com/news/an-update-on-independent-evaluators)**  
   <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><img alt="An update on independent evaluators" class="PostDetail-module-scss-module__U
 - **[Preparing for the 2026 US midterms](https://www.anthropic.com/news/2026-us-midterms)**  
@@ -91,8 +100,6 @@ multi-agent frameworks independently gathering data. However, the multi-agent
   <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><div class="Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-mod
 - **[2026 Usage Policy update](https://www.anthropic.com/news/2026-usage-policy-update)**  
   <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"></div><div class="page-wrapper"><article><div class=""><div class="Body-module-scss-module__z40yvW__body"><p class="Body-module-scss-module__z40yvW__reading-colum
-- **[Building on our commitment to American scientific discovery](https://www.anthropic.com/news/genesis-mission-commitment)**  
-  <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"><div class="PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper"><div class="Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-mod
 
 ## Lab Blog: Thinking Machines Lab
 - **[A Safe Path to Open Weights](https://thinkingmachines.ai/blog/a-safe-path-to-open-weights/)**  
@@ -133,10 +140,8 @@ multi-agent frameworks independently gathering data. However, the multi-agent
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image2-5-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="image2" width="768" />Enter
 
 ## GitHub Trending (AI, new repos)
-- **[Generated-Computers/Locals](https://github.com/Generated-Computers/Locals)**  
-  ★ 28 — Run many AI agents at once on your Mac, about three times faster.
-- **[alfera-labs/company-use](https://github.com/alfera-labs/company-use)**  
-  ★ 7 — The Open Source AI Co-worker for your whole team. Lives in Slack, API, Whatsapp, web and gets work done.
+- **[Fazmin/cve-intel](https://github.com/Fazmin/cve-intel)**  
+  ★ 42 — Local security intelligence for CVE triage - 34 tools, 25 sources, risk scores and an MCP server for AI agents, all in native Rust. Private by default.
 - **[gautamjajoo/awesome-economics-of-ai](https://github.com/gautamjajoo/awesome-economics-of-ai)**  
   ★ 4 — A curated guide to the costs, markets, adoption, and economic effects of AI.
 - **[KarimELMERNISSI/Cohort-Studio](https://github.com/KarimELMERNISSI/Cohort-Studio)**  
@@ -145,11 +150,13 @@ multi-agent frameworks independently gathering data. However, the multi-agent
   ★ 3 — Open-source, model-agnostic AI skill toolkit for structured reasoning, reliable coding, research, and verified execution.
 - **[47thtechcorner/RayCodes_LFM-2.5-A2B](https://github.com/47thtechcorner/RayCodes_LFM-2.5-A2B)**  
   ★ 2 — Liquid AI's New LFM 2.5 Is INSANE — 184 TOK/S With Only 2B Active! (Live Tests) - High-performance local edge reasoning guide, prompts, and deployment for LFM2.5-24B-A2B hybrid architecture
-- **[ydvsamiirrr2007/polar-science-hub](https://github.com/ydvsamiirrr2007/polar-science-hub)**  
-  ★ 2 — An AI-powered polar science knowledge hub for discovering research, exploring Arctic and Antarctic science, and creating accessible science outreach content.
+- **[kzndotsh/companion](https://github.com/kzndotsh/companion)**  
+  ★ 2 — An AI companion that tries to be as human-like as we can make it, and the memory engine underneath it.
+- **[rafidaaziz23/assay](https://github.com/rafidaaziz23/assay)**  
+  ★ 2 — Every AI study tool answers questions. Assay interrogates your answers. Gated Socratic syllabus from a topic or PDF, honeypot probes that catch pasted LLM answers, on-device focus tracking. AI Builder
+- **[Faizan-khan144/awesome-free-ai](https://github.com/Faizan-khan144/awesome-free-ai)**  
+  ★ 2 — A curated list of free & open-source AI tools, models, APIs and learning resources for developers.
+- **[lord-kirby-kirk69/Athena](https://github.com/lord-kirby-kirk69/Athena)**  
+  ★ 2 — A lightweight desktop AI assistant built with Tauri, React, and Rust, designed to support multiple AI models through a simple, customizable interface.
 - **[Yvngval/ASADI-Assistant](https://github.com/Yvngval/ASADI-Assistant)**  
   ★ 2 — Intelligent educational assistant built with Python and NLP for document-based learning and academic support.
-- **[zerocostaipro/awesome-zerocost-ai](https://github.com/zerocostaipro/awesome-zerocost-ai)**  
-  ★ 2 — A curated list of 937+ verified free, freemium & no-login AI tools. Maintained by ZeroCostAI.pro
-- **[kzndotsh/skills](https://github.com/kzndotsh/skills)**  
-  ★ 2 — Agent skills for Claude Code, Cursor, and other SKILL.md-compatible agents.
