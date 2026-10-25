@@ -1,54 +1,36 @@
-# AI Research Digest — 2026-10-23
+# AI Research Digest — 2026-10-24
 
 ## HF Daily Papers (Trending)
 - **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
-  ⬆ 118 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
-- **[Kronos: A Foundation Model for the Language of Financial Markets](https://huggingface.co/papers/2508.02739)**  
-  ⬆ 62 upvotes — The success of large-scale pre-training paradigm, exemplified by Large
-Language Models (LLMs), has inspired the development of Time Series Foundation
-Models (TSFMs). However, their application to financial candlestick (K-line)
-data remains limited, often underperforming non-pre-trained architectures
+  ⬆ 122 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
   ⬆ 154 upvotes — Significant progress has been made in automated problem-solving using
 societies of agents powered by large language models (LLMs). In finance,
 efforts have largely focused on single-agent systems handling specific tasks or
 multi-agent frameworks independently gathering data. However, the multi-agent
-- **[MOSS-Image Technical Report](https://huggingface.co/papers/2610.23374)**  
-  ⬆ 96 upvotes — Recent closed-source image generation systems can produce diverse visual content from simple compositions to information-dense graphics, yet open-weight text-to-image models still struggle with dense text and intricate layouts. To narrow this gap, we introduce MOSS-Image, an open generation system t
+- **[Kronos: A Foundation Model for the Language of Financial Markets](https://huggingface.co/papers/2508.02739)**  
+  ⬆ 62 upvotes — The success of large-scale pre-training paradigm, exemplified by Large
+Language Models (LLMs), has inspired the development of Time Series Foundation
+Models (TSFMs). However, their application to financial candlestick (K-line)
+data remains limited, often underperforming non-pre-trained architectures
 - **[The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction](https://huggingface.co/papers/2609.18063)**  
-  ⬆ 29 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
+  ⬆ 30 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
+- **[MOSS-Image Technical Report](https://huggingface.co/papers/2610.23374)**  
+  ⬆ 98 upvotes — Recent closed-source image generation systems can produce diverse visual content from simple compositions to information-dense graphics, yet open-weight text-to-image models still struggle with dense text and intricate layouts. To narrow this gap, we introduce MOSS-Image, an open generation system t
 - **[nanoMuse: An Open-Source Personal Agent for Every Device You Own](https://huggingface.co/papers/2610.08699)**  
-  ⬆ 119 upvotes — Assistants from 2011 answered and waited, and agents from 2023 did a task and stopped. In September 2026 Meta's Muse showed an agent for one person, with accounts, devices, memory and a conversation that lasts, closed, in a vendor's cloud, in one country. Such an agent is expected to act on a person
+  ⬆ 120 upvotes — Assistants from 2011 answered and waited, and agents from 2023 did a task and stopped. In September 2026 Meta's Muse showed an agent for one person, with accounts, devices, memory and a conversation that lasts, closed, in a vendor's cloud, in one country. Such an agent is expected to act on a person
 - **[StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions](https://huggingface.co/papers/2610.17309)**  
-  ⬆ 80 upvotes — We introduce StartLux-Decision, decision models from 0.8B to 27B parameters that combine efficient single-pass prediction with adaptive, confidence-guided reasoning. The Instant models use bidirectional attention in full-attention layers to improve decision accuracy while keeping single-pass inferen
+  ⬆ 81 upvotes — We introduce StartLux-Decision, decision models from 0.8B to 27B parameters that combine efficient single-pass prediction with adaptive, confidence-guided reasoning. The Instant models use bidirectional attention in full-attention layers to improve decision accuracy while keeping single-pass inferen
 - **[Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation](https://huggingface.co/papers/2610.14162)**  
-  ⬆ 15 upvotes — Diffusion language models (DLMs) offer parallel sampling for faster generation than autoregressive models, an increasingly important advantage as inference becomes a dominant computational workload. However, DLMs degrade quickly with fewer sampling steps, process the full sequence at every step, and
+  ⬆ 16 upvotes — Diffusion language models (DLMs) offer parallel sampling for faster generation than autoregressive models, an increasingly important advantage as inference becomes a dominant computational workload. However, DLMs degrade quickly with fewer sampling steps, process the full sequence at every step, and
+- **[Internal Safety Collapse in Frontier Large Language Models](https://huggingface.co/papers/2603.23509)**  
+  ⬆ 31 upvotes — This work identifies a critical failure mode in frontier large language models (LLMs), which we term Internal Safety Collapse (ISC): under certain task conditions, models enter a state in which they continuously generate harmful content while executing otherwise benign tasks. We introduce TVD (Task,
 - **[Scaling in Games: Continued Pre-Training For Embodied Agents In Diverse Virtual Worlds](https://huggingface.co/papers/2610.28698)**  
-  ⬆ 60 upvotes — Scaling data, diversity and model capacity has improved embodied learning in physical environments, where diverse experiences remain grounded in shared physical laws. Whether these gains extend to virtual worlds with different visual styles, dynamics, controls, and objectives remains unclear. We inv
-- **[Unlimited OCR Works](https://huggingface.co/papers/2606.23050)**  
-  ⬆ 97 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
+  ⬆ 73 upvotes — Scaling data, diversity and model capacity has improved embodied learning in physical environments, where diverse experiences remain grounded in shared physical laws. Whether these gains extend to virtual worlds with different visual styles, dynamics, controls, and objectives remains unclear. We inv
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[WeVisOne-VL: Unified Visual Perception from Objects to Pixels](https://huggingface.co/papers/2610.31329)**  
-  ⬆ 222 upvotes — Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token prediction. It supports multiple visual ta
-- **[Making MLLM Latents Matter: Factor-Aware Predictive Learning for Cinematic Video Generation](https://huggingface.co/papers/2610.30926)**  
-  ⬆ 164 upvotes — Cinematic video generation requires both temporal inference from limited inputs (i.e., sparse rather than frame-by-frame guidance) and factor-aware control of character, scene, action, and camera. Multimodal large language models (MLLMs) offer useful priors for both capabilities, but their represent
-- **[Deep Search in Real-World Web Environments](https://huggingface.co/papers/2610.30181)**  
-  ⬆ 152 upvotes — Despite substantial progress in Deep Search agents, their ability to conduct end-to-end research in real-world open Web environments remains insufficiently evaluated. Unlike static retrieval settings, information on the real-world Web is distributed across diverse sources, modalities, and heterogene
-- **[Editing Images into Reusable Layers via Compositional Edit-Prior Distillation](https://huggingface.co/papers/2610.24738)**  
-  ⬆ 74 upvotes — High-quality image editing requires precise modification of target regions while preserving the content of unrelated regions. Existing editing models produce flattened outputs that limit precise local manipulation and layer reuse, while decomposition methods typically optimize layer recovery separat
-- **[IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems](https://huggingface.co/papers/2610.30949)**  
-  ⬆ 54 upvotes — We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a two-stage curriculum whose second
-- **[Toward Recursive Self-Improvement in Physical AI](https://huggingface.co/papers/2610.29677)**  
-  ⬆ 46 upvotes — Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechanisms into the physical world requi
-- **[Deep Fusion Memory: A Chunk-Level Parametric Memory for Large Language Models](https://huggingface.co/papers/2610.25100)**  
-  ⬆ 39 upvotes — Large language models need effective ways to acquire and use external knowledge beyond what they retain from pretraining. Continued pretraining risks catastrophic forgetting, while retrieval at inference time can add substantial overhead. External parametric memory avoids online retrieval, but const
-- **[What Generation Knows: Unlocking Fine-Grained Understanding in Unified Multimodal Models](https://huggingface.co/papers/2610.23987)**  
-  ⬆ 31 upvotes — Fine-grained visual understanding requires distinguishing subtle differences in local attributes and spatial relations, yet remains challenging for existing vision-language models. Unified multimodal models (UMMs) offer a new opportunity through generation pathways that preserve rich visual informat
-- **[LaLa-World: Scaling Latent World Models with Natural Language Actions](https://huggingface.co/papers/2610.27851)**  
-  ⬆ 28 upvotes — This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with imagination and downstream policy 
-- **[Meta Expert: Cross-Layer Expert Sharing for Storage- and Retrieval-Efficient MoE](https://huggingface.co/papers/2610.27598)**  
-  ⬆ 25 upvotes — As model parameters scale up, sparsely activated Mixture-of-Experts (MoE) approaches have become essential for model scaling. However, mainstream models currently adopt hierarchical architectures, where experts in different layers, although topologically independent, exhibit substantial similarity a
+- **[No papers indexed yet for 2026-10-24 (HF submissions can lag up to 14 days behind arXiv)]()**  
+  
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
 - **[Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success](https://arxiv.org/abs/2610.31670v1)**  
@@ -151,23 +133,23 @@ multi-agent frameworks independently gathering data. However, the multi-agent
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/workstation-3d-render-dgx-spark-key-visual-single-gtc26-4655400-768x432.png" style="display: block; margin-bottom
 
 ## GitHub Trending (AI, new repos)
-- **[Fazmin/cve-intel](https://github.com/Fazmin/cve-intel)**  
-  ★ 93 — Local security intelligence for CVE triage - 39 data sources and 36 tools, risk scores and an MCP server for AI agents, all in native Rust. Private by default.
 - **[agentshield-dev/agentshield](https://github.com/agentshield-dev/agentshield)**  
-  ★ 49 — Agentshield is open source defense for Kubernetes and AWS. It learns how your workloads really talk, flags lateral movement with evidence, and proposes fixes you approve.
+  ★ 50 — Agentshield is open source defense for Kubernetes and AWS. It learns how your workloads really talk, flags lateral movement with evidence, and proposes fixes you approve.
 - **[Cinderubasp/InterviewCopilot-rpocket-team](https://github.com/Cinderubasp/InterviewCopilot-rpocket-team)**  
   ★ 29 — EdTech application designed to bridge the gap between learning and landing your dream job
 - **[dcarrero/genpic](https://github.com/dcarrero/genpic)**  
   ★ 20 — AI portrait SaaS (Laravel 11, Livewire, Filament, Stripe, fal.ai) — run in production, released as open source after closing
 - **[Sociaro-Research/open-media-gateway](https://github.com/Sociaro-Research/open-media-gateway)**  
-  ★ 8 — OMG - Open Media Gateway
+  ★ 17 — OMG - Open Media Gateway
+- **[zidniryi/cutvii](https://github.com/zidniryi/cutvii)**  
+  ★ 12 — CutVii - Creative editing. Flexible workflow. On-device AI
 - **[refraction-ray/free-energy-to-llms](https://github.com/refraction-ray/free-energy-to-llms)**  
   ★ 6 — Generative models from variational free energy to LLM
+- **[mostwanted7/ygo-agent](https://github.com/mostwanted7/ygo-agent)**  
+  ★ 4 — AI Yu-Gi-Oh! players for EDOPro: a headless duel host, pluggable model backends, live coaching and deck training.
 - **[amorey/agent-zero](https://github.com/amorey/agent-zero)**  
   ★ 4 — A starter template for AI-native coding projects
-- **[codebyshambhavi/pramana-dfir](https://github.com/codebyshambhavi/pramana-dfir)**  
-  ★ 3 — Evidence-first AI platform for cyber investigation and digital forensics, turning digital traces into traceable, defensible findings.
-- **[mostwanted7/ygo-agent](https://github.com/mostwanted7/ygo-agent)**  
-  ★ 3 — AI Yu-Gi-Oh! players for EDOPro: a headless duel host, pluggable model backends, live coaching and deck training.
 - **[A220man/cobalt-console-ryan-vo](https://github.com/A220man/cobalt-console-ryan-vo)**  
   ★ 2 — Ryan Vo | Work in progress: cobalt-console-ryan-vo
+- **[ALANDVO/signal-forge-144-alan-vo](https://github.com/ALANDVO/signal-forge-144-alan-vo)**  
+  ★ 2 — Alan Vo | Work in progress: signal-forge-144-alan-vo
