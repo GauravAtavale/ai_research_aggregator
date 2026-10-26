@@ -1,8 +1,8 @@
-# AI Research Digest — 2026-10-24
+# AI Research Digest — 2026-10-25
 
 ## HF Daily Papers (Trending)
 - **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
-  ⬆ 122 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
+  ⬆ 123 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
   ⬆ 154 upvotes — Significant progress has been made in automated problem-solving using
 societies of agents powered by large language models (LLMs). In finance,
@@ -16,20 +16,25 @@ data remains limited, often underperforming non-pre-trained architectures
 - **[The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction](https://huggingface.co/papers/2609.18063)**  
   ⬆ 30 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
 - **[MOSS-Image Technical Report](https://huggingface.co/papers/2610.23374)**  
-  ⬆ 98 upvotes — Recent closed-source image generation systems can produce diverse visual content from simple compositions to information-dense graphics, yet open-weight text-to-image models still struggle with dense text and intricate layouts. To narrow this gap, we introduce MOSS-Image, an open generation system t
+  ⬆ 103 upvotes — Recent closed-source image generation systems can produce diverse visual content from simple compositions to information-dense graphics, yet open-weight text-to-image models still struggle with dense text and intricate layouts. To narrow this gap, we introduce MOSS-Image, an open generation system t
 - **[nanoMuse: An Open-Source Personal Agent for Every Device You Own](https://huggingface.co/papers/2610.08699)**  
   ⬆ 120 upvotes — Assistants from 2011 answered and waited, and agents from 2023 did a task and stopped. In September 2026 Meta's Muse showed an agent for one person, with accounts, devices, memory and a conversation that lasts, closed, in a vendor's cloud, in one country. Such an agent is expected to act on a person
 - **[StartLux-Decision: AutoThink Decision Models with Reinforcement Learning for Calibrated Deliberative Decisions](https://huggingface.co/papers/2610.17309)**  
   ⬆ 81 upvotes — We introduce StartLux-Decision, decision models from 0.8B to 27B parameters that combine efficient single-pass prediction with adaptive, confidence-guided reasoning. The Instant models use bidirectional attention in full-attention layers to improve decision accuracy while keeping single-pass inferen
+- **[Prism: Dynamic Sparse Attention for Native 2K Joint Video-Audio Generation Model Training](https://huggingface.co/papers/2610.05416)**  
+  ⬆ 23 upvotes — Natively training joint video-audio generation models at higher resolutions empowers them to learn richer visual details and sharper motion dynamics. However, full attention incurs quadratic cost and, as resolution increases, spreads attention over increasingly redundant tokens, diluting learning si
 - **[Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation](https://huggingface.co/papers/2610.14162)**  
   ⬆ 16 upvotes — Diffusion language models (DLMs) offer parallel sampling for faster generation than autoregressive models, an increasingly important advantage as inference becomes a dominant computational workload. However, DLMs degrade quickly with fewer sampling steps, process the full sequence at every step, and
-- **[Internal Safety Collapse in Frontier Large Language Models](https://huggingface.co/papers/2603.23509)**  
-  ⬆ 31 upvotes — This work identifies a critical failure mode in frontier large language models (LLMs), which we term Internal Safety Collapse (ISC): under certain task conditions, models enter a state in which they continuously generate harmful content while executing otherwise benign tasks. We introduce TVD (Task,
-- **[Scaling in Games: Continued Pre-Training For Embodied Agents In Diverse Virtual Worlds](https://huggingface.co/papers/2610.28698)**  
-  ⬆ 73 upvotes — Scaling data, diversity and model capacity has improved embodied learning in physical environments, where diverse experiences remain grounded in shared physical laws. Whether these gains extend to virtual worlds with different visual styles, dynamics, controls, and objectives remains unclear. We inv
+- **[AgentScope 1.0: A Developer-Centric Framework for Building Agentic
+  Applications](https://huggingface.co/papers/2508.16279)**  
+  ⬆ 71 upvotes — Driven by rapid advancements of Large Language Models (LLMs), agents are
+empowered to combine intrinsic knowledge with dynamic tool use, greatly
+enhancing their capacity to address real-world tasks. In line with such an
+evolution, AgentScope introduces major improvements in a new version (1.0),
+towa
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[No papers indexed yet for 2026-10-24 (HF submissions can lag up to 14 days behind arXiv)]()**  
+- **[No papers indexed yet for 2026-10-25 (HF submissions can lag up to 14 days behind arXiv)]()**  
   
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
@@ -134,22 +139,22 @@ data remains limited, often underperforming non-pre-trained architectures
 
 ## GitHub Trending (AI, new repos)
 - **[agentshield-dev/agentshield](https://github.com/agentshield-dev/agentshield)**  
-  ★ 50 — Agentshield is open source defense for Kubernetes and AWS. It learns how your workloads really talk, flags lateral movement with evidence, and proposes fixes you approve.
+  ★ 51 — Agentshield is open source defense for Kubernetes and AWS. It learns how your workloads really talk, flags lateral movement with evidence, and proposes fixes you approve.
 - **[Cinderubasp/InterviewCopilot-rpocket-team](https://github.com/Cinderubasp/InterviewCopilot-rpocket-team)**  
   ★ 29 — EdTech application designed to bridge the gap between learning and landing your dream job
-- **[dcarrero/genpic](https://github.com/dcarrero/genpic)**  
-  ★ 20 — AI portrait SaaS (Laravel 11, Livewire, Filament, Stripe, fal.ai) — run in production, released as open source after closing
 - **[Sociaro-Research/open-media-gateway](https://github.com/Sociaro-Research/open-media-gateway)**  
-  ★ 17 — OMG - Open Media Gateway
+  ★ 21 — OMG - Open Media Gateway
+- **[faraflow/faraflow](https://github.com/faraflow/faraflow)**  
+  ★ 14 — Visual builder and execution engine for AI powered organizations
 - **[zidniryi/cutvii](https://github.com/zidniryi/cutvii)**  
-  ★ 12 — CutVii - Creative editing. Flexible workflow. On-device AI
+  ★ 14 — CutVii - Creative editing. Flexible workflow. On-device AI
 - **[refraction-ray/free-energy-to-llms](https://github.com/refraction-ray/free-energy-to-llms)**  
   ★ 6 — Generative models from variational free energy to LLM
 - **[mostwanted7/ygo-agent](https://github.com/mostwanted7/ygo-agent)**  
   ★ 4 — AI Yu-Gi-Oh! players for EDOPro: a headless duel host, pluggable model backends, live coaching and deck training.
+- **[sukhee-2626/plot-docs](https://github.com/sukhee-2626/plot-docs)**  
+  ★ 4 — A local-first AI office suite for Docs, Sheets, Slides, PDF, Markdown and HTML. Windows, macOS and Linux.
 - **[amorey/agent-zero](https://github.com/amorey/agent-zero)**  
   ★ 4 — A starter template for AI-native coding projects
-- **[A220man/cobalt-console-ryan-vo](https://github.com/A220man/cobalt-console-ryan-vo)**  
-  ★ 2 — Ryan Vo | Work in progress: cobalt-console-ryan-vo
-- **[ALANDVO/signal-forge-144-alan-vo](https://github.com/ALANDVO/signal-forge-144-alan-vo)**  
-  ★ 2 — Alan Vo | Work in progress: signal-forge-144-alan-vo
+- **[ashtonckj/Purrrfessorrr-Slothhh](https://github.com/ashtonckj/Purrrfessorrr-Slothhh)**  
+  ★ 3 — A playful, pixel-inspired data analysis app that makes exploring, cleaning, and visualising datasets simple, interactive, and fun! 🐈✨
