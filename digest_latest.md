@@ -1,15 +1,17 @@
-# AI Research Digest — 2026-10-28
+# AI Research Digest — 2026-10-29
 
 ## HF Daily Papers (Trending)
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
-  ⬆ 157 upvotes — Significant progress has been made in automated problem-solving using
+  ⬆ 158 upvotes — Significant progress has been made in automated problem-solving using
 societies of agents powered by large language models (LLMs). In finance,
 efforts have largely focused on single-agent systems handling specific tasks or
 multi-agent frameworks independently gathering data. However, the multi-agent
 - **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
   ⬆ 125 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
+- **[The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction](https://huggingface.co/papers/2609.18063)**  
+  ⬆ 31 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
 - **[Unlimited OCR Works](https://huggingface.co/papers/2606.23050)**  
-  ⬆ 104 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
+  ⬆ 105 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
 - **[Very Large-Scale Multi-Agent Simulation in AgentScope](https://huggingface.co/papers/2407.17789)**  
   ⬆ 48 upvotes — Recent advances in large language models (LLMs) have opened new avenues for
 applying multi-agent systems in very large-scale simulations. However, there
@@ -22,79 +24,77 @@ empowered to combine intrinsic knowledge with dynamic tool use, greatly
 enhancing their capacity to address real-world tasks. In line with such an
 evolution, AgentScope introduces major improvements in a new version (1.0),
 towa
+- **[TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents](https://huggingface.co/papers/2610.22732)**  
+  ⬆ 6 upvotes — Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motiv
 - **[Kronos: A Foundation Model for the Language of Financial Markets](https://huggingface.co/papers/2508.02739)**  
   ⬆ 62 upvotes — The success of large-scale pre-training paradigm, exemplified by Large
 Language Models (LLMs), has inspired the development of Time Series Foundation
 Models (TSFMs). However, their application to financial candlestick (K-line)
 data remains limited, often underperforming non-pre-trained architectures
-- **[Hy-Nomas: Towards Free-form Interactive World Generation](https://huggingface.co/papers/2610.36729)**  
-  ⬆ 107 upvotes — Interactive world generation requires models to follow successive commands while preserving relevant history and action consequences. We present Hy-Nomas, a video world model with an 8B diffusion backbone that supports free-form text instructions and continuous camera control across multiple interac
 - **[MOSS-Image Technical Report](https://huggingface.co/papers/2610.23374)**  
   ⬆ 107 upvotes — Recent closed-source image generation systems can produce diverse visual content from simple compositions to information-dense graphics, yet open-weight text-to-image models still struggle with dense text and intricate layouts. To narrow this gap, we introduce MOSS-Image, an open generation system t
-- **[The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction](https://huggingface.co/papers/2609.18063)**  
-  ⬆ 31 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
-- **[Prism: Dynamic Sparse Attention for Native 2K Joint Video-Audio Generation Model Training](https://huggingface.co/papers/2610.05416)**  
-  ⬆ 23 upvotes — Natively training joint video-audio generation models at higher resolutions empowers them to learn richer visual details and sharper motion dynamics. However, full attention incurs quadratic cost and, as resolution increases, spreads attention over increasingly redundant tokens, diluting learning si
+- **[Hy-Nomas: Towards Free-form Interactive World Generation](https://huggingface.co/papers/2610.36729)**  
+  ⬆ 126 upvotes — Interactive world generation requires models to follow successive commands while preserving relevant history and action consequences. We present Hy-Nomas, a video world model with an 8B diffusion backbone that supports free-form text instructions and continuous camera control across multiple interac
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents](https://huggingface.co/papers/2610.36077)**  
-  ⬆ 531 upvotes — Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks: constructing heterogeneous, verifiable environments is costly, and manual Harness iteration cannot keep pace with growing task divers
-- **[Multiscale Policy Optimization for Long-Horizon LLM Agents](https://huggingface.co/papers/2610.35013)**  
-  ⬆ 373 upvotes — Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale
-- **[ChronoReplay: One Answer Interface Is Not Enough for Streaming Spatial Intelligence](https://huggingface.co/papers/2610.34283)**  
-  ⬆ 346 upvotes — Training a spatial VLM to answer which side an object lies on does not require it to preserve the metric displacement that determines that answer, while supervision for a distance estimate may leave categorical relations largely unconstrained. When post-training emphasizes one readout, improvements 
-- **[VibeVideoBench: Evaluating Multimodal Agents on Code-Driven Video Generation](https://huggingface.co/papers/2610.35864)**  
-  ⬆ 172 upvotes — Diffusion video models produce striking clips, but they cannot reliably render an exact formula, a correct chart, a rule-consistent game or narration synchronized to on-screen events. A different route is emerging: multimodal agents that write code to render every frame and synthesize every sound. W
-- **[PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations](https://huggingface.co/papers/2610.37381)**  
-  ⬆ 137 upvotes — Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into the control loop. We
-- **[Memory Tax: Dissecting the Net Value of Agent Memory](https://huggingface.co/papers/2610.34073)**  
-  ⬆ 137 upvotes — Memory is increasingly used in long-horizon agents, yet the net value of building memory over direct retrieval from raw history remains largely unclear. Through a large-scale evaluation across multiple benchmarks and model backbones, we find many dedicated memory systems underperform naive RAG in ma
-- **[Hy-Nomas: Towards Free-form Interactive World Generation](https://huggingface.co/papers/2610.36729)**  
-  ⬆ 107 upvotes — Interactive world generation requires models to follow successive commands while preserving relevant history and action consequences. We present Hy-Nomas, a video world model with an 8B diffusion backbone that supports free-form text instructions and continuous camera control across multiple interac
-- **[Can Test-Time Memory Evolution Outperform Test-Time Training for Scientific Discovery?](https://huggingface.co/papers/2610.32046)**  
-  ⬆ 101 upvotes — Recent test-time training (TTT) frameworks have enabled open-weight large language models (LLMs) to outperform inference-only frameworks powered by frontier models on scientific discovery tasks. However, TTT introduces additional computational cost for online weight updates during the discovery proc
-- **[Can Discrete Tokens Serve as Semantically Lossless Representations of Visual Signals?](https://huggingface.co/papers/2610.37662)**  
-  ⬆ 82 upvotes — Discrete visual tokens represent vision in a discrete form analogous to language, offering a native interface for multimodal modeling under a shared next-token prediction objective. However, quantization error is widely assumed to cause unavoidable semantic loss, fundamentally limiting the semantic 
-- **[HABIT-Bench: Evaluating Habit Induction from Longitudinal Weak Evidence in Agent Memory](https://huggingface.co/papers/2610.24520)**  
-  ⬆ 79 upvotes — In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial evidence about a habit or whe
+- **[Efficient Streaming Audio-Visual Target Speaker Extraction for Real-World Acoustic Scenes](https://huggingface.co/papers/2610.32749)**  
+  ⬆ 150 upvotes — Streaming audio-visual target speaker extraction (AVTSE) is essential for latency-sensitive applications. However, current causal systems face two coupled gaps. First, standard benchmarks fix the number of speakers at two and ignore the near-/far-field interference, reverberation, and sudden noise o
+- **[OmniShowcase: Omnidirectional Subject-Consistent Video Generation from Multi-View Images](https://huggingface.co/papers/2610.35684)**  
+  ⬆ 47 upvotes — Generating videos of a specific subject from a few reference images remains challenging when the camera reveals surfaces that are not visible in the input. Early subject-to-video (S2V) methods condition on a single reference image and must therefore infer the subject's unseen appearance and geometry
+- **[Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success](https://huggingface.co/papers/2610.31670)**  
+  ⬆ 21 upvotes — Robot foundation models are typically evaluated through costly closed-loop rollouts, motivating low-cost offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, modalities such as vision and language converge toward a shared statis
+- **[TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving](https://huggingface.co/papers/2610.37230)**  
+  ⬆ 18 upvotes — Agentic services alternate between model inference on clustered GPUs and external tools on distributed CPUs. In this scenario, existing systems (1) overlook tool-return readiness in service evaluation, wasting limited resources, and (2) use heuristic strategies to decide admission and placement on G
+- **[RealCLI: Toward a Unified Evaluation of Human-Agent Collaboration for CLI Agents](https://huggingface.co/papers/2610.22507)**  
+  ⬆ 17 upvotes — Command-line interface (CLI) agents increasingly execute longer-horizon tasks, yet existing benchmarks either assume that user instructions remain fixed throughout execution or evaluate task outcomes without capturing runtime collaboration quality. In this paper, we present REALCLI, a paired benchma
+- **[PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas](https://huggingface.co/papers/2610.22990)**  
+  ⬆ 13 upvotes — Computer-use agents (CUAs) are commonly evaluated against fixed task specifications, but users may omit requirements, add constraints, or require approval before consequential actions. Completing the benchmark instruction does not guarantee serving the person who asked. We introduce PersonaCUABench,
+- **[TauIndianBankBench: Procedure-Aware, Action-Oriented Evaluation of Tool-Using Conversational Agents](https://huggingface.co/papers/2610.30161)**  
+  ⬆ 9 upvotes — Many Indian banks serve customers through FAQ pages and scripted chatbots. Assistants based on language models could respond faster and carry out requests such as blocking a card, but only if they give correct information and follow the bank's rules. These rules prescribe a procedure, a set of requi
+- **[Amortizing Sequential Experimental Design in Reasoning LLMs](https://huggingface.co/papers/2610.20832)**  
+  ⬆ 6 upvotes — Despite their extensive pretraining knowledge and strong reasoning capabilities, large language models (LLMs) struggle to adaptively gather information in experimental design tasks. We study how to amortize sequential Bayesian experimental design (BED) into an LLM by explicitly training the reasonin
+- **[LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data](https://huggingface.co/papers/2610.30132)**  
+  ⬆ 5 upvotes — Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL,
+- **[CausGround: Causal Interaction Grounding for Adaptive Embodied Planning](https://huggingface.co/papers/2610.29702)**  
+  ⬆ 4 upvotes — Multimodal large language models (MLLMs) show promising reasoning capabilities, but reliable physical interaction requires planning that accounts for when actions are executable and how they change the world. These preconditions and effects are environment-dependent and often not captured by MLLMs, 
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
-- **[Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction](https://arxiv.org/abs/2610.37668v1)**  
-  Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use in resource-constrained settings. We introduce Hexels: novel planar hexagonal surface elements with a first-order spatial color field for ef
-- **[ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning](https://arxiv.org/abs/2610.37666v1)**  
-  Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning fro
-- **[When Should We Intervene at Test Time?](https://arxiv.org/abs/2610.37658v1)**  
-  Test-time adaptation helps a deployed model respond to changing inputs, but the same intervention can rescue one batch and damage the next. Updating normalization statistics, for example, can improve corrupted images yet fail when a batch contains mostly one class. Average accuracy hides these failu
-- **[Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness](https://arxiv.org/abs/2610.37657v1)**  
-  We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small set of learned per-head attention gates. HoS learns how each head should redistribute attention between trusted and untrusted tokens, enabling models to reason over untrusted conten
-- **[Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops](https://arxiv.org/abs/2610.37656v1)**  
-  Relations compose through the entity they share - Alice is Bob's mother and Bob is Carol's father, so Alice is Carol's grandmother - and the order matters, since a father's mother is not a mother's father; verifying a composed relation means closing the loop. We show that if each entity's coordinate
-- **[KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry](https://arxiv.org/abs/2610.37655v1)**  
-  Atmospheric chemical mechanisms are commonly distributed in the language of the Kinetic PreProcessor (KPP), which generates efficient Fortran or C code but does not fit into the differentiable programming frameworks in which machine-learning models are developed. We present KPPax, a kinetic preproce
-- **[Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well](https://arxiv.org/abs/2610.37652v1)**  
-  Dexterous manipulation with multi-fingered hands is the next frontier of robotics, yet learned hand skills remain limited to simple grasps or basic repeated motions, such as rotating an object. As robots attempt more demanding in-hand maneuvers, safety, such as not dropping the object, becomes criti
-- **[GEPA-Curator: Curated Learning for Self Improving Agents](https://arxiv.org/abs/2610.37651v1)**  
-  Large Language Models (LLMs) are increasingly used in multi-turn agentic workloads that require sustained interaction with complex environments. Existing reflective prompt optimizers such as GEPA learn from failed rollouts, but agentic failures can also come from prompt weaknesses, harness limitatio
-- **[Can LLMs Uncover Hidden Physical Laws through Free Exploration?](https://arxiv.org/abs/2610.37649v1)**  
-  Scientific discovery often begins with an unexpected observation that prompts a new research question. In a world with altered physical laws, can large language models (LLMs) notice unexpected behavior, such as heavier objects falling more slowly, and discover the law through experiments without bei
-- **[Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis](https://arxiv.org/abs/2610.37648v1)**  
-  We explore how to build performant large language model (LLM) tool-use agents that complete complex, multi-step tasks. Specifically, we study how data composition in synthetically generated tool-use environments affects the training of such agents. To do so, we propose the SynthAPI pipeline, which e
+- **[Autonomous Quantum Measurement with Agentic AI](https://arxiv.org/abs/2610.38850v1)**  
+  Quantum materials exhibit diverse electronic and functional phenomena, but their characterization requires extensive experimental expertise, iterative decision-making and accumulated laboratory knowledge that is difficult to document and transfer. Here we introduce Quantum Agent (QUANTA), an agentic
+- **[Discovery of Diverse and Realistic Financial Tail-Risk Using Generative Flow Networks](https://arxiv.org/abs/2610.38838v1)**  
+  Accurate modeling of rare, high-impact financial events is essential for robust risk management. Sampling-based techniques such as Sequential Markov Chain Monte Carlo (SMCMC) generate diverse scenarios but inefficiently explore high-risk regions, while Deep Reinforcement Learning (DRL) converges on 
+- **[What to randomize matters: a controlled study of volume, axis and representation in low-data molecular generation](https://arxiv.org/abs/2610.38835v1)**  
+  Chemical language models can struggle to generate new molecules when trained on small datasets, where a model may reproduce training examples rather than learn a useful generative distribution. Randomized SMILES augmentation varies atom traversal, whereas Sequential Attachment-based Fragment Embeddi
+- **[Discovering Jailbreaks via Curriculum of Models](https://arxiv.org/abs/2610.38833v1)**  
+  Automated jailbreak discovery aims to find prompts that elicit prohibited behaviors from safety-trained language models, helping developers identify vulnerabilities before deployment. One class of approaches uses reinforcement learning to train an investigator model to generate prompts that elicit a
+- **[Evaluating Visual Realism of AI-Generated Videos with Eye Tracking](https://arxiv.org/abs/2610.38825v1)**  
+  Human evaluation of AI-generated videos has so far relied on explicit human feedback, such as judgments or ratings. While these signals capture the conclusions viewers reach, they fail to offer insights into the perception that leads to them. This paper investigates eye tracking as a complementary h
+- **[CopyLoop: Fast Looped Transformer Decoding via Context Copying and Shallow Screening](https://arxiv.org/abs/2610.38822v1)**  
+  Looped Transformers increase computational capacity through the repeated application of shared blocks, but their recurrent depth makes conventional full-depth decoding expensive. While existing speculative pipelines accelerate generation by processing consecutive token positions at varying depths, t
+- **[UnEZ: A Fully Unsupervised Self-Templating Neural Network for Redshift and Line Strength Estimation](https://arxiv.org/abs/2610.38816v1)**  
+  As spectroscopic surveys grow, estimating galaxy properties such as metallicity, star formation rate, and redshift becomes computationally cumbersome. Methods of estimating such properties rely on template spectra or curated redshift catalogs, which fail to represent the diversity of objects seen in
+- **[Causal Attention on CPU: A Cache-Aware and Load-Balanced Scheduling Kernel for Prefill](https://arxiv.org/abs/2610.38809v1)**  
+  Agentic AI drives significant productivity gains across diverse domains, but concurrent long-context prefills from multiple agents can saturate GPU compute resources. Although CPUs offer a viable alternative, existing CPU attention kernels fall short in adapting to multi-tier cache hierarchies and l
+- **[Pinpointing Pivot Points: The DECIDE Framework for Data Analysis Decision Importances](https://arxiv.org/abs/2610.38797v1)**  
+  Human judgment calls made throughout the data science life cycle can change the conclusions drawn from data. Independent analysts often make different choices when given the same data, leading to often unacceptable variations in results and contributing to the ongoing reproducibility crisis across s
+- **[Routed Continual Learning](https://arxiv.org/abs/2610.38796v1)**  
+  Agents deployed at scale repeatedly encounter related problems, and it is natural to let them learn from each other's experience rather than starting over each time. Unfortunately, there is no single way to retain that experience that works well across settings, and no way to know in advance which f
 
 ## Reddit
 - **[[Reddit fetch failed: 403 Client Error: Blocked for url: https://www.reddit.com/r/MachineLearning/top.json?limit=10&t=day]]()**  
   
 
 ## Lab Blog: OpenAI
+- **[An updated Model Spec for more capable and beneficial AI](https://openai.com/index/updated-model-spec)**  
+  OpenAI’s updated Model Spec outlines five core values to guide more capable AI toward sound judgment, human agency, and faithfulness to human intent.
+- **[How we detect frontier model misalignment](https://openai.com/index/how-we-detect-frontier-model-misalignment)**  
+  OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.
+- **[How Ropes & Gray is developing AI for transactional diligence](https://openai.com/index/ropes-gray-ai-diligence)**  
+  Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.
 - **[OpenAI and ServiceNow expand partnership across enterprise workflows](https://openai.com/index/openai-servicenow-partnership-expansion)**  
   OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.
 - **[The future of the firm](https://openai.com/index/the-future-of-the-firm)**  
   How AI might enter the org chart—beneath, beside, and between us.
-- **[Legora is building the agentic operating system for legal work](https://openai.com/index/legora)**  
-  See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.
-- **[Retell uses OpenAI models to help power 100M monthly calls](https://openai.com/index/retell-ai)**  
-  GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.
-- **[OpenAI expands partnership with Oracle to bring its apps to ChatGPT](https://openai.com/index/oracle-apps-in-chatgpt)**  
-  OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.
 
 ## Lab Blog: DeepMind
 - **[Gemini 4 Carbon: Our next frontier model](https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/)**  
@@ -134,18 +134,20 @@ data remains limited, often underperforming non-pre-trained architectures
   <p>Today’s leading language models contain upwards of a trillion parameters, pretrained on tens of trillions of tokens. Base model performance keeps improving with scale, as these trillions are necessary for learning and representing all the patterns
 
 ## Lab Blog: NVIDIA Blog
+- **[Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents](https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/)**  
+  Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry
+- **[Slice Into GFN Thursday: ‘Phantom Blade Zero’ Launches on GeForce NOW](https://blogs.nvidia.com/blog/geforce-now-thursday-phantom-blade-zero/)**  
+  This Halloween week, GFN Thursday is delivering a fresh batch of gaming treats. Something wicked this blade comes. S-GAME’s Phantom Blade Zero launches on GeForce NOW today, bringing a scarily good blend of martial arts and punk fantasy to the cloud.
 - **[Thin, Light and Built for Everything: NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games](https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/)**  
   NVIDIA RTX Spark powers thin and light laptops built for everything that developers, creators and gamers do. RTX Spark laptops are now available from ASUS, Dell, HP, Lenovo, Microsoft and MSI. These powerful systems combine an NVIDIA Blackwell RTX GP
 - **[How AI Is Changing the Pace of Discovery for Millions Living With Dementia](https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/)**  
   There are 57 million people worldwide living with dementia today. For the researchers working to help them, the obstacle isn’t a lack of effort — it’s too much data, too few experts to synthesize it and a pace of discovery that can’t keep up with the
 - **[Kazakhstan Expands Compute for Its AI Future](https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/)**  
   Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment.  The shift is visible across the full AI stack — from infrastructure to models to applications. The announcements below — coinciding with a visit to Astana by NVIDIA founder
-- **[NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories](https://blogs.nvidia.com/blog/minerva-platform-infrastructure/)**  
-  Launched today, NVIDIA Minerva is an AIOps platform built to help teams find problems earlier and keep AI factories productive. It brings together telemetry from infrastructure and AI workloads, then applies purpose-built AI models to turn that data 
-- **[Cloud Deployment Incoming: ‘Call of Duty: Modern Warfare 4’ Arrives on GeForce NOW](https://blogs.nvidia.com/blog/geforce-now-thursday-call-of-duty-modern-warfare-4/)**  
-  Lock in and load out this GFN Thursday. Call of Duty: Modern Warfare 4 arrives on GeForce NOW at launch, bringing a new campaign, multiplayer action and DMZ, high-stakes extraction mode to supported devices. The campaign also gets an enhanced look: G
 
 ## Lab Blog: NVIDIA Technical Blog
+- **[Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials](https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/)**  
+  <img alt="Colorful matrix-like blocks transition into a lattice of spheres, illustrating computation for atomistic simulation." class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/
 - **[Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4](https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/)**  
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/CUDAMemoryKV-768x432.webp" style="display: block; margin-bottom: 5px; clear: both;" title="CUDAMemoryKV" width="7
 - **[NVIDIA RTX Spark Powers Neural Rendering and AI Characters in Games](https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/)**  
@@ -154,27 +156,25 @@ data remains limited, often underperforming non-pre-trained architectures
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/agentic-promo-nemotron-models-eu-gtc-berlin-press-1600x900-5811620-768x432.png" style="display: block; margin-bot
 - **[3 Ways to Boost MoE Inference on NVIDIA DGX Spark](https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/)**  
   <img alt="Abstract green computing cube with layered panels, performance icons, and streams of data on a black background" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/dg
-- **[How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield](https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/)**  
-  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/MinervaKV-768x432.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="MinervaKV" width="768" />A
 
 ## GitHub Trending (AI, new repos)
-- **[Cinderubasp/InterviewCopilot-rpocket-team](https://github.com/Cinderubasp/InterviewCopilot-rpocket-team)**  
-  ★ 53 — EdTech application designed to bridge the gap between learning and landing your dream job
-- **[faraflow/faraflow](https://github.com/faraflow/faraflow)**  
-  ★ 49 — Visual builder and execution engine for AI powered organizations
 - **[OFat34764e/InterviewCopilot-rpocket-team](https://github.com/OFat34764e/InterviewCopilot-rpocket-team)**  
-  ★ 32 — EdTech application designed to bridge the gap between learning and landing your dream job
+  ★ 64 — EdTech application designed to bridge the gap between learning and landing your dream job
+- **[Omianheart/Deadline-resp-Tracker-AI](https://github.com/Omianheart/Deadline-resp-Tracker-AI)**  
+  ★ 32 — 📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects & submission dates from academic documents, with smart deadline Q&A and Telegram notifications.
+- **[Doravanaheim/telegram-acp-bridge-IntelliJ-rpocket-IDEA](https://github.com/Doravanaheim/telegram-acp-bridge-IntelliJ-rpocket-IDEA)**  
+  ★ 32 — Мост между Telegram и Codex ACP в IntelliJ IDEA: запускайте задачи и управляйте чатами с агентом прямо из Telegram.
+- **[ElectroixHigh/rpocket-SmartGrow-AI](https://github.com/ElectroixHigh/rpocket-SmartGrow-AI)**  
+  ★ 32 — AI and IoT-based plant monitoring system with sensor monitoring and a Telegram chatbot.
 - **[lucidrains/attention-contact-planning](https://github.com/lucidrains/attention-contact-planning)**  
   ★ 10 — Implementation of Attention-based Contact Planning, by Junzhe He of ETH Zürich
 - **[xAerux/aerus-ezai](https://github.com/xAerux/aerus-ezai)**  
   ★ 7 — EZ AI — Local AI made easy: Windows command center for local AI apps, model library, and coding agents.
 - **[eDurphy/QATNN-HFP](https://github.com/eDurphy/QATNN-HFP)**  
   ★ 3 — Local Neural Network Quantized and Trainable On The Fly on CPU
-- **[A220man/axiom-observatory-144-ryan-vo](https://github.com/A220man/axiom-observatory-144-ryan-vo)**  
-  ★ 2 — Ryan Vo | Work in progress: axiom-observatory-144-ryan-vo
 - **[ALANDVO/sentinel-console-144](https://github.com/ALANDVO/sentinel-console-144)**  
   ★ 2 — Alan Vo | Work in progress: sentinel-console-144
-- **[ALANDVO/signal-forge-144-alan-vo](https://github.com/ALANDVO/signal-forge-144-alan-vo)**  
-  ★ 2 — Alan Vo | Work in progress: signal-forge-144-alan-vo
 - **[A220man/cobalt-lab-144-ryan-vo](https://github.com/A220man/cobalt-lab-144-ryan-vo)**  
   ★ 2 — Ryan Vo | Work in progress: cobalt-lab-144-ryan-vo
+- **[hardikkoul/markclean-ai](https://github.com/hardikkoul/markclean-ai)**  
+  ★ 2 — Convert any URL or HTML into clean, token-optimized LLM Markdown, structured JSON/CSV tables, and traceable RAG chunks with automatic table-header repetition and deep-linked citation URLs. Cuts LLM to
