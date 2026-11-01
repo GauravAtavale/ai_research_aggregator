@@ -1,19 +1,24 @@
-# AI Research Digest — 2026-10-30
+# AI Research Digest — 2026-10-31
 
 ## HF Daily Papers (Trending)
+- **[TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents](https://huggingface.co/papers/2610.22732)**  
+  ⬆ 6 upvotes — Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motiv
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
-  ⬆ 159 upvotes — Significant progress has been made in automated problem-solving using
+  ⬆ 160 upvotes — Significant progress has been made in automated problem-solving using
 societies of agents powered by large language models (LLMs). In finance,
 efforts have largely focused on single-agent systems handling specific tasks or
 multi-agent frameworks independently gathering data. However, the multi-agent
 - **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
-  ⬆ 126 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
-- **[TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents](https://huggingface.co/papers/2610.22732)**  
-  ⬆ 6 upvotes — Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motiv
+  ⬆ 85 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
 - **[The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction](https://huggingface.co/papers/2609.18063)**  
   ⬆ 31 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
 - **[Unlimited OCR Works](https://huggingface.co/papers/2606.23050)**  
   ⬆ 105 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
+- **[Kronos: A Foundation Model for the Language of Financial Markets](https://huggingface.co/papers/2508.02739)**  
+  ⬆ 62 upvotes — The success of large-scale pre-training paradigm, exemplified by Large
+Language Models (LLMs), has inspired the development of Time Series Foundation
+Models (TSFMs). However, their application to financial candlestick (K-line)
+data remains limited, often underperforming non-pre-trained architectures
 - **[Very Large-Scale Multi-Agent Simulation in AgentScope](https://huggingface.co/papers/2407.17789)**  
   ⬆ 48 upvotes — Recent advances in large language models (LLMs) have opened new avenues for
 applying multi-agent systems in very large-scale simulations. However, there
@@ -27,36 +32,13 @@ enhancing their capacity to address real-world tasks. In line with such an
 evolution, AgentScope introduces major improvements in a new version (1.0),
 towa
 - **[Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?](https://huggingface.co/papers/2610.38342)**  
-  ⬆ 9 upvotes — Financial agents must form forecasts and investment judgments from decision-time evidence, with predictions evaluated against subsequent outcomes. Existing benchmarks assess financial knowledge, research workflows, or forecasting, but evaluating the full research process requires a strictly frozen i
-- **[Kronos: A Foundation Model for the Language of Financial Markets](https://huggingface.co/papers/2508.02739)**  
-  ⬆ 62 upvotes — The success of large-scale pre-training paradigm, exemplified by Large
-Language Models (LLMs), has inspired the development of Time Series Foundation
-Models (TSFMs). However, their application to financial candlestick (K-line)
-data remains limited, often underperforming non-pre-trained architectures
+  ⬆ 11 upvotes — Financial agents must form forecasts and investment judgments from decision-time evidence, with predictions evaluated against subsequent outcomes. Existing benchmarks assess financial knowledge, research workflows, or forecasting, but evaluating the full research process requires a strictly frozen i
 - **[MOSS-Image Technical Report](https://huggingface.co/papers/2610.23374)**  
-  ⬆ 107 upvotes — Recent closed-source image generation systems can produce diverse visual content from simple compositions to information-dense graphics, yet open-weight text-to-image models still struggle with dense text and intricate layouts. To narrow this gap, we introduce MOSS-Image, an open generation system t
+  ⬆ 104 upvotes — Recent closed-source image generation systems can produce diverse visual content from simple compositions to information-dense graphics, yet open-weight text-to-image models still struggle with dense text and intricate layouts. To narrow this gap, we introduce MOSS-Image, an open generation system t
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[Intrinsic Distribution Matching](https://huggingface.co/papers/2610.39633)**  
-  ⬆ 238 upvotes — One-step and few-step text-to-image generation must accurately render the details specified in the prompt despite limited opportunities for refinement. Distribution matching distillation (DMD) uses score differences to bring the generated distribution closer to a reference distribution. Following pr
-- **[A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement](https://huggingface.co/papers/2610.38568)**  
-  ⬆ 150 upvotes — Recursive self-improvement requires models not only to acquire useful training experience, but also to decide when their current experience has ceased to be useful. Existing methods often focus on what experience to generate next, while paying less attention to when fresh experience should be introd
-- **[Your Benchmark Is an Empirical Measure Over Difficulty](https://huggingface.co/papers/2610.29927)**  
-  ⬆ 140 upvotes — A benchmark is not merely a collection of test questions; it naturally induces an empirical measure over difficulty. In this work, we develop this measure-based view of benchmark evaluation. This perspective allows us to identify and formalize two central failure modes: measure mismatch, where the b
-- **[Look Only When Needed: Certificate-Guided Visual Routing for Efficient Diffusion VLMs](https://huggingface.co/papers/2610.36671)**  
-  ⬆ 91 upvotes — Diffusion vision-language models (DVLMs) process their entire input at every denoising step. Since visual tokens make up 89-97% of this input on the benchmarks we study, most of the decoding computation is spent repeatedly processing the same image. Visual token pruning methods partially relieve thi
-- **[Youtu-Parsing-Omni: One Encoder, One Schema, All Modalities](https://huggingface.co/papers/2610.39301)**  
-  ⬆ 55 upvotes — We present Youtu-Parsing-Omni, an omni-modal parser that converts documents, images, audio, and video into structured records grounded in space and time, providing a perception layer for agents that read, locate, and cite evidence across modalities. Its design rests on one encoder for every modality
-- **[Proving and Improving the Platonic Representation Hypothesis with JEPAs](https://huggingface.co/papers/2610.39302)**  
-  ⬆ 54 upvotes — Whether models trained on different modalities converge to the same representation of the world is central to AI. The Platonic Representation Hypothesis (PRH) conjectures that they do as they scale, but without a proof it offers neither a guarantee nor a recipe. We turn the hypothesis into a theorem
-- **[L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory](https://huggingface.co/papers/2610.40614)**  
-  ⬆ 35 upvotes — Interactive world models generate visual content conditioned on user actions, yet maintaining spatial consistency over long-horizon exploration in real time remains challenging. Existing approaches rely on either temporal context or explicit 3D memory, both of which scale poorly because memory grows
-- **[Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers](https://huggingface.co/papers/2610.40647)**  
-  ⬆ 31 upvotes — Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from gl
-- **[WorkFactory: Turning Professional Intents into Executable Work for Scalable Agent Training](https://huggingface.co/papers/2610.37161)**  
-  ⬆ 30 upvotes — Scaling supervised training for working agents requires diverse professional tasks that yield reliable expert demonstrations. However, missing or inconsistent task information can obstruct teacher execution and weaken the resulting supervision. We propose WorkFactory, a scalable framework for constr
-- **[A Broader Look into MLLM's Retrieval Heads](https://huggingface.co/papers/2610.32411)**  
-  ⬆ 28 upvotes — Locating relevant evidence in long inputs is a core capability of Multimodal Large Language Models. Prior studies attribute this capability to retrieval heads, a sparse set of attention heads that transfer information from the context to the output. However, these analyses are confined to a limited 
+- **[No papers indexed yet for 2026-10-31 (HF submissions can lag up to 14 days behind arXiv)]()**  
+  
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
 - **[Elucidating the Design Space of LM Data Attribution](https://arxiv.org/abs/2610.40655v1)**  
@@ -159,13 +141,9 @@ data remains limited, often underperforming non-pre-trained architectures
 
 ## GitHub Trending (AI, new repos)
 - **[OFat34764e/InterviewCopilot-rpocket-team](https://github.com/OFat34764e/InterviewCopilot-rpocket-team)**  
-  ★ 56 — EdTech application designed to bridge the gap between learning and landing your dream job
+  ★ 95 — EdTech application designed to bridge the gap between learning and landing your dream job
 - **[Omianheart/Deadline-resp-Tracker-AI](https://github.com/Omianheart/Deadline-resp-Tracker-AI)**  
-  ★ 32 — 📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects & submission dates from academic documents, with smart deadline Q&A and Telegram notifications.
-- **[SRN0129/Agenttrust](https://github.com/SRN0129/Agenttrust)**  
-  ★ 20 — Enterprise Zero-Trust AI Security & Governance Gateway: Real-Time Prompt Injection Defense, Action Scoping, HITL Approvals, Post-Quantum Merkle Audit & EU AI Act Compliance for Autonomous Agent Swarms
-- **[lucidrains/attention-contact-planning](https://github.com/lucidrains/attention-contact-planning)**  
-  ★ 10 — Implementation of Attention-based Contact Planning, by Junzhe He of ETH Zürich
+  ★ 68 — 📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects & submission dates from academic documents, with smart deadline Q&A and Telegram notifications.
 - **[eDurphy/QATNN-HFP](https://github.com/eDurphy/QATNN-HFP)**  
   ★ 3 — Local Neural Network Quantized and Trainable On The Fly on CPU
 - **[biletian/awesome-ai-news-sources-zh](https://github.com/biletian/awesome-ai-news-sources-zh)**  
@@ -176,5 +154,9 @@ data remains limited, often underperforming non-pre-trained architectures
   ★ 2 — Alan Vo | Work in progress: tensor-foundry-144
 - **[Anil-matcha/open-spaces](https://github.com/Anil-matcha/open-spaces)**  
   ★ 2 — Free, open-source alternative to ChatGPT Spaces: a self-hostable AI workspace for shared pages and conversations.
+- **[OmarSoudan/tic-tac-toe-ai-lab](https://github.com/OmarSoudan/tic-tac-toe-ai-lab)**  
+  ★ 2 — A game-grade Tic-Tac-Toe AI laboratory featuring hardware-accelerated Pygame rendering, real-time candidate move heatmaps, live telemetry dossiers, and multi-engine tournament benchmarking.
+- **[ALANDVO/cobalt-hub-145-2](https://github.com/ALANDVO/cobalt-hub-145-2)**  
+  ★ 2 — Alan Vo | Work in progress: cobalt-hub-145-2
 - **[A220man/tensor-engine-144-ryan-vo](https://github.com/A220man/tensor-engine-144-ryan-vo)**  
   ★ 2 — Ryan Vo | Work in progress: tensor-engine-144-ryan-vo
