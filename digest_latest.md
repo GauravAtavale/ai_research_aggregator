@@ -1,26 +1,28 @@
-# AI Research Digest — 2026-10-31
+# AI Research Digest — 2026-11-01
 
 ## HF Daily Papers (Trending)
 - **[TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents](https://huggingface.co/papers/2610.22732)**  
-  ⬆ 6 upvotes — Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motiv
+  ⬆ 8 upvotes — Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motiv
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
-  ⬆ 160 upvotes — Significant progress has been made in automated problem-solving using
+  ⬆ 162 upvotes — Significant progress has been made in automated problem-solving using
 societies of agents powered by large language models (LLMs). In finance,
 efforts have largely focused on single-agent systems handling specific tasks or
 multi-agent frameworks independently gathering data. However, the multi-agent
-- **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
-  ⬆ 85 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
-- **[The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction](https://huggingface.co/papers/2609.18063)**  
-  ⬆ 31 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
-- **[Unlimited OCR Works](https://huggingface.co/papers/2606.23050)**  
-  ⬆ 105 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
 - **[Kronos: A Foundation Model for the Language of Financial Markets](https://huggingface.co/papers/2508.02739)**  
-  ⬆ 62 upvotes — The success of large-scale pre-training paradigm, exemplified by Large
+  ⬆ 63 upvotes — The success of large-scale pre-training paradigm, exemplified by Large
 Language Models (LLMs), has inspired the development of Time Series Foundation
 Models (TSFMs). However, their application to financial candlestick (K-line)
 data remains limited, often underperforming non-pre-trained architectures
+- **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
+  ⬆ 85 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
+- **[Unlimited OCR Works](https://huggingface.co/papers/2606.23050)**  
+  ⬆ 103 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
+- **[The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction](https://huggingface.co/papers/2609.18063)**  
+  ⬆ 32 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
+- **[HairDeck: Animation-Ready Stylized Hair Cards from a Single Image](https://huggingface.co/papers/2610.40599)**  
+  ⬆ 26 upvotes — The hair of stylized characters in games and avatars is built from hair cards: artist-placed ribbons whose geometry is the visible hair, animated by spring bones. Existing image-based methods produce realistic hair or a single fused mesh, while CHARM, the only generator of stylized hair cards, decod
 - **[Very Large-Scale Multi-Agent Simulation in AgentScope](https://huggingface.co/papers/2407.17789)**  
-  ⬆ 48 upvotes — Recent advances in large language models (LLMs) have opened new avenues for
+  ⬆ 39 upvotes — Recent advances in large language models (LLMs) have opened new avenues for
 applying multi-agent systems in very large-scale simulations. However, there
 remain several challenges when conducting multi-agent simulations with existing
 platforms, such as limited scalability and low efficiency, unsatisf
@@ -31,36 +33,34 @@ empowered to combine intrinsic knowledge with dynamic tool use, greatly
 enhancing their capacity to address real-world tasks. In line with such an
 evolution, AgentScope introduces major improvements in a new version (1.0),
 towa
-- **[Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?](https://huggingface.co/papers/2610.38342)**  
-  ⬆ 11 upvotes — Financial agents must form forecasts and investment judgments from decision-time evidence, with predictions evaluated against subsequent outcomes. Existing benchmarks assess financial knowledge, research workflows, or forecasting, but evaluating the full research process requires a strictly frozen i
-- **[MOSS-Image Technical Report](https://huggingface.co/papers/2610.23374)**  
-  ⬆ 104 upvotes — Recent closed-source image generation systems can produce diverse visual content from simple compositions to information-dense graphics, yet open-weight text-to-image models still struggle with dense text and intricate layouts. To narrow this gap, we introduce MOSS-Image, an open generation system t
+- **[Xiaomi-OCR-0 Technical Report](https://huggingface.co/papers/2609.36136)**  
+  ⬆ 12 upvotes — Compact OCR-specific vision-language models achieve strong document parsing performance, but often rely on costly supervision and focus primarily on visual-text reconstruction. We introduce Xiaomi-OCR-0, a unified 0.8B model for document parsing and OCR-centric understanding. We build an approximate
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[No papers indexed yet for 2026-10-31 (HF submissions can lag up to 14 days behind arXiv)]()**  
+- **[No papers indexed yet for 2026-11-01 (HF submissions can lag up to 14 days behind arXiv)]()**  
   
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
-- **[Elucidating the Design Space of LM Data Attribution](https://arxiv.org/abs/2610.40655v1)**  
-  Data attribution methods for Language Models (LMs) are typically evaluated using downstream tasks like fact retrieval. However, existing evaluations vary multiple dataset properties simultaneously, making it impossible to isolate exactly why an attribution algorithm fails. To diagnose these failures
-- **[Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering](https://arxiv.org/abs/2610.40654v1)**  
-  An estimator can be accurate and stable on typical data, yet sensitive to a few possible records. Differentially private mechanisms commonly scale their noise to the worst-case influence of a single record, which lets these records dictate the noise even when the remaining data would allow far less.
-- **[Rethinking Neural Thickets Without Weight Perturbations](https://arxiv.org/abs/2610.40649v1)**  
-  The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a sing
-- **[Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers](https://arxiv.org/abs/2610.40647v1)**  
-  Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from gl
-- **[Adaptive Scenario Generation for KL-DRO Around a Learned Density Model](https://arxiv.org/abs/2610.40644v1)**  
-  Distributionally robust optimization (DRO) hedges data-driven two-stage stochastic programs against error in the distribution estimated from a finite record, and standard ambiguity sets differ in how they treat realizations absent from that record. A divergence ball around the empirical distribution
-- **[Luggage re-identification: A study of strategies towards a real-world application](https://arxiv.org/abs/2610.40643v1)**  
-  Luggage re-identification (ReID) is a critical task in video surveillance for forensics, security or border management (suspicious or abandoned luggage recognition), as well as luggage management (lost luggage recovery). It enables the association of observations of the same luggage across disjoint 
-- **[From extreme weather to agricultural consequences with agentic AI](https://arxiv.org/abs/2610.40641v1)**  
-  Extreme weather is forecast days ahead, yet its consequences for agriculture remain hard to predict: a forecast says where a storm will strike, not which crops will suffer or how much is at risk, and the records that could tell span many sources. We present WxCrop, the first agent that judges agricu
-- **[world2vec: Mechanistic world models through latent dynamics learning](https://arxiv.org/abs/2610.40637v1)**  
-  World models can achieve strong control performance without faithfully capturing the dynamics of their environment, limiting their potential for mechanistic interpretability and scientific discovery. Here, we introduce world2vec to learn mechanistic world models without reward information directly f
-- **[Probing Spatial State Representations in Visual Foundation Models](https://arxiv.org/abs/2610.40636v1)**  
-  An observer sees only part of the surrounding world, yet must keep track of what lies beyond the current view. Spatial perception therefore involves more than recognizing individual images: it calls for a persistent spatial state that is updated under self-motion and used to guide action. Do visual 
-- **[ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender](https://arxiv.org/abs/2610.40627v1)**  
-  Safety alignment has enabled large language models to reliably refuse harmful requests directly, yet the same request distributed across a multi-turn conversation still succeeds far too often. This brittleness has a mechanistic root: Alignment is shallow, with safety behavior concentrated in a model
+- **[From 1D Benchmarks to Complex 3D Geometries: Can Agents Reliably Specify Problems for Automated PDE Simulation?](https://arxiv.org/abs/2610.41267v1)**  
+  Turning an engineering request into a simulation requires consistent geometry, physics, boundary conditions, and numerical settings. Recent agent-assisted systems automate simulation setup, but successful execution alone does not establish whether the specification preserves the intended problem or 
+- **[Rome Wasn't Built in One Turn: Replay-Grounded Reward Signals for Long-Horizon Freeciv Agents](https://arxiv.org/abs/2610.41264v1)**  
+  Training language-model agents to play long-horizon strategy games is hard because deterministic feedback is sparse and often arrives only at the end of a game. In-game scores can offer dense signals, but they do not reliably predict future outcomes: in 8-68% of position pairs across eight strategy 
+- **[MEMIG: Self-evolving Memory Construction for Antibody Optimization](https://arxiv.org/abs/2610.41245v1)**  
+  Memory has become central to self-evolving LLM agents, which store and retrieve experience from past rollouts to guide future decisions. Existing systems represent this experience as free-form natural language and maintain it by rewriting, which fits tasks whose experience is narratable. However, in
+- **[A Unified Framework for Probability Estimation of Data-Dependent Events](https://arxiv.org/abs/2610.41244v1)**  
+  We study the general problem of estimating $D(\dde(S))$, the probability that an unknown distribution $D$ assigns to an event determined by a sample $S$ of $n$ i.i.d.\ draws from $D$ through a known mapping $\dde$. The estimation algorithm knows $\dde$ and $S$ but does not have access to any additio
+- **[Generative SDEs with Trainable Diffusion and Density-Based Losses](https://arxiv.org/abs/2610.41243v1)**  
+  We develop a divergence-kernel method for jointly optimizing neural SDE drift and diffusion fields and the initial Gaussian distribution, using losses that depend directly on the terminal density. In two- and eight-dimensional Gaussian-mixture experiments, we learn time-independent fields and obtain
+- **[Experts Exhibit Structured Redundancy: Structure-Preserving Expert Pruning for Mixture-of-Experts Large Language Models](https://arxiv.org/abs/2610.41236v1)**  
+  Sparse MoE mechanism significantly improves the trade-off between model capacity and inference efficiency. However, practical deployment still requires storing all experts, resulting in substantial memory overhead. We show that expert outputs in MoE layers exhibit structured redundancy. Across diffe
+- **[TRIDENT and SHAKTI: A Framework and Benchmark for Hindi AI-Text Detection](https://arxiv.org/abs/2610.41232v1)**  
+  As Large Language Models (LLMs) become increasingly multilingual, distinguishing human-written from AI-generated text is essential for maintaining information integrity. However, research remains English-centric, with limited benchmarks for low-resource languages such as Hindi. To address this gap, 
+- **[Coarse3D: Controllable and Faithful Sparse Structure Generation for Image-to-3D](https://arxiv.org/abs/2610.41231v1)**  
+  Coarse-to-fine 3D-native generation relies heavily on the first-stage sparse structure, which determines the global orientation and overall geometry for subsequent refinement. However, existing coarse generators suffer from two key limitations: their orientation is difficult to control due to ambigu
+- **[RTL-Interact: Training EDA-Interactive Models for Multi-Task RTL Design](https://arxiv.org/abs/2610.41225v1)**  
+  Large language models offer a promising route to register-transfer-level (RTL) design, but reliable implementations require checking and revision based on electronic design automation (EDA) tools' feedback. Existing RTL-specialized models often lack learned interaction with such EDA tools or rely on
+- **[Corroborative Learning: Mutual Enhancement through Task-Response Reconstruction](https://arxiv.org/abs/2610.41222v1)**  
+  In pattern analysis, models trained independently for the same task often develop complementary capabilities through differences in architecture, data, and optimization. Exploiting complementarity while retaining independent deployment is central to collaborative learning. Most methods establish tra
 
 ## Reddit
 - **[[Reddit fetch failed: 403 Client Error: Blocked for url: https://www.reddit.com/r/MachineLearning/top.json?limit=10&t=day]]()**  
@@ -140,23 +140,23 @@ towa
   <img alt="Colorful matrix-like blocks transition into a lattice of spheres, illustrating computation for atomistic simulation." class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/
 
 ## GitHub Trending (AI, new repos)
-- **[OFat34764e/InterviewCopilot-rpocket-team](https://github.com/OFat34764e/InterviewCopilot-rpocket-team)**  
-  ★ 95 — EdTech application designed to bridge the gap between learning and landing your dream job
+- **[Jumbomuffin777/Frontier-UI](https://github.com/Jumbomuffin777/Frontier-UI)**  
+  ★ 32 — ChatGPT-style generative UI for Open WebUI: photo galleries, live maps with real routes, multi-day trips, budgets, calculators, live weather & stocks, link previews, and one-click Word/Excel/PowerPoin
 - **[Omianheart/Deadline-resp-Tracker-AI](https://github.com/Omianheart/Deadline-resp-Tracker-AI)**  
-  ★ 68 — 📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects & submission dates from academic documents, with smart deadline Q&A and Telegram notifications.
-- **[eDurphy/QATNN-HFP](https://github.com/eDurphy/QATNN-HFP)**  
-  ★ 3 — Local Neural Network Quantized and Trainable On The Fly on CPU
+  ★ 25 — 📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects & submission dates from academic documents, with smart deadline Q&A and Telegram notifications.
 - **[biletian/awesome-ai-news-sources-zh](https://github.com/biletian/awesome-ai-news-sources-zh)**  
   ★ 3 — 精选 AI 资讯信源清单（中英双语）· Curated AI news sources, read daily by Zhiyike
+- **[ashh-droid/AksharaCheck](https://github.com/ashh-droid/AksharaCheck)**  
+  ★ 3 — AksharaCheck detects Hindi and Kannada text-rendering issues using Chromium, with multilingual BharatCode AI explanations, visual evidence, and browser-verified repair suggestions.
 - **[ALANDVO/sentinel-console-144](https://github.com/ALANDVO/sentinel-console-144)**  
   ★ 2 — Alan Vo | Work in progress: sentinel-console-144
-- **[ALANDVO/tensor-foundry-144](https://github.com/ALANDVO/tensor-foundry-144)**  
-  ★ 2 — Alan Vo | Work in progress: tensor-foundry-144
-- **[Anil-matcha/open-spaces](https://github.com/Anil-matcha/open-spaces)**  
-  ★ 2 — Free, open-source alternative to ChatGPT Spaces: a self-hostable AI workspace for shared pages and conversations.
 - **[OmarSoudan/tic-tac-toe-ai-lab](https://github.com/OmarSoudan/tic-tac-toe-ai-lab)**  
   ★ 2 — A game-grade Tic-Tac-Toe AI laboratory featuring hardware-accelerated Pygame rendering, real-time candidate move heatmaps, live telemetry dossiers, and multi-engine tournament benchmarking.
 - **[ALANDVO/cobalt-hub-145-2](https://github.com/ALANDVO/cobalt-hub-145-2)**  
   ★ 2 — Alan Vo | Work in progress: cobalt-hub-145-2
-- **[A220man/tensor-engine-144-ryan-vo](https://github.com/A220man/tensor-engine-144-ryan-vo)**  
-  ★ 2 — Ryan Vo | Work in progress: tensor-engine-144-ryan-vo
+- **[Anil-matcha/open-spaces](https://github.com/Anil-matcha/open-spaces)**  
+  ★ 2 — Free, open-source alternative to ChatGPT Spaces: a self-hostable AI workspace for shared pages and conversations.
+- **[ALANDVO/cobalt-foundry-144](https://github.com/ALANDVO/cobalt-foundry-144)**  
+  ★ 2 — Alan Vo | Work in progress: cobalt-foundry-144
+- **[ALANDVO/vector-lab-144](https://github.com/ALANDVO/vector-lab-144)**  
+  ★ 2 — Alan Vo | Work in progress: vector-lab-144
