@@ -1,4 +1,4 @@
-# AI Research Digest — 2026-11-06
+# AI Research Digest — 2026-11-07
 
 ## HF Daily Papers (Trending)
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
@@ -7,7 +7,7 @@ societies of agents powered by large language models (LLMs). In finance,
 efforts have largely focused on single-agent systems handling specific tasks or
 multi-agent frameworks independently gathering data. However, the multi-agent
 - **[VibeVoice Technical Report](https://huggingface.co/papers/2508.19205)**  
-  ⬆ 183 upvotes — This report presents VibeVoice, a novel model designed to synthesize
+  ⬆ 184 upvotes — This report presents VibeVoice, a novel model designed to synthesize
 long-form speech with multiple speakers by employing next-token diffusion,
 which is a unified method for modeling continuous data by autoregressively
 generating latent vectors via diffusion. To enable this, we introduce a novel
@@ -18,41 +18,28 @@ Language Models (LLMs), has inspired the development of Time Series Foundation
 Models (TSFMs). However, their application to financial candlestick (K-line)
 data remains limited, often underperforming non-pre-trained architectures
 - **[TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents](https://huggingface.co/papers/2610.22732)**  
-  ⬆ 13 upvotes — Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motiv
+  ⬆ 14 upvotes — Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motiv
 - **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
   ⬆ 67 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
 - **[FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution](https://huggingface.co/papers/2608.16157)**  
-  ⬆ 110 upvotes — Frontier open-weight models are increasingly available, but serving them still largely assumes datacenter infrastructure. We present FreeToken, an edge-native MoE serving system that treats a personal machine not as a small GPU, but as a unified, elastic inference platform. FreeToken co-designs the 
+  ⬆ 111 upvotes — Frontier open-weight models are increasingly available, but serving them still largely assumes datacenter infrastructure. We present FreeToken, an edge-native MoE serving system that treats a personal machine not as a small GPU, but as a unified, elastic inference platform. FreeToken co-designs the 
 - **[Unlimited OCR Works](https://huggingface.co/papers/2606.23050)**  
-  ⬆ 102 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
+  ⬆ 103 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
+- **[Persistent Recursive Worlds Enable Autonomous Software Evolution](https://huggingface.co/papers/2608.10450)**  
+  ⬆ 8 upvotes — Complex software systems develop over timescales that exceed the lifespan of any individual coding agent. Most agentic software systems preserve continuity through persistent sessions, memories, managers or shared context. We introduce EvoX Genesis (hereafter, Genesis), which instead makes the softw
+- **[Efficient Memory Management for Large Language Model Serving with
+  PagedAttention](https://huggingface.co/papers/2309.06180)**  
+  ⬆ 77 upvotes — High throughput serving of large language models (LLMs) requires batching
+sufficiently many requests at a time. However, existing systems struggle
+because the key-value cache (KV cache) memory for each request is huge and
+grows and shrinks dynamically. When managed inefficiently, this memory can be
+
 - **[VisSearch-Bench: Evaluating Long Horizon Visual Search in Multimodal Agents](https://huggingface.co/papers/2611.04894)**  
-  ⬆ 17 upvotes — Multimodal agents use web and image tools to answer questions beyond their internal knowledge. Some search tasks use images mainly to identify an initial entity, then rely on text retrieval. These tasks offer limited insight into how agents connect information across images, objects, and search step
-- **[Democratizing Robot-Use Agents: A Unified Harness with Open Models](https://huggingface.co/papers/2611.01560)**  
-  ⬆ 48 upvotes — Robot-use Agents (RUAs) have shown promising zero-shot manipulation capabilities, but reliance on frontier, proprietary models limits research into further training. To democratize RUA research, we introduce uni-robot-agent, a unified harness for competitive open-weight robot use that supports furth
-- **[WeVisOne-VL: Unified Visual Perception from Objects to Pixels](https://huggingface.co/papers/2610.31329)**  
-  ⬆ 45 upvotes — Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token prediction. It supports multiple visual ta
+  ⬆ 21 upvotes — Multimodal agents use web and image tools to answer questions beyond their internal knowledge. Some search tasks use images mainly to identify an initial entity, then rely on text retrieval. These tasks offer limited insight into how agents connect information across images, objects, and search step
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[SLA: Scaling Spatial-Language-Action Model via Continual Pre-training](https://huggingface.co/papers/2611.08373)**  
-  ⬆ 97 upvotes — Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during 
-- **[VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding](https://huggingface.co/papers/2611.08449)**  
-  ⬆ 96 upvotes — Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one co
-- **[Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training](https://huggingface.co/papers/2611.04277)**  
-  ⬆ 55 upvotes — Harness evolution from a common base exhibits Locality, Complementarity, and Nonstationarity: variants repair different failures, and their utility changes as the policy learns. Rather than seeking a universally superior harness, we introduce Harness-S to selectively rescue failures of a base execut
-- **[Random Is Almost Enough? Stable and Low-Cost Benchmark Compression via BestRand](https://huggingface.co/papers/2611.00883)**  
-  ⬆ 50 upvotes — Benchmark compression reduces the often prohibitive time and cost of model evaluation by evaluating models on a small benchmark subset that closely matches full-benchmark results. To quantify estimation error, we derive an accurate analytical approximation to the error distribution when estimating f
-- **[WeLM-Image: A Unified Image Generation Model towards Visual Intelligence](https://huggingface.co/papers/2611.07392)**  
-  ⬆ 39 upvotes — We present WeLM-Image, a unified image foundation model that integrates multimodal understanding into text-to-image generation, instruction-guided editing, and multi-reference synthesis. Designed for single-GPU deployment in WeChat's large-scale consumer applications, the model processes text, refer
-- **[TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing](https://huggingface.co/papers/2611.06741)**  
-  ⬆ 37 upvotes — Strong single-turn editing performance does not guarantee reliable multi-turn interaction: as edited outputs are repeatedly reused, small unintended changes can accumulate into severe visual drift. This long-term drift is often mitigated through training on multi-turn data or cross-turn rollouts, po
-- **[EvoMemState: Evolving Memory State for Personal Agents](https://huggingface.co/papers/2611.03743)**  
-  ⬆ 20 upvotes — Long-term memory enables large language model (LLM) agents to provide continuous personalized assistance by retaining user information across interactions. Existing systems support this process through fact extraction, organization, updating, and retrieval, but largely maintain memories as independe
-- **[Towards Foundation Decision Models: Drex](https://huggingface.co/papers/2611.07854)**  
-  ⬆ 18 upvotes — Autoregressive approaches with large language models, such as long chain-of-thought reasoning, have become the default for new AI applications because they reach higher accuracy on a wide range of tasks. In production, however, they give inconsistent answers, require parsing of outputs, and add cost
-- **[VisSearch-Bench: Evaluating Long Horizon Visual Search in Multimodal Agents](https://huggingface.co/papers/2611.04894)**  
-  ⬆ 17 upvotes — Multimodal agents use web and image tools to answer questions beyond their internal knowledge. Some search tasks use images mainly to identify an initial entity, then rely on text retrieval. These tasks offer limited insight into how agents connect information across images, objects, and search step
-- **[Open-HumanScale: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models](https://huggingface.co/papers/2611.06817)**  
-  ⬆ 15 upvotes — Egocentric human video offers a scalable source of manipulation priors for robot learning, yet translating raw data scale into generalizable robot policies demands rigorous data curation and training recipes. We introduce Open-HumanScale, the first fully open recipe for scaling egocentric pretrainin
+- **[No papers indexed yet for 2026-11-07 (HF submissions can lag up to 14 days behind arXiv)]()**  
+  
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
 - **[User Embeddings are Superpositions of Interpretable Behavioral Modes](https://arxiv.org/abs/2611.08487v1)**  
@@ -155,22 +142,22 @@ data remains limited, often underperforming non-pre-trained architectures
 
 ## GitHub Trending (AI, new repos)
 - **[didilili/mianstack](https://github.com/didilili/mianstack)**  
-  ★ 121 — 🚀 面栈 MianStack｜程序员面试题库天花板！Java、Python、数据库、算法、大模型、AI Agent、RAG 一栈备齐。真实面经关联高频考点，按公司、岗位定向备考；图文题解、精华专题、项目源码拆解，全系标配。面试官出题，面栈出招！免费开源，持续更新。
+  ★ 127 — 🚀 面栈 MianStack｜程序员面试题库天花板！Java、Python、数据库、算法、大模型、AI Agent、RAG 一栈备齐。真实面经关联高频考点，按公司、岗位定向备考；图文题解、精华专题、项目源码拆解，全系标配。面试官出题，面栈出招！免费开源，持续更新。
 - **[vixhal-baraiya/qwenFS](https://github.com/vixhal-baraiya/qwenFS)**  
-  ★ 92 — Qwen3.5-2B with a filesystem compiled and inserted directly into its weights.
-- **[Jumbomuffin777/Frontier-UI](https://github.com/Jumbomuffin777/Frontier-UI)**  
-  ★ 64 — ChatGPT-style generative UI for Open WebUI: photo galleries, live maps with real routes, multi-day trips, budgets, calculators, live weather & stocks, link previews, and one-click Word/Excel/PowerPoin
+  ★ 93 — Qwen3.5-2B with a filesystem compiled and inserted directly into its weights.
 - **[AstralBeneathSilver/Deadline-resp-Tracker-AI](https://github.com/AstralBeneathSilver/Deadline-resp-Tracker-AI)**  
-  ★ 40 — 📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects & submission dates from academic documents, with smart deadline Q&A and Telegram notifications.
+  ★ 68 — 📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects & submission dates from academic documents, with smart deadline Q&A and Telegram notifications.
 - **[DjibrilM/MagicVoiceAI](https://github.com/DjibrilM/MagicVoiceAI)**  
-  ★ 14 —  An offline desktop Text-to-Speech (TTS) studio built with Electron and the Qvac sdk 
+  ★ 17 —  An offline desktop Text-to-Speech (TTS) studio built with Electron and the Qvac sdk 
+- **[mannanloomba/PayGuard](https://github.com/mannanloomba/PayGuard)**  
+  ★ 12 — AI-powered payment safety assistant that detects suspicious activity, analyzes UPI QR codes, extracts bill details, and provides smart spending insights.
 - **[DeepakSingh98/qwenlab](https://github.com/DeepakSingh98/qwenlab)**  
   ★ 9 — Six small transformers compiled into Qwen3.5-9B, trained in its own forward passes. Qwen runs the experiments.
 - **[Hrity7/smart-course-recommendation-system](https://github.com/Hrity7/smart-course-recommendation-system)**  
   ★ 3 — An AI-powered platform for personalized course recommendations and skill-based learning paths.
-- **[bogdancstrike/image-organizer](https://github.com/bogdancstrike/image-organizer)**  
-  ★ 3 — Turn a messy photo folder into beautifully organized albums. Locally, in seconds, with an undo button.  Sort by what's in the photos, cull a shoot like a pro (blurry · eyes closed · best of burst), an
-- **[abchughtai786/automated-job-posting-pipeline](https://github.com/abchughtai786/automated-job-posting-pipeline)**  
-  ★ 3 — Node.js pipeline that collects, screens with AI, de-duplicates and publishes job listings demo with sample data
-- **[KCFindstr/RSI-Bench](https://github.com/KCFindstr/RSI-Bench)**  
-  ★ 3 — Frontier Foundation Model Benchmark
+- **[big-data-team/ai-course](https://github.com/big-data-team/ai-course)**  
+  ★ 2 — AI Agents Engineer Specialization / Practical AI Course
+- **[Sumit-tech01/DevSphere-Community](https://github.com/Sumit-tech01/DevSphere-Community)**  
+  ★ 2 — A global developer community to learn, connect, collaborate and build together.
+- **[A220man/tensor-studio-144](https://github.com/A220man/tensor-studio-144)**  
+  ★ 2 — Ryan Vo | Work in progress: tensor-studio-144
