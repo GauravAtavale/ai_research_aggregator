@@ -1,8 +1,8 @@
-# AI Research Digest — 2026-11-07
+# AI Research Digest — 2026-11-08
 
 ## HF Daily Papers (Trending)
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
-  ⬆ 162 upvotes — Significant progress has been made in automated problem-solving using
+  ⬆ 163 upvotes — Significant progress has been made in automated problem-solving using
 societies of agents powered by large language models (LLMs). In finance,
 efforts have largely focused on single-agent systems handling specific tasks or
 multi-agent frameworks independently gathering data. However, the multi-agent
@@ -12,21 +12,21 @@ long-form speech with multiple speakers by employing next-token diffusion,
 which is a unified method for modeling continuous data by autoregressively
 generating latent vectors via diffusion. To enable this, we introduce a novel
 con
+- **[TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents](https://huggingface.co/papers/2610.22732)**  
+  ⬆ 14 upvotes — Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motiv
 - **[Kronos: A Foundation Model for the Language of Financial Markets](https://huggingface.co/papers/2508.02739)**  
-  ⬆ 63 upvotes — The success of large-scale pre-training paradigm, exemplified by Large
+  ⬆ 64 upvotes — The success of large-scale pre-training paradigm, exemplified by Large
 Language Models (LLMs), has inspired the development of Time Series Foundation
 Models (TSFMs). However, their application to financial candlestick (K-line)
 data remains limited, often underperforming non-pre-trained architectures
-- **[TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents](https://huggingface.co/papers/2610.22732)**  
-  ⬆ 14 upvotes — Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motiv
 - **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
   ⬆ 67 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
 - **[FreeToken: Efficient Edge-Native MoE Serving with Bandwidth-Adaptive Execution](https://huggingface.co/papers/2608.16157)**  
   ⬆ 111 upvotes — Frontier open-weight models are increasingly available, but serving them still largely assumes datacenter infrastructure. We present FreeToken, an edge-native MoE serving system that treats a personal machine not as a small GPU, but as a unified, elastic inference platform. FreeToken co-designs the 
-- **[Unlimited OCR Works](https://huggingface.co/papers/2606.23050)**  
-  ⬆ 103 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
 - **[Persistent Recursive Worlds Enable Autonomous Software Evolution](https://huggingface.co/papers/2608.10450)**  
   ⬆ 8 upvotes — Complex software systems develop over timescales that exceed the lifespan of any individual coding agent. Most agentic software systems preserve continuity through persistent sessions, memories, managers or shared context. We introduce EvoX Genesis (hereafter, Genesis), which instead makes the softw
+- **[Unlimited OCR Works](https://huggingface.co/papers/2606.23050)**  
+  ⬆ 103 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
 - **[Efficient Memory Management for Large Language Model Serving with
   PagedAttention](https://huggingface.co/papers/2309.06180)**  
   ⬆ 77 upvotes — High throughput serving of large language models (LLMs) requires batching
@@ -34,34 +34,39 @@ sufficiently many requests at a time. However, existing systems struggle
 because the key-value cache (KV cache) memory for each request is huge and
 grows and shrinks dynamically. When managed inefficiently, this memory can be
 
-- **[VisSearch-Bench: Evaluating Long Horizon Visual Search in Multimodal Agents](https://huggingface.co/papers/2611.04894)**  
-  ⬆ 21 upvotes — Multimodal agents use web and image tools to answer questions beyond their internal knowledge. Some search tasks use images mainly to identify an initial entity, then rely on text retrieval. These tasks offer limited insight into how agents connect information across images, objects, and search step
+- **[OpenDevin: An Open Platform for AI Software Developers as Generalist
+  Agents](https://huggingface.co/papers/2407.16741)**  
+  ⬆ 86 upvotes — Software is one of the most powerful tools that we humans have at our
+disposal; it allows a skilled programmer to interact with the world in complex
+and profound ways. At the same time, thanks to improvements in large language
+models (LLMs), there has also been a rapid development in AI agents that
+
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[No papers indexed yet for 2026-11-07 (HF submissions can lag up to 14 days behind arXiv)]()**  
+- **[No papers indexed yet for 2026-11-08 (HF submissions can lag up to 14 days behind arXiv)]()**  
   
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
-- **[User Embeddings are Superpositions of Interpretable Behavioral Modes](https://arxiv.org/abs/2611.08487v1)**  
-  User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embedd
-- **[SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization](https://arxiv.org/abs/2611.08483v1)**  
-  LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must rep
-- **[Scientist World: Grow a Research World for AI-Scientists](https://arxiv.org/abs/2611.08478v1)**  
-  AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Scientists, that world is readable but not runnable, so we build Scientist World for them: every resea
-- **[XStack: A Benchmark for ML Repo Migration](https://arxiv.org/abs/2611.08472v1)**  
-  ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on NVIDIA GPUs and JAX on Google TPUs. Migrating repositories between them means building and testing across frameworks and hardware. This migration is (1
-- **[Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information](https://arxiv.org/abs/2611.08469v1)**  
-  Interpretability, AI auditing and assessments of machine consciousness increasingly rest on mechanism-level quantities: functionals of a system's causal transition law that describe how it computes, not what it outputs. Experiments see that law only through finite, partial and noisy interventions. W
-- **[Towards interpreting any residual stream direction by scaling activation inversion](https://arxiv.org/abs/2611.08465v1)**  
-  To interpret a direction in a language model's residual stream, we can look for text that strongly activates it. But when such text is found by scanning a corpus, it is limited to what that corpus contains. We develop Maximally-Activating Example Metamodels (MAEMs), language models which map residua
-- **[Adversarial Training with Large Step Sizes: Implicit Bias, Optimization, and Sharpness](https://arxiv.org/abs/2611.08457v1)**  
-  Adversarial Training (AT) is an important method for improving model robustness. We study the dynamics of deterministic Gradient Descent (GD) in AT. Most existing works in this direction focus on the small or vanishing step sizes regime, where GD resembles a continuous-time flow. However, such step 
-- **[Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO](https://arxiv.org/abs/2611.08453v1)**  
-  On-policy distillation (OPD) trains a student on its own rollouts under a frozen teacher's per-token supervision. Does this dense signal reduce the training FLOPs needed to reach a target accuracy compared with reinforcement learning? We systematically compare vanilla reverse-KL OPD with Group Relat
-- **[ReproBridge: Building Reproducibility into ML Research Artifacts](https://arxiv.org/abs/2611.08452v1)**  
-  Reproducing machine learning experiments requires reconstructing procedures from information scattered across papers, released code, and supporting artifacts. For coding agents, reproduction success can therefore depend on their ability to fill in missing details, rather than on the released artifac
-- **[A Hidden Markov Preference Model for Online Prediction of Adversary Actions](https://arxiv.org/abs/2611.08445v1)**  
-  A defender anticipating an attacker needs a probability distribution over the attacker's next action from information available before that action occurs. Two structures complicate this: the attacker's behavioral regime persists and can switch within an episode, and each action combines an operation
+- **[Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model](https://arxiv.org/abs/2611.08977v1)**  
+  Looping is a powerful inductive bias for reasoning. By repeatedly iterating a recurrent block, looped models can scale their effective depth and enable multi-step reasoning in latent space. However, existing looped models are not inherently guided by an explicit measure of progress, making it diffic
+- **[Beyond Truncation? Entailment-Licensed Elision and the Limits of Semantic Preservation in LLM Decoding](https://arxiv.org/abs/2611.08975v1)**  
+  Instruction-tuned large language models (LLMs) answer at greater length than a request needs. We ask whether a training-free controller inside the decoding loop can remove that surplus while preserving content, judged against the simplest possible baseline: truncating the model's own answer to the s
+- **[Phantom Consensus: Measuring Social Reasoning in Multi-Agent LLM Decision-Making](https://arxiv.org/abs/2611.08971v1)**  
+  Multi-agent LLM systems increasingly aggregate judgments across model instances, but reasoning about other agents can itself introduce failure. We study a setting in which LLMs shift their public decisions after observing ambiguous social signals while reporting inaccurate estimates of what other ag
+- **[PhysioWave-T: Token-Efficient Wavelet Foundation Models for Biosignals](https://arxiv.org/abs/2611.08969v1)**  
+  We present PhysioWave-T, a token-efficient wavelet foundation model family for EEG, ECG, and sEMG. Dynamic scale folding recombines J+1 wavelet subbands prior to tokenization, compressing sequence length from (J+1)CS to CS tokens for J levels, C channels, and S temporal patches. Route-specific front
+- **[Using an LLM to Tackle Difficult Cases in NER for Nepali Tweets](https://arxiv.org/abs/2611.08967v1)**  
+  Named entity recognition (NER) is challenging for social media data in a low-resource language. LLMs often lag behind pretrained language models (PLMs) in NER performance, but they show promise in handling cases that PLMs struggle with. Using a dataset of Nepali tweets, we split the test set into "e
+- **[Concordance-Optimal Continuous Music Emotion Estimation: Variance Decomposition, Dual-Branch Temporal Fusion, and Conformal Prediction Intervals](https://arxiv.org/abs/2611.08966v1)**  
+  Continuous music emotion recognition (MER) estimates how Arousal and Valence evolve within a song, yet the field's standard metric, pooled frame-level correlation, is dominated by between-song differences and cannot distinguish a model that tracks emotional dynamics from one that only ranks songs by
+- **[Accuracy Is Not Value: Choosing Weak Supervisors by What the Student Inherits](https://arxiv.org/abs/2611.08959v1)**  
+  Weak supervisors are usually judged by their own errors, but what matters is what a student learns from them. For squared loss and any linear learner shared by all supervisors, we show that a supervisor's value is determined by its errors after they pass through the student's learning operator. Cons
+- **[More with Less: Efficient Parallel Scientific Code Translation via an Agent-Skill Workflow](https://arxiv.org/abs/2611.08947v1)**  
+  Translating parallel scientific codes between HPC programming frameworks is a critical but labor-intensive task. Existing LLM-based approaches rely on fixed sequential pipelines with undifferentiated repair strategies and correctness criteria that do not match scientific computing practice. We prese
+- **[Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents](https://arxiv.org/abs/2611.08946v1)**  
+  Frontier language models are increasingly deployed as agents, and how well an agent performs depends not only on its model but also on its harness: the prompts, tools, memory, and control loop through which the model acts. When an agent is applied to a new problem, a natural question is whether it c
+- **[Surrogate Quality Score: A Novel Composite Performance Metric for Model Selection](https://arxiv.org/abs/2611.08937v1)**  
+  The growing reliance on high-fidelity, state-of-the-art machine learning based models for engineering decision-making necessitates robust and systematic approaches for model selection. While high predictive accuracy at untrained points is a necessary trait in the final model, other attributes such a
 
 ## Reddit
 - **[[Reddit fetch failed: 403 Client Error: Blocked for url: https://www.reddit.com/r/MachineLearning/top.json?limit=10&t=day]]()**  
@@ -141,22 +146,22 @@ grows and shrinks dynamically. When managed inefficiently, this memory can be
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image2-3-768x432.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="image2" width="768" />As GP
 
 ## GitHub Trending (AI, new repos)
-- **[didilili/mianstack](https://github.com/didilili/mianstack)**  
-  ★ 127 — 🚀 面栈 MianStack｜程序员面试题库天花板！Java、Python、数据库、算法、大模型、AI Agent、RAG 一栈备齐。真实面经关联高频考点，按公司、岗位定向备考；图文题解、精华专题、项目源码拆解，全系标配。面试官出题，面栈出招！免费开源，持续更新。
-- **[vixhal-baraiya/qwenFS](https://github.com/vixhal-baraiya/qwenFS)**  
-  ★ 93 — Qwen3.5-2B with a filesystem compiled and inserted directly into its weights.
-- **[AstralBeneathSilver/Deadline-resp-Tracker-AI](https://github.com/AstralBeneathSilver/Deadline-resp-Tracker-AI)**  
-  ★ 68 — 📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects & submission dates from academic documents, with smart deadline Q&A and Telegram notifications.
 - **[DjibrilM/MagicVoiceAI](https://github.com/DjibrilM/MagicVoiceAI)**  
-  ★ 17 —  An offline desktop Text-to-Speech (TTS) studio built with Electron and the Qvac sdk 
+  ★ 29 —  An offline desktop Text-to-Speech (TTS) studio built with Electron and the Qvac sdk 
+- **[AstralBeneathSilver/Deadline-resp-Tracker-AI](https://github.com/AstralBeneathSilver/Deadline-resp-Tracker-AI)**  
+  ★ 23 — 📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects & submission dates from academic documents, with smart deadline Q&A and Telegram notifications.
 - **[mannanloomba/PayGuard](https://github.com/mannanloomba/PayGuard)**  
-  ★ 12 — AI-powered payment safety assistant that detects suspicious activity, analyzes UPI QR codes, extracts bill details, and provides smart spending insights.
+  ★ 13 — AI-powered payment safety assistant that detects suspicious activity, analyzes UPI QR codes, extracts bill details, and provides smart spending insights.
+- **[ctianye/CodeSlice](https://github.com/ctianye/CodeSlice)**  
+  ★ 10 — Local-first AI code-reading desktop app with navigable source citations and human-approved actions.
 - **[DeepakSingh98/qwenlab](https://github.com/DeepakSingh98/qwenlab)**  
   ★ 9 — Six small transformers compiled into Qwen3.5-9B, trained in its own forward passes. Qwen runs the experiments.
 - **[Hrity7/smart-course-recommendation-system](https://github.com/Hrity7/smart-course-recommendation-system)**  
   ★ 3 — An AI-powered platform for personalized course recommendations and skill-based learning paths.
 - **[big-data-team/ai-course](https://github.com/big-data-team/ai-course)**  
   ★ 2 — AI Agents Engineer Specialization / Practical AI Course
+- **[Pentexa/metargon](https://github.com/Pentexa/metargon)**  
+  ★ 2 — METARGON — A crow-inspired AI research project exploring adaptive learning, memory, reasoning, and autonomous discovery.
 - **[Sumit-tech01/DevSphere-Community](https://github.com/Sumit-tech01/DevSphere-Community)**  
   ★ 2 — A global developer community to learn, connect, collaborate and build together.
 - **[A220man/tensor-studio-144](https://github.com/A220man/tensor-studio-144)**  
