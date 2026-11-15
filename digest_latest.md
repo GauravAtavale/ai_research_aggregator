@@ -1,19 +1,19 @@
-# AI Research Digest — 2026-11-13
+# AI Research Digest — 2026-11-14
 
 ## HF Daily Papers (Trending)
 - **[The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction](https://huggingface.co/papers/2609.18063)**  
-  ⬆ 30 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
+  ⬆ 31 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
-  ⬆ 165 upvotes — Significant progress has been made in automated problem-solving using
+  ⬆ 166 upvotes — Significant progress has been made in automated problem-solving using
 societies of agents powered by large language models (LLMs). In finance,
 efforts have largely focused on single-agent systems handling specific tasks or
 multi-agent frameworks independently gathering data. However, the multi-agent
+- **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
+  ⬆ 70 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
 - **[TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents](https://huggingface.co/papers/2610.22732)**  
   ⬆ 16 upvotes — Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motiv
-- **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
-  ⬆ 69 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
 - **[Learning Heterogeneous Tactile Representation for General Dexterous Manipulation](https://huggingface.co/papers/2611.12806)**  
-  ⬆ 102 upvotes — Tactile sensing is an indispensable modality for contact-rich dexterous manipulation, a capability that hints at the ultimate frontiers of embodied intelligence. However, commercially available tactile sensors are still at a relatively early stage of development, with each type of sensor offering ir
+  ⬆ 103 upvotes — Tactile sensing is an indispensable modality for contact-rich dexterous manipulation, a capability that hints at the ultimate frontiers of embodied intelligence. However, commercially available tactile sensors are still at a relatively early stage of development, with each type of sensor offering ir
 - **[MACaQ: Fast, Model Agnostic Calibrated Quantization for Low-Precision Weights and Activations](https://huggingface.co/papers/2611.10649)**  
   ⬆ 30 upvotes — Weight-activation quantization can reduce the memory and compute cost of neural-network inference, but recent methods often require expensive optimization and architecture-specific propagation of basis transforms across layers. We introduce MACaQ, an MXFP4 W4A4 post-training quantization method that
 - **[e-means: outperforming k-means (in one-tenth the epochs)](https://huggingface.co/papers/2611.09501)**  
@@ -29,35 +29,17 @@ long-form speech with multiple speakers by employing next-token diffusion,
 which is a unified method for modeling continuous data by autoregressively
 generating latent vectors via diffusion. To enable this, we introduce a novel
 con
-- **[OpenDevin: An Open Platform for AI Software Developers as Generalist
-  Agents](https://huggingface.co/papers/2407.16741)**  
-  ⬆ 86 upvotes — Software is one of the most powerful tools that we humans have at our
-disposal; it allows a skilled programmer to interact with the world in complex
-and profound ways. At the same time, thanks to improvements in large language
-models (LLMs), there has also been a rapid development in AI agents that
+- **[Efficient Memory Management for Large Language Model Serving with
+  PagedAttention](https://huggingface.co/papers/2309.06180)**  
+  ⬆ 77 upvotes — High throughput serving of large language models (LLMs) requires batching
+sufficiently many requests at a time. However, existing systems struggle
+because the key-value cache (KV cache) memory for each request is huge and
+grows and shrinks dynamically. When managed inefficiently, this memory can be
 
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models](https://huggingface.co/papers/2611.15777)**  
-  ⬆ 82 upvotes — System One models promise fast, general-purpose decision-making without lengthy token generation. However, understanding their capability spectrum and decision reliability requires more than aggregate performance on current benchmarks. Existing evaluations often provide limited insight into the brea
-- **[BirdDreams: Joint Perspective and BEV Video Generation for a Plausible, Reactive Driving World Model](https://huggingface.co/papers/2611.14815)**  
-  ⬆ 46 upvotes — Driving world models aim to simulate how a scene unfolds under different ego actions. This requires plausible motion of surrounding vehicles as well as precise ego-trajectory control. Learning vehicle motion from perspective video alone is challenging because motion is entangled with appearance and 
-- **[PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models](https://huggingface.co/papers/2611.16748)**  
-  ⬆ 42 upvotes — Video generation models produce visually realistic videos but still struggle with physical dynamics and causal consistency. Learning from generated videos requires fine-grained physical supervision, yet reliable quality judgments, correction pairs, and controlled variations are difficult to obtain. 
-- **[G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation](https://huggingface.co/papers/2611.13004)**  
-  ⬆ 41 upvotes — Discrete autoregressive models offer a scalable framework for image generation. However, they face a fundamental trade-off: long token sequences preserve representation quality but slow generation, while aggressive spatial compression reduces representation capacity. Based on product quantization, w
-- **[Duo: A Reciprocal World Model for Full-Duplex Interaction](https://huggingface.co/papers/2611.15131)**  
-  ⬆ 37 upvotes — In this report, we introduce the Reciprocal World Model (RWM) and present Duo v1, a full-duplex world model that continuously perceives audiovisual inputs while responding to users in real time. The RWM treats intelligence and physical reality as equally fundamental to what constitutes a world. Exis
-- **[Open Vision Banana: A Fully Open Recipe for Generative Visual Perception](https://huggingface.co/papers/2611.15844)**  
-  ⬆ 30 upvotes — Recent work suggests that pretrained image generators encode real-world understanding beyond image synthesis. Vision Banana exploits this by framing vision tasks as conditional image editing. However, its data, weights, code, and implementation details are not public. We present Open Vision Banana (
-- **[Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents](https://huggingface.co/papers/2611.17167)**  
-  ⬆ 29 upvotes — Decision models answer a question with a typed output, such as a choice among options with a probability for each, so one model can choose an agent's actions, evaluate actions already taken, or score every action to teach a policy with reinforcement learning. Prior work has studied them mainly as ac
-- **[Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors](https://huggingface.co/papers/2611.17060)**  
-  ⬆ 26 upvotes — Large foundation models such as GPT-6 Astra and Claude Fable 5.1 have recently been shown to control robots directly from visual observations. They nevertheless remain brittle on long-horizon, contact-rich tasks in real-world environments. Further progress depends on two complementary resources: dem
-- **[On the Design of Hyper-Connections: Simplification, Stability, and Scalability](https://huggingface.co/papers/2611.05984)**  
-  ⬆ 26 upvotes — Hyper-Connections (HC) architectures are increasingly adopted in frontier language models, yet their components remain insufficiently understood and introduce non-negligible training overhead. In this work, we systematically study the HC architecture to understand its components and identify simpler
-- **[TTB: Test-time Baking for Efficient Rendering of Decoder-only View Synthesis Models](https://huggingface.co/papers/2611.17331)**  
-  ⬆ 21 upvotes — Decoder-only Large View Synthesis Models (LVSMs) with KV-cache have recently achieved state-of-the-art quality by regressing novel views from neural networks without reconstructing 3D geometry, while Test-Time Training (TTT) layers save computation but sacrifice quality. We propose Test-Time Baking 
+- **[No papers indexed yet for 2026-11-14 (HF submissions can lag up to 14 days behind arXiv)]()**  
+  
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
 - **[Unbundling Multimodal Vision Encoding](https://arxiv.org/abs/2611.17334v1)**  
@@ -146,10 +128,10 @@ models (LLMs), there has also been a rapid development in AI agents that
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="338" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/SOMA_Retargeter_Featured_600x338.gif" style="display: block; margin-bottom: 5px; clear: both;" title="SOMA_Retarg
 
 ## GitHub Trending (AI, new repos)
+- **[Igniaemage/Deadline-resp-Tracker-AI](https://github.com/Igniaemage/Deadline-resp-Tracker-AI)**  
+  ★ 50 — 📅 AI-powered academic deadline assistant that uses Gemini Vision to extract assignments, exams, projects & submission dates from academic documents, with smart deadline Q&A and Telegram notifications.
 - **[rohitjee7022-blip/Anonymous-Campus](https://github.com/rohitjee7022-blip/Anonymous-Campus)**  
   ★ 37 — Anonymous Campus protects student identities while enabling honest campus facility feedback. It uses aggregated ratings and issue tracking to help administrators improve facilities, with BharatCode AI
-- **[byte-od/mixture-of-scars](https://github.com/byte-od/mixture-of-scars)**  
-  ★ 8 — Breaking the barrier between LLMs and hardware. Mixture of Scars (MoS) static weight compression & SCache O(1) constant KV-cache replacement.
 - **[joedejesus/JJ_ML_DL_BOOK](https://github.com/joedejesus/JJ_ML_DL_BOOK)**  
   ★ 7 — Recurso educativo en español sobre Data Science, Machine Learning, Deep Learning, NLP y Transformers con Python, PyTorch y Jupyter.
 - **[dharunram-lgtm/Echo_Knowledge](https://github.com/dharunram-lgtm/Echo_Knowledge)**  
@@ -157,12 +139,12 @@ models (LLMs), there has also been a rapid development in AI agents that
 - **[pathbit/AgentDevKit](https://github.com/pathbit/AgentDevKit)**  
   ★ 4 — Repositório com as skills, comandos e outros que agentes de código irão utilizar.
 - **[hanspeterdietiker/open-agent-skills](https://github.com/hanspeterdietiker/open-agent-skills)**  
-  ★ 3 — Discover. Share. Build.
-- **[haoqinhe8-boop/NeuroShaqma](https://github.com/haoqinhe8-boop/NeuroShaqma)**  
-  ★ 3 — 小沙大脑：288,964 神经元脉冲皮层（果蝇 2.07x/4.16x），12 岁初中生在家用 2080Ti+4090 做的 SNN，主力开发 DeepSeek-V4-Pro
-- **[Zar-Manah/HELIOS-Space-Weather](https://github.com/Zar-Manah/HELIOS-Space-Weather)**  
-  ★ 3 — ☀️ Single-File Plug-and-Play 4 AI Models for Real-Time Solar Storm Impact & CME Arrival. Outperforms NASA supercomputers on consumer hardware. 🇪🇸
-- **[webDMX/followspot-AI](https://github.com/webDMX/followspot-AI)**  
-  ★ 2 — Tool for using moving lights as followspots based on video camera image.
+  ★ 4 — Discover. Share. Build.
+- **[A220man/prism-forge-144](https://github.com/A220man/prism-forge-144)**  
+  ★ 2 — Ryan Vo | Work in progress: prism-forge-144
+- **[ALANDVO/axiom-station-144](https://github.com/ALANDVO/axiom-station-144)**  
+  ★ 2 — Alan Vo | Work in progress: axiom-station-144
+- **[phillarmonic/mcpdev](https://github.com/phillarmonic/mcpdev)**  
+  ★ 2 — A dummy harness for debugging/CI testing MCPs
 - **[ALANDVO/tensor-hub-145](https://github.com/ALANDVO/tensor-hub-145)**  
   ★ 2 — Alan Vo | Work in progress: tensor-hub-145
