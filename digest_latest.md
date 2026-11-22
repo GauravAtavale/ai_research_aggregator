@@ -1,31 +1,31 @@
-# AI Research Digest — 2026-11-20
+# AI Research Digest — 2026-11-21
 
 ## HF Daily Papers (Trending)
 - **[PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing](https://huggingface.co/papers/2604.05018)**  
-  ⬆ 10 upvotes — Synthesizing unstructured research materials into manuscripts is an essential yet under-explored challenge in AI-driven scientific discovery. Existing autonomous writers are rigidly coupled to specific experimental pipelines, and produce superficial literature reviews. We introduce PaperOrchestra, a
+  ⬆ 11 upvotes — Synthesizing unstructured research materials into manuscripts is an essential yet under-explored challenge in AI-driven scientific discovery. Existing autonomous writers are rigidly coupled to specific experimental pipelines, and produce superficial literature reviews. We introduce PaperOrchestra, a
+- **[Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth](https://huggingface.co/papers/2611.26603)**  
+  ⬆ 31 upvotes — We present Depth Pro 2, an approach to estimating dense metric depth for images and video at full resolution. By analyzing prior methods for monocular depth estimation, we find that they commonly trade off temporal consistency and boundary sharpness: multi-frame methods favor consistency, single-fra
+- **[Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent](https://huggingface.co/papers/2611.18397)**  
+  ⬆ 147 upvotes — We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D gr
 - **[TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents](https://huggingface.co/papers/2610.22732)**  
   ⬆ 21 upvotes — Advances in frontier coding agents have sharply increased the token costs of AI-assisted software engineering. Their token efficiency is typically evaluated on isolated tasks, whereas real-world developers use them to continuously build, update, and maintain large-scale projects. This mismatch motiv
 - **[π^4: A Foundation Model for 4D Scene Geometry and Motion](https://huggingface.co/papers/2611.23144)**  
   ⬆ 18 upvotes — π^4 is a unified foundation model for 4D scene perception. From diverse, uncalibrated RGB observations in the wild---a single image, an unordered collection, or a video sequence---it recovers dense geometry, camera poses, and metric scale, together with 2D/3D point tracks and moving-object masks for
-- **[Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth](https://huggingface.co/papers/2611.26603)**  
-  ⬆ 28 upvotes — We present Depth Pro 2, an approach to estimating dense metric depth for images and video at full resolution. By analyzing prior methods for monocular depth estimation, we find that they commonly trade off temporal consistency and boundary sharpness: multi-frame methods favor consistency, single-fra
-- **[Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent](https://huggingface.co/papers/2611.18397)**  
-  ⬆ 144 upvotes — We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D gr
+- **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
+  ⬆ 169 upvotes — Significant progress has been made in automated problem-solving using
+societies of agents powered by large language models (LLMs). In finance,
+efforts have largely focused on single-agent systems handling specific tasks or
+multi-agent frameworks independently gathering data. However, the multi-agent
 - **[The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction](https://huggingface.co/papers/2609.18063)**  
-  ⬆ 36 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
+  ⬆ 37 upvotes — Mixture-of-experts (MoE) inference on consumer hardware is bounded by weight memory: a 35B-class model is 19.5GB at 4-bit, and sparsity shrinks the compute per token, not the bytes that must be held. Naive offloading to SSD does not help on its own, because layer N+1's experts must be chosen before 
+- **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
+  ⬆ 70 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
 - **[Bitnet.cpp: Efficient Edge Inference for Ternary LLMs](https://huggingface.co/papers/2502.11880)**  
   ⬆ 22 upvotes — The advent of 1-bit large language models (LLMs), led by BitNet b1.58, has
 spurred interest in ternary LLMs. Despite this, research and practical
 applications focusing on efficient edge inference for ternary LLMs remain
 scarce. To bridge this gap, we introduce Bitnet.cpp, an inference system
 optimiz
-- **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
-  ⬆ 169 upvotes — Significant progress has been made in automated problem-solving using
-societies of agents powered by large language models (LLMs). In finance,
-efforts have largely focused on single-agent systems handling specific tasks or
-multi-agent frameworks independently gathering data. However, the multi-agent
-- **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
-  ⬆ 70 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
 - **[Efficient Memory Management for Large Language Model Serving with
   PagedAttention](https://huggingface.co/papers/2309.06180)**  
   ⬆ 78 upvotes — High throughput serving of large language models (LLMs) requires batching
@@ -35,26 +35,8 @@ grows and shrinks dynamically. When managed inefficiently, this memory can be
 
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection](https://huggingface.co/papers/2611.21373)**  
-  ⬆ 49 upvotes — Recent advances in video generation call for reliable detection grounded in explicit forensic evidence. However, current methods primarily depend on single-pass chain-of-thought reasoning that overlooks brief or localized artifacts, or on predefined multi-agent workflows that offer limited flexibili
-- **[Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation](https://huggingface.co/papers/2611.26444)**  
-  ⬆ 45 upvotes — Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and execution through envi
-- **[Probing the "Conscious" Mind: Selective Access and Global Workspace in Vision-Language Models](https://huggingface.co/papers/2611.26590)**  
-  ⬆ 41 upvotes — Vision-language models (VLMs) integrate visual and textual information, but their outputs do not reveal internal concept representations. Global workspace theory (GWT) proposes that information is selected from parallel brain processes, integrated in a shared workspace, and made available to special
-- **[WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding](https://huggingface.co/papers/2611.26409)**  
-  ⬆ 40 upvotes — Video understanding, particularly with accompanying audio, remains a central challenge in multimodal intelligence. In this report, we introduce WeMM-Video, a family of Chinese-English bilingual omni-modal foundation models spanning 2B, 4B, 9B, and 35B-A3B variants. Centering on joint audio-visual pe
-- **[Posterior Matching Distillation](https://huggingface.co/papers/2611.26629)**  
-  ⬆ 33 upvotes — Diffusion distillation accelerates image and video generation by compressing a pretrained teacher's iterative sampling process into a few network evaluations. Distribution-based methods achieve this by matching the student's output distribution to the teacher's. This matching is often driven by reve
-- **[Coda-DaVinci: Reimagining Video Generation with Code2Video](https://huggingface.co/papers/2611.26595)**  
-  ⬆ 32 upvotes — Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled 
-- **[The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation](https://huggingface.co/papers/2611.21383)**  
-  ⬆ 31 upvotes — 3D Gaussian Splatting enables object-level operations on Gaussian primitives, yet existing segmentation methods are largely trained and evaluated through rendered views. This mismatch can produce accurate rendered masks from incomplete 3D selections since alpha-blended feature supervision concentrat
-- **[Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth](https://huggingface.co/papers/2611.26603)**  
-  ⬆ 28 upvotes — We present Depth Pro 2, an approach to estimating dense metric depth for images and video at full resolution. By analyzing prior methods for monocular depth estimation, we find that they commonly trade off temporal consistency and boundary sharpness: multi-frame methods favor consistency, single-fra
-- **[EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning](https://huggingface.co/papers/2611.26380)**  
-  ⬆ 24 upvotes — Egocentric video captioning requires fine-grained detail and accurate timing, yet current multimodal large language models (MLLMs) often miss brief actions, confuse their order, or misinterpret the wearer's motion. Existing caption formats also offer limited support for combining detailed narration 
-- **[HiUni: Harmonizing Understanding and Generation in Shared Visual Space](https://huggingface.co/papers/2611.26107)**  
-  ⬆ 23 upvotes — Unified multimodal models aim to support visual understanding and generation within a single framework. However, prevailing approaches often separate their visual representations or backbone computation to accommodate the different requirements of these two tasks, which limits the degree of unificat
+- **[No papers indexed yet for 2026-11-21 (HF submissions can lag up to 14 days behind arXiv)]()**  
+  
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
 - **[RL Post-Training in Diffusion Transformers Is Activation Steering](https://arxiv.org/abs/2611.26627v1)**  
@@ -143,23 +125,23 @@ grows and shrinks dynamically. When managed inefficiently, this memory can be
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image4-10-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="image4" width="768" />Trai
 
 ## GitHub Trending (AI, new repos)
+- **[Morriswawan05/elevenlabs-pro-win](https://github.com/Morriswawan05/elevenlabs-pro-win)**  
+  ★ 79 — ElevenLabs - AI voice synthesis platform for text-to-speech generation, voice cloning and multilingual dubbing on Windows 10/11
+- **[Cloudcode04/runway-ml-pro-win](https://github.com/Cloudcode04/runway-ml-pro-win)**  
+  ★ 72 — Runway - AI video generation platform for text-to-video synthesis, image animation and motion brush editing on Windows 10/11
+- **[Juanlabs1989/descript-pro-win](https://github.com/Juanlabs1989/descript-pro-win)**  
+  ★ 71 — Descript - AI-powered video and podcast editor for text-based editing, transcription and screen recording on Windows 10/11
+- **[debugdigital677/descript-pro-win](https://github.com/debugdigital677/descript-pro-win)**  
+  ★ 71 — Descript - AI-powered video and podcast editor for text-based editing, transcription and screen recording on Windows 10/11
+- **[GuzmanJacqueline93/copy-ai-pro-win](https://github.com/GuzmanJacqueline93/copy-ai-pro-win)**  
+  ★ 69 — Copy Ai Pro - AI copywriting assistant for content generation, tone rewriting and SEO text optimization on Windows 10/11
+- **[JieFedorov81/runway-ml-pro-win](https://github.com/JieFedorov81/runway-ml-pro-win)**  
+  ★ 68 — Runway - AI video generation platform for text-to-video synthesis, image animation and motion brush editing on Windows 10/11
+- **[isanders5152/descript-pro-win](https://github.com/isanders5152/descript-pro-win)**  
+  ★ 58 — Descript - AI-powered video and podcast editor for text-based editing, transcription and screen recording on Windows 10/11
+- **[suryacode04/jasper-ai-win](https://github.com/suryacode04/jasper-ai-win)**  
+  ★ 51 — Jasper AI - AI content generation platform for marketing copy creation, brand voice customization and long-form article drafting on Windows 10/11
 - **[lucidrains/supermimic-pytorch](https://github.com/lucidrains/supermimic-pytorch)**  
   ★ 15 — Unofficial implementation of Supermimic, Scaling Humanoid Whole-Body Control with One Differentiable World Model, from Qiayuan Liao et al. of Berkeley
 - **[cookllm/AI-PhD-Internships-2027](https://github.com/cookllm/AI-PhD-Internships-2027)**  
   ★ 4 — AI and ML research internships that require or prefer a PhD, for Summer 2027 and off-cycle terms. Updated daily from company career pages, with direct apply links.
-- **[A220man/vector-lens-144](https://github.com/A220man/vector-lens-144)**  
-  ★ 2 — Ryan Vo | Work in progress: vector-lens-144
-- **[ALANDVO/orbit-pilot-145](https://github.com/ALANDVO/orbit-pilot-145)**  
-  ★ 2 — Alan Vo | Work in progress: orbit-pilot-145
-- **[ALANDVO/orbit-foundry-146](https://github.com/ALANDVO/orbit-foundry-146)**  
-  ★ 2 — Alan Vo | Work in progress: orbit-foundry-146
-- **[ALANDVO/lumen-lab-147](https://github.com/ALANDVO/lumen-lab-147)**  
-  ★ 2 — Alan Vo | Work in progress: lumen-lab-147
-- **[ALANDVO/nexus-studio-145](https://github.com/ALANDVO/nexus-studio-145)**  
-  ★ 2 — Alan Vo | Work in progress: nexus-studio-145
-- **[Pro-GenAI/awesome-checklists](https://github.com/Pro-GenAI/awesome-checklists)**  
-  ★ 2 — ✅ Practical, reusable checklists for planning, building, reviewing, and launching software and AI products.
-- **[janhavi-giri/semiconductor-data-discovery](https://github.com/janhavi-giri/semiconductor-data-discovery)**  
-  ★ 2 — A proof of concept that uses semiconductor manufacturing metadata to find the right process traces, link them to test outcomes, and export verifiable file references for downstream AI workflows.
-- **[ALANDVO/tensor-lens-145](https://github.com/ALANDVO/tensor-lens-145)**  
-  ★ 2 — Alan Vo | Work in progress: tensor-lens-145
