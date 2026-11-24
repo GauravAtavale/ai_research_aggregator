@@ -1,4 +1,4 @@
-# Weekly Curated AI Digest — week of 2026-11-16
+# Weekly Curated AI Digest — week of 2026-11-23
 
 _Tier 2: curated newsletters + direct lab blog re-check. Use this to catch anything Tier 1's daily firehose surfaced without enough context, or that a curator flagged as genuinely important this week._
 
@@ -21,22 +21,22 @@ _Tier 2: curated newsletters + direct lab blog re-check. Use this to catch anyth
   The Batch News & Insights: I am delighted to present The AI Engineering Skills Map.
 
 ## Newsletter: The Rundown AI
+- **[Claude helps solve math's biggest open problem](https://therundownai.beehiiv.com/p/claude-helps-solve-math-s-biggest-open-problem)**  
+  PLUS: Test Gemini 4 Neon on finding billing errors
+- **[Anthropic pulls off the biggest IPO ever](https://therundownai.beehiiv.com/p/anthropic-pulls-off-the-biggest-ipo-ever)**  
+  PLUS: Use AI to find a job and prepare to get hired
+- **[Google’s shipping spree continues with Neon](https://therundownai.beehiiv.com/p/google-shipping-spree-continues-with-neon)**  
+  PLUS: Use AI to rework your LinkedIn profile
+- **[OpenAI’s newest release lands to rough reviews](https://therundownai.beehiiv.com/p/openai-newest-release-lands-to-rough-reviews)**  
+  PLUS: Turn a spreadsheet into a data story with AI
+- **[California takes OpenAI to court](https://therundownai.beehiiv.com/p/california-takes-openai-to-court)**  
+  PLUS: Make your AI usage go further with these tips
 - **[Jensen Huang weighs a comeback at Nvidia](https://therundownai.beehiiv.com/p/jensen-huang-weighs-a-comeback-at-nvidia)**  
   PLUS: Turn a messy plan into a shared board
 - **[Nvidia enters life without Jensen Huang](https://therundownai.beehiiv.com/p/nvidia-enters-life-without-jensen-huang)**  
   PLUS: Build a shared tracker in Claude Sheets
 - **[AI’s biggest CEO may be on his way out](https://therundownai.beehiiv.com/p/ai-s-biggest-ceo-may-be-on-his-way-out)**  
   PLUS: How to claim and set up your business on ChatGPT
-- **[OpenAI invites brands to set up shop in ChatGPT](https://therundownai.beehiiv.com/p/openai-invites-brands-to-set-up-shop-in-chatgpt)**  
-  PLUS: Put your open Chrome tabs to work with AI
-- **[Anthropic says ‘pacing, not pausing’ with Fable 5.2](https://therundownai.beehiiv.com/p/anthropic-says-pacing-not-pausing-with-fable-5-2)**  
-  PLUS: Clean up a messy Excel report with Claude
-- **[Jensen Huang admits affair amid spy claims](https://therundownai.beehiiv.com/p/jensen-huang-admits-affair-amid-spy-claims)**  
-  PLUS: Turn your X bookmarks into a personal research desk
-- **[An inside look at Anthropic’s AI speedup](https://therundownai.beehiiv.com/p/an-inside-look-at-anthropic-s-ai-speedup)**  
-  PLUS: Use AI to find a job and prepare to get hired
-- **[AI agents can now make your phone calls](https://therundownai.beehiiv.com/p/ai-agents-can-now-make-your-phone-calls)**  
-  PLUS: Which free AI tool should you actually use?
 
 ## Newsletter: One Useful Thing (Ethan Mollick)
 - **[Fable 5.2 and Jagged AGI](https://www.oneusefulthing.org/p/fable-52-and-jagged-agi)**  
@@ -57,54 +57,54 @@ _Tier 2: curated newsletters + direct lab blog re-check. Use this to catch anyth
   Claude Fable represents another big jump in AI
 
 ## Newsletter: MarkTechPost
-- **[Meet Meta’s JiTTests: LLM-Generated Tests Designed to Fail Before Risky Code Lands](https://www.marktechpost.com/2026/11/16/meta-jittests-llm-catching-tests-privacy-bugs/)**  
-  <p>Meta has moved Catching JiTTests into production. The LLM system writes tests designed to fail on risky diffs, and caught 74 privacy SEVs before landing in H1 2026, with a 60% engineer-reported true-positive rate.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/11/16/meta-jittests-llm-catching-tests-privacy-bugs/">Meet Meta&#8217;s Ji
-- **[Alibaba Releases Qwen4-Max: 2.4T MoE, 71B Active, 1M Context](https://www.marktechpost.com/2026/11/16/alibaba-qwen4-max-release/)**  
-  <p>Alibaba released Qwen4-Max, a proprietary 2.4T-parameter MoE model with 71B active parameters, native vision and a 1M-token context. It costs $1.5/M input tokens and cuts Work360 cost per task by 62%.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/11/16/alibaba-qwen4-max-release/">Alibaba Releases Qwen4-Max: 2.4T MoE, 71B Active, 1M 
-- **[Hark Releases Handoff², a 2x Faster Computer-Use Agent for Hark Pro](https://www.marktechpost.com/2026/11/16/hark-handoff-2-computer-use-agent-2x-faster/)**  
-  <p>Hark has released Handoff², the computer-use agent inside Hark Pro. It averages 2x faster than v1, completes 82% of 478 internal web tasks, and learned to batch actions through latency-penalized RL.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/11/16/hark-handoff-2-computer-use-agent-2x-faster/">Hark Releases Handoff², a 2x Faster C
-- **[Bland Launches Tofu-1, a Full-Duplex Speech-to-Speech Model for Calls](https://www.marktechpost.com/2026/11/15/bland-tofu-1-full-duplex-speech-to-speech-model/)**  
-  <p>Bland has released Tofu-1, a full-duplex speech-to-speech model for noisy, high-stakes phone calls. It is in enterprise research preview, with no published benchmarks, size or pricing yet.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/11/15/bland-tofu-1-full-duplex-speech-to-speech-model/">Bland Launches Tofu-1, a Full-Duplex Speech
-- **[Cmpnd Releases dspy-wsp: Weight-Space Programming Comes to DSPy](https://www.marktechpost.com/2026/11/14/cmpnd-dspy-wsp-weight-space-programming/)**  
-  <p>Cmpnd released dspy-wsp, a prototype DSPy optimizer for weight-space programming. A frontier LLM reads a small model’s weights, edits them in a sandbox, and tests each change, with no gradients and about $5 to $10 per run.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/11/14/cmpnd-dspy-wsp-weight-space-programming/">Cmpnd Releases ds
-- **[Stanford Research Open-Sources Memorilla, a Latent Memory Module for Frozen LLMs](https://www.marktechpost.com/2026/11/14/stanford-memorilla-memory-system-16-memory-tokens/)**  
-  <p>Stanford researchers released Memorilla, an open-source memory system that compresses a document collection into 16 memory tokens for a frozen Qwen3-8B. It reaches 84.33% on FactKG using 108x fewer document tokens than full context.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/11/14/stanford-memorilla-memory-system-16-memory-tokens
-- **[Vercel Releases UI SDK: 50+ UI Behaviors for AI Coding Agents](https://www.marktechpost.com/2026/11/13/vercel-ui-sdk-agent-ui-behaviors/)**  
-  <p>Vercel Labs released Vercel UI SDK, an Apache-2.0 beta library of 50+ UI behaviors. Coding agents compose them into accessible components for React, Vue, Svelte, Solid and Web Components, with a bridge for direct UI control.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/11/13/vercel-ui-sdk-agent-ui-behaviors/">Vercel Releases UI SDK
-- **[Best AI Video Generation Models in 2026: Elo, Price per Second, Open Weights](https://www.marktechpost.com/2026/11/13/best-ai-video-generation-models-2026/)**  
-  <p>The AI video leaderboard looks very different from 12 months ago. Native audio is now table stakes. Clips run 15–30 seconds. And an open-weights model sits in the top 3. This ranking (as of Nov 13, 2026) uses one quality signal: blind human-preference Elo from the Artificial Analysis Video Arena. We pair it with API [&#8230;]</p>
-<p>The post <a 
+- **[Anthropic Launches Claude Ship for GitHub Pull Request Review and Fixes](https://www.marktechpost.com/2026/11/23/anthropic-claude-ship-pull-request-agents/)**  
+  <p>Anthropic's Claude Ship bundles Code Review, PR Steward and Claude Approvals to review, fix and approve GitHub pull requests. Code Review is GA; the other 2 agents are in public beta for Team and Enterprise.</p>
+<p>The post <a href="https://www.marktechpost.com/2026/11/23/anthropic-claude-ship-pull-request-agents/">Anthropic Launches Claude Ship
+- **[Z AI Releases GLM-5.4: A 750B Loop Transformer That Runs 28 Layers Twice](https://www.marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer/)**  
+  <p>Z.ai released GLM-5.4, its first Loop Transformer flagship. The 750B-scale model runs 28 GLM-5 layers twice for deeper reasoning, with API access and open weights planned after safety work.</p>
+<p>The post <a href="https://www.marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer/">Z AI Releases GLM-5.4: A 750B Loop Transformer That Runs 28 L
+- **[27 Cybersecurity Terms to Prepare You for the Age of AI](https://www.marktechpost.com/2026/11/23/27-ai-cybersecurity-terms/)**  
+  <p>AI now sits on both sides of the security fight, and the vocabulary has changed with it. IBM&#8217;s 2026 Cost of a Data Breach Report found that 1 in 4 malicious breaches were AI-enabled, up 56% year over year. Those breaches cost an average of $6 million, about $1 million above the $4.99 million global [&#8230;]</p>
+<p>The post <a href="https:
+- **[Architect Labs Unveils Frostbite, an Interaction Net CPU Designed by AI](https://www.marktechpost.com/2026/11/23/architect-labs-frostbite-ai-designed-cpu-interaction-nets/)**  
+  <p>Architect Labs introduced Frostbite, an AI-designed CPU that runs interaction nets in hardware. Agents took it from theory to 7 nm GDS, and pre-silicon tests show 4.59x performance per watt over an in-order core.</p>
+<p>The post <a href="https://www.marktechpost.com/2026/11/23/architect-labs-frostbite-ai-designed-cpu-interaction-nets/">Architect
+- **[Meta TLX Brings Warp-Group GPU Control to Triton on Hopper, Blackwell, AMD](https://www.marktechpost.com/2026/11/23/meta-tlx-triton-low-level-extensions/)**  
+  <p>Meta has detailed TLX, its Triton Low-Level Extensions that add warp-group, barrier, TMA and cluster control to Python Triton kernels. It runs Meta's ads and LLM workloads on Hopper, Blackwell and AMD MI350 GPUs.</p>
+<p>The post <a href="https://www.marktechpost.com/2026/11/23/meta-tlx-triton-low-level-extensions/">Meta TLX Brings Warp-Group GPU
+- **[NVIDIA Releases Alpamayo 2 Edge: A 2B Reasoning VLA for DRIVE Thor](https://www.marktechpost.com/2026/11/22/nvidia-alpamayo-2-edge-2b-reasoning-vla-drive-thor/)**  
+  <p>NVIDIA released Alpamayo 2 Edge, a 2B-class reasoning vision-language-action model that plans driving trajectories and explains them on DRIVE AGX Thor, at 160 to 190 ms pixel-to-trajectory latency.</p>
+<p>The post <a href="https://www.marktechpost.com/2026/11/22/nvidia-alpamayo-2-edge-2b-reasoning-vla-drive-thor/">NVIDIA Releases Alpamayo 2 Edge
+- **[Best Personal AI Agents in 2026: OpenClaw, Hermes Agent, Gemini Spark and More, Compared on Memory, Security and Cost](https://www.marktechpost.com/2026/11/22/best-personal-ai-agents-2026/)**  
+  <p>Hermes Agent, OpenClaw, Gemini Spark, OpenAI dots, Meta Muse and Perplexity Personal Computer ranked on memory, security defaults and real cost.</p>
+<p>The post <a href="https://www.marktechpost.com/2026/11/22/best-personal-ai-agents-2026/">Best Personal AI Agents in 2026: OpenClaw, Hermes Agent, Gemini Spark and More, Compared on Memory, Securi
+- **[Google AI Previews Tool Retrieval in the Gemini API for Large Tool Libraries](https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval/)**  
+  <p>Google launched Gemini API Tool Retrieval in preview. Agents keep a large tool library on standby and load each parameter schema only when needed, inside one Interactions API request.</p>
+<p>The post <a href="https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval/">Google AI Previews Tool Retrieval in the Gemini API for Large T
 
 ## Lab Blog: OpenAI
-- **[Broadening access to AI for scientists](https://openai.com/index/expanding-chatgpt-for-academic-researchers)**  
-  We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.
-- **[Strengthening the fight against online child sexual abuse with new tools and support](https://openai.com/index/strengthening-online-child-safety)**  
-  New tools, practical guidance, and partnerships will help prevent, detect and respond to online child sexual exploitation and abuse.
-- **[Science at the Frontier: How scientists use ChatGPT](https://openai.com/index/science-at-the-frontier)**  
-  Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.
-- **[LVMH’s Media Division announces strategic partnership with OpenAI](https://openai.com/index/lvmh-media-division-partnership)**  
-  LVMH’s Media Division and OpenAI announce a partnership to support journalism with AI and make its publications more accessible through ChatGPT.
-- **[Our first phase of embedded assessments](https://openai.com/index/our-first-phase-of-embedded-assessments)**  
-  OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.
+- **[OpenAI and Cisco introduce Shirudo](https://openai.com/index/introducing-shirudo)**  
+  OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.
+- **[Connected intelligence for in-house legal](https://openai.com/business/learn/connected-intelligence-for-in-house-legal)**  
+  Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.
+- **[Richpanel helps companies automate 50% of support in 30 days](https://openai.com/business/customer-stories/richpanel-ai-customer-support)**  
+  Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.
+- **[Perplexity and Intelligence](https://openai.com/index/perplexity-and-intelligence)**  
+  How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.
+- **[Combatting adversarial distillation](https://openai.com/index/combatting-adversarial-distillation)**  
+  OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction.
 
 ## Lab Blog: DeepMind
+- **[Finding faster quantum algorithms with agents and formal verification](https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/)**  
+  Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.
+- **[Introducing Gemini 4 Neon](https://deepmind.google/blog/introducing-gemini-4-neon/)**  
+  
+- **[Genie 4 is now available](https://deepmind.google/blog/genie-4-is-now-available/)**  
+  
 - **[Introducing Gemini 4 Hydrogen](https://deepmind.google/blog/introducing-gemini-4-hydrogen/)**  
   
 - **[AlphaGenome 2: Deciphering how cells read DNA to better understand disease](https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/)**  
   Predicting how DNA sequences and their variations impact specific human cell types and disease.
-- **[Gemini 4 Carbon is now available](https://deepmind.google/blog/gemini-4-carbon-is-now-available/)**  
-  
-- **[Introducing AlphaProof Code: a breakthrough in verifying complex software at depth](https://deepmind.google/blog/introducing-alphaproof-code/)**  
-  AlphaProof Code agents wrote three  million lines of proofs in Lean to verify Signal’s core encryption.
-- **[Opening the datasets behind our AI weather models](https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/)**  
-  Foundational precipitation and geostationary satellite datasets to observe the planet clearly.
 
 ## Lab Blog: Anthropic (unofficial mirror)
 - **[Investing in the public benefit](https://www.anthropic.com/news/public-benefit-fund)**  
@@ -119,28 +119,28 @@ _Tier 2: curated newsletters + direct lab blog re-check. Use this to catch anyth
   <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"></div><div class="page-wrapper"><article><div class=""><div class="Body-module-scss-module__z40yvW__body"><p class="Body-module-scss-module__z40yvW__reading-column body-2 serif post-text">Each year, Anthropic updates its Usage Policy in response to the evolving 
 
 ## Lab Blog: NVIDIA Blog
-- **[How the World’s Most Advanced AI Infrastructure Supply Chain Invents the Future](https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain/)**  
-  Deb Shoquist leads operations at NVIDIA, overseeing the supply chain and manufacturing behind its AI platforms. That description sums up the job, but it doesn’t begin to encompass what Shoquist has made possible over decades. Shoquist, her team and their global network of manufacturing partners enable NVIDIA to introduce world-leading technologies 
-- **[Lambda Boosts AI Factory Resiliency and Efficiency With NVIDIA Photonics](https://blogs.nvidia.com/blog/lambda-photonics/)**  
-  To train an AI model, thousands of GPUs have to work together, requiring a network that’s fast, efficient and resilient. Lambda is tackling the network piece of the puzzle with NVIDIA Photonics co-packaged optics (CPO) switches. The cloud provider is using the switches to connect NVIDIA GB300 NVL72 racks with more than 10,000 GPUs, delivering [&#82
-- **[NVIDIA Expands Slurm to Bring Quantum Computing Into Supercomputing](https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing/)**  
-  Quantum processor deployments at supercomputing centers have grown nearly sevenfold over the past five years, with nearly 30 supercomputing centers around the world now in the process of deploying over 50 quantum processors.  Many of these centers use Slurm to run scientific supercomputing workloads, so expanding its support for quantum processors 
-- **[NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance](https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/)**  
-  In its MLPerf benchmarks debut, with results released today, the NVIDIA Vera Rubin platform delivers leading performance across training, post-training and agentic inference.  NVIDIA swept every MLPerf Training v6.1 benchmark and, in its first MLPerf Endpoints submission, delivered more than 10x generational gains in throughput per watt for agentic
-- **[NVIDIA CUDA-X Libraries Give Agents the Tools to Accelerate Scientific Discovery](https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery/)**  
-  With expanded NVIDIA CUDA-X libraries, including cuPhoton, cuPotential and cuSpa, researchers can sift through vast amounts of data to accelerate research, from astrophysics and materials science to single-cell biology. The speedups are helping scientists analyze larger datasets and model more complex systems. The new libraries give AI agents the t
+- **[Merry Making: Play, Build and Create With NVIDIA Technologies This Holiday Season](https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026/)**  
+  The elves don’t have to be the only ones busy in the workshop this holiday season. With the lights twinkling and the gift wrap out, it’s the perfect time to give someone — or yourself — a spark to take a hobby to the next level. For some, that means diving into a new game. [&#8230;]
+- **[NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs](https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/)**  
+  NVIDIA and Microsoft are extending their full-stack collaboration to help organizations build, customize and deploy intelligent applications — from next-generation infrastructure on Azure to industrial systems and Windows PCs. At Microsoft Ignite, the companies are expanding access to Azure virtual machines powered by NVIDIA Vera Rubin NVL72 system
+- **[Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents](https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/)**  
+  Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for exploring scenarios, investigating failures and improving
+- **[Season’s Streamings and Savings: Black Friday Deals Come to GeForce NOW](https://blogs.nvidia.com/blog/geforce-now-thursday-black-friday-2026/)**  
+  GeForce NOW is kicking off Black Friday with more reasons to make time for gaming. Six-month memberships are back for a limited time. Save 30% on the first six-month term of a Performance or Ultimate membership. Big gaming plans, smaller price tag.  Keep the holiday savings going: Check out more NVIDIA holiday deals for gamers, [&#8230;]
+- **[NVIDIA RTX Spark Compact Desktops Out Now](https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/)**  
+  New NVIDIA RTX Spark compact desktops from ASUS, Dell and MSI are available today, bringing local AI agents, image and video generation, and model fine-tuning to a dedicated Windows PC. With up to 128GB of unified memory and NVIDIA’s AI software stack, these systems provide room for larger local models alongside RTX-accelerated creative and develop
 
 ## Lab Blog: NVIDIA Technical Blog
-- **[Accelerate Molecular Dynamics Simulations with Accurate, Flexible Primitives Using NVIDIA cuPotential](https://developer.nvidia.com/blog/accelerate-molecular-dynamics-simulations-with-accurate-flexible-primitives-using-nvidia-cupotential/)**  
-  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/healthcare-cupotential-768x432.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="healthcare-cupotential" width="768" />Molecular dynamics (MD) is an indispensable tool across physics, chemistry,
-- **[Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain](https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/)**  
-  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image4-5-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="image4" width="768" />Agentic AI is reshaping scientific research and innovation. Researchers communicate complex scientific hy
-- **[NVIDIA Vera Rubin NVL72 Leads Agentic Inference Performance on MLPerf Endpoints v1.0](https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0/)**  
-  <img alt="Two rows of black data center racks with gold-colored server components against a black background." class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/mlperf-endpoints-vera-rubin-featured-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="
-- **[NVIDIA Vera Rubin NVL72 Achieves up to 2x Blackwell Ultra Performance in MLPerf Training v6.1](https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-achieves-up-to-2x-blackwell-ultra-performance-in-mlperf-training-v6-1/)**  
-  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/techblog_featured2_1520x855-768x432.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="techblog_featured2_1520x855" width="768" />As AI agents tackle increasingly complex workflows, reducing time
-- **[Faster Scientific Simulations with New FP64 Algorithms in NVIDIA cuBLAS](https://developer.nvidia.com/blog/faster-scientific-simulations-with-new-fp64-algorithms-in-nvidia-cublas/)**  
-  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="431" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image5-7-768x431.png" style="display: block; margin-bottom: 5px; clear: both;" title="image5" width="768" />Many scientific simulations, from molecular chemistry to materials science, spend the majority of their e
+- **[Accelerating Direct Sparse Solvers for Computational Engineering with NVIDIA cuDSS 1.0](https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0/)**  
+  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2024/06/DatacenterKV-2-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="NVIDIA cuDSS 3.0" width="768" />Sparse linear systems are at the core of nearly every engineering and scientific simulati
+- **[Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension](https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/)**  
+  <img alt="Animated GPU and SQL database icons connected by moving data signals." class="webfeedsFeaturedVisual wp-post-image" height="338" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/sirius-duckdb-gpu-analytics.gif" style="display: block; margin-bottom: 5px; clear: both;" title="GPU-powered DuckDB analytics" width="600" />As 
+- **[Reducing Rollout Bottlenecks in Reinforcement Learning with NVIDIA Dynamo](https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo/)**  
+  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image3-17-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="image3" width="768" />Reinforcement learning (RL) uses rewards to train models to solve problems and complete tasks more succe
+- **[Enabling Real-Time AI for Scientific Instruments with GPU-Native Data Acquisition](https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/)**  
+  <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/electron-energy-loss-spectroscopy-768x432.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="electron-energy-loss-spectroscopy" width="768" />In science and industry, analyzing sensor measurement
+- **[Build Tool-Calling Parsers in Rust with AI Agents](https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents/)**  
+  <img alt="A developer, code blocks, a checklist, and a rising bar chart connect to a central network diagram." class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/agentic-ai-rl-gym-1024x576-1-768x432.png" style="display: block; margin-bottom: 5px; clear: both;" title="agentic-
 
 ## ⚠️ Manual Check Needed (not automatable)
 - **Import AI (Jack Clark)** — https://jack-clark.net/
