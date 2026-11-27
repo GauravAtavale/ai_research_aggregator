@@ -1,18 +1,16 @@
-# AI Research Digest — 2026-11-26
+# AI Research Digest — 2026-11-27
 
 ## HF Daily Papers (Trending)
 - **[PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing](https://huggingface.co/papers/2604.05018)**  
-  ⬆ 18 upvotes — Synthesizing unstructured research materials into manuscripts is an essential yet under-explored challenge in AI-driven scientific discovery. Existing autonomous writers are rigidly coupled to specific experimental pipelines, and produce superficial literature reviews. We introduce PaperOrchestra, a
+  ⬆ 19 upvotes — Synthesizing unstructured research materials into manuscripts is an essential yet under-explored challenge in AI-driven scientific discovery. Existing autonomous writers are rigidly coupled to specific experimental pipelines, and produce superficial literature reviews. We introduce PaperOrchestra, a
 - **[Unlimited OCR Works](https://huggingface.co/papers/2606.23050)**  
   ⬆ 112 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
 - **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
   ⬆ 72 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
 - **[Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth](https://huggingface.co/papers/2611.26603)**  
-  ⬆ 40 upvotes — We present Depth Pro 2, an approach to estimating dense metric depth for images and video at full resolution. By analyzing prior methods for monocular depth estimation, we find that they commonly trade off temporal consistency and boundary sharpness: multi-frame methods favor consistency, single-fra
-- **[Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent](https://huggingface.co/papers/2611.18397)**  
-  ⬆ 166 upvotes — We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D gr
+  ⬆ 41 upvotes — We present Depth Pro 2, an approach to estimating dense metric depth for images and video at full resolution. By analyzing prior methods for monocular depth estimation, we find that they commonly trade off temporal consistency and boundary sharpness: multi-frame methods favor consistency, single-fra
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
-  ⬆ 169 upvotes — Significant progress has been made in automated problem-solving using
+  ⬆ 168 upvotes — Significant progress has been made in automated problem-solving using
 societies of agents powered by large language models (LLMs). In finance,
 efforts have largely focused on single-agent systems handling specific tasks or
 multi-agent frameworks independently gathering data. However, the multi-agent
@@ -25,6 +23,8 @@ sufficiently many requests at a time. However, existing systems struggle
 because the key-value cache (KV cache) memory for each request is huge and
 grows and shrinks dynamically. When managed inefficiently, this memory can be
 
+- **[Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent](https://huggingface.co/papers/2611.18397)**  
+  ⬆ 166 upvotes — We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D gr
 - **[OpenDevin: An Open Platform for AI Software Developers as Generalist
   Agents](https://huggingface.co/papers/2407.16741)**  
   ⬆ 87 upvotes — Software is one of the most powerful tools that we humans have at our
@@ -36,26 +36,26 @@ models (LLMs), there has also been a rapid development in AI agents that
   ⬆ 158 upvotes — This report describes ARIS (Auto-Research-in-sleep), an open-source research harness for autonomous research, including its architecture, assurance mechanisms, and early deployment experience. The performance of agent systems built on LLMs depends on both the model weights and the harness around the
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[Sage-Med: Scaling Medical Multimodal Intelligence](https://huggingface.co/papers/2611.34575)**  
-  ⬆ 24 upvotes — Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling mode
-- **[PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents](https://huggingface.co/papers/2611.33144)**  
-  ⬆ 24 upvotes — Learning for dexterous manipulation is limited by the scarcity of high-quality demonstrations: retargeting from human video is imprecise, teleoperation gives no force feedback to the operator, and exoskeleton-based collection is hard to scale up. We present PyRUA-Dex, a framework that enables coding
-- **[Target-Part Preference Optimization for Part-Aware 3D Generation](https://huggingface.co/papers/2611.30472)**  
-  ⬆ 13 upvotes — Part-aware 3D generation requires not only globally plausible objects but also complete, well-separated semantic parts, yet high-quality part decompositions remain too scarce to support large-scale supervised fine-tuning. We study whether preference fine-tuning based on Direct Preference Optimizatio
-- **[Improving and Expanding Video Editing Capabilities Without Videos](https://huggingface.co/papers/2611.34941)**  
-  ⬆ 12 upvotes — Image editing models can follow a wide range of instructions, but video editing models still lag behind, limited in part by the difficulty of collecting paired source and edited videos. Is it possible to transfer advanced image editing capabilities to video editors without new paired videos? We intr
-- **[What Is Redundant at High Resolution? Efficient Attention and Feed-Forward Design for All-in-One Image Restoration](https://huggingface.co/papers/2611.33636)**  
-  ⬆ 9 upvotes — Multi-scale architectures are widely adopted in all-in-one image restoration (AIO-IR) to capture larger-scale context at low-resolution stages and refine details at high-resolution (HR) stages. However, processing spatially large feature maps at HR stages incurs substantial computational costs and m
-- **[DyLoMo-DiT: Dynamic Looped Mixture-of-Experts Diffusion Transformers](https://huggingface.co/papers/2611.30844)**  
-  ⬆ 9 upvotes — Diffusion Transformers (DiTs) scale model capacity by increasing both parameter count and computation. Mixture-of-Experts (MoE) variants expand parameter capacity while keeping per-token computation roughly fixed, but still require substantial parameter storage. In this paper, we propose Dynamic Loo
-- **[VibeVideoAgent: Closing the Perceptual Loop for Code-Driven Video Generation](https://huggingface.co/papers/2611.34237)**  
-  ⬆ 8 upvotes — Code-driven video generation asks a coding agent to write and run rendering programs. This gives exact control over typography, data visualizations, synchronized audio, and multi-shot scenes, and it leaves an editable project behind. A program that exits cleanly can still render overlapping labels, 
-- **[ROAM-Bench: Evaluating Embodied Active Spatial Intelligence through Evidence Verification](https://huggingface.co/papers/2611.33143)**  
-  ⬆ 8 upvotes — Embodied spatial intelligence requires agents to gather information through exploration and interaction, then use it to reason and act. Existing benchmarks insufficiently distinguish correct outcomes from completion of these task requirements. We introduce ROAM-Bench to evaluate these abilities unde
-- **[Agentic LongLive: Asynchronous Agentic Memory for Long Video Generation](https://huggingface.co/papers/2611.34907)**  
-  ⬆ 7 upvotes — Real-time autoregressive video generators stream minutes of video and accept new prompts on the fly, but struggle to keep people, objects, and places consistent over a long interactive story. Agent systems provide such memory for offline multi-shot generation, yet they read the whole script in advan
-- **[RoboEvo^2: Recursive Robot Self-Improvement via Harness-Policy Co-Evolution](https://huggingface.co/papers/2611.34675)**  
-  ⬆ 6 upvotes — Robots should adapt to unfamiliar environments and acquire new skills through interaction, then execute those skills efficiently with practice. Vision-language-action policies provide efficient control, but often need additional human demonstrations to handle unfamiliar settings; reasoning agents ca
+- **[Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability](https://huggingface.co/papers/2611.34051)**  
+  ⬆ 61 upvotes — Linear attention offers an efficient solution for long-sequence modeling via linear complexity and fixed-size recurrent states. Gated DeltaNet-2 (GDN-2) introduces independent channel-wise control over erasure and writing, enhancing state-update expressiveness and in-context retrieval, yet it suffer
+- **[OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms](https://huggingface.co/papers/2611.34232)**  
+  ⬆ 49 upvotes — Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span mu
+- **[ProxyGenBench: Benchmarking Proxy-Guided Video Generation](https://huggingface.co/papers/2611.34457)**  
+  ⬆ 33 upvotes — Recent video generators produce realistic videos, yet controlling how scenes unfold remains challenging. Structural proxies, such as animated 3D blockouts, guide generation by specifying scene layout, motion, camera behavior, and event order. However, these coarse inputs leave details unspecified an
+- **[StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation](https://huggingface.co/papers/2611.34290)**  
+  ⬆ 21 upvotes — Modern video foundation models generate high-quality short clips, but preserving long-video consistency and correctly depicting event-driven state changes remain challenging. Existing agentic workflows face these challenges because continual planning and repair accumulate context, while reference up
+- **[ShowNow: Fine-Grained Speculative Streaming for Responsive World Models](https://huggingface.co/papers/2611.34693)**  
+  ⬆ 17 upvotes — Interactive world models must generate video continuously while responding promptly to user actions. Real-time throughput alone leaves input latency unresolved: coarse generation blocks delay action updates, and generation after input adds work to the response path. We introduce ShowNow, a fine-grai
+- **[DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents](https://huggingface.co/papers/2611.34852)**  
+  ⬆ 14 upvotes — Deep research agents gather information from multiple sources and synthesize it into reports on complex, open-ended questions. Existing benchmarks assess report quality along several dimensions, but lack a dedicated knowledge-centric evaluation of which research directions a report covers and how de
+- **[Boundary-Aware Policy Learning for Agent-Orchestrated Robot Manipulation](https://huggingface.co/papers/2611.32238)**  
+  ⬆ 5 upvotes — Agent-orchestrated robot systems combine the general reasoning capability of multimodal agents with the precise physical control of learned visuomotor policies. Yet such systems often fail at the moment of handoff: a policy is reliable only from a limited set of start states, while the agent may inv
+- **[Solve Vision with Code: Coding Agents Are Stronger Visual Reasoners Than Video Models](https://huggingface.co/papers/2611.34813)**  
+  ⬆ 5 upvotes — Video generation models are increasingly evaluated as visual reasoners: given a first frame and a natural-language prompt, can the model produce the video in which the specified task is carried out? The paradigm is considered advantageous because the reasoning is native to the visual medium, unfoldi
+- **[Reading, Not Adapting: Unlocking Frozen Visual Knowledge for AI-Generated Image Detection](https://huggingface.co/papers/2611.34719)**  
+  ⬆ 2 upvotes — Generalization to unseen image generators has driven efforts to adapt pretrained visual representations for detection. Yet recent findings show that vision foundation models already encode transferable detection knowledge, while further adaptation can impair generalization. This motivates a shift fr
+- **[Decision-Native Multimodal Clinical Modeling via Anatomical Grounding and Confidence Calibration](https://huggingface.co/papers/2611.32993)**  
+  ⬆ 1 upvotes — Structured clinical decisions from volumetric computed tomography (CT) require anatomically grounded predictions and calibrated confidence estimates. However, existing 3D medical multimodal models often suffer from uncalibrated autoregressive decoding and shortcut reliance on irrelevant anatomical r
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
 - **[Spectrum Adaptation of AI-Native Autoencoder Communications with Transfer Learning](https://arxiv.org/abs/2611.34942v1)**  
@@ -120,6 +120,8 @@ models (LLMs), there has also been a rapid development in AI agents that
   <article class=""><div class="page-wrapper PostDetail-module-scss-module__UQuRMa__hero"></div><div class="page-wrapper"><article><div class=""><div class="Body-module-scss-module__z40yvW__body"><p class="Body-module-scss-module__z40yvW__reading-colum
 
 ## Lab Blog: NVIDIA Blog
+- **[Come for the Games, Stay for the Community With GeForce NOW](https://blogs.nvidia.com/blog/geforce-now-thursday-community-war-thunder-reward/)**  
+  Good games bring people together. This GFN Thursday, GeForce NOW is celebrating the members, creators and community moderators who turn every session into something worth sharing. From friendships formed in online lobbies to new worlds explored on ev
 - **[Merry Making: Play, Build and Create With NVIDIA Technologies This Holiday Season](https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026/)**  
   The elves don’t have to be the only ones busy in the workshop this holiday season. With the lights twinkling and the gift wrap out, it’s the perfect time to give someone — or yourself — a spark to take a hobby to the next level. For some, that means 
 - **[NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs](https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/)**  
@@ -128,8 +130,6 @@ models (LLMs), there has also been a rapid development in AI agents that
   Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry
 - **[Season’s Streamings and Savings: Black Friday Deals Come to GeForce NOW](https://blogs.nvidia.com/blog/geforce-now-thursday-black-friday-2026/)**  
   GeForce NOW is kicking off Black Friday with more reasons to make time for gaming. Six-month memberships are back for a limited time. Save 30% on the first six-month term of a Performance or Ultimate membership. Big gaming plans, smaller price tag.  
-- **[NVIDIA RTX Spark Compact Desktops Out Now](https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/)**  
-  New NVIDIA RTX Spark compact desktops from ASUS, Dell and MSI are available today, bringing local AI agents, image and video generation, and model fine-tuning to a dedicated Windows PC. With up to 128GB of unified memory and NVIDIA’s AI software stac
 
 ## Lab Blog: NVIDIA Technical Blog
 - **[How to Optimize NVFP4 Attention on NVIDIA RTX Blackwell Through Register Recycling](https://developer.nvidia.com/blog/how-to-optimize-nvfp4-attention-on-nvidia-rtx-blackwell-through-register-recycling/)**  
@@ -144,23 +144,23 @@ models (LLMs), there has also been a rapid development in AI agents that
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image4-11-768x432.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="image4" width="768" />Wher
 
 ## GitHub Trending (AI, new repos)
+- **[R3DRUN3/reconai](https://github.com/R3DRUN3/reconai)**  
+  ★ 14 — AI that knocks on your own front door 🛰️
+- **[mvplab-ai/agentdream](https://github.com/mvplab-ai/agentdream)**  
+  ★ 8 — Open-source 'dreaming' for any AI agent: sleep-time memory consolidation that merges duplicates, fixes stale or wrong notes with transcript evidence, and surfaces insights. Any model, local-first.
 - **[LEX310Dex/walid-slimani-ai-portfolio](https://github.com/LEX310Dex/walid-slimani-ai-portfolio)**  
   ★ 8 — Portfolio of Walid Slimani — AI/ML engineer & AI PhD researcher (ELTE). Interactive WebGL site: GLSL particle morphing, GSAP scroll choreography, accessible motion, checksum-verified Vercel deploys.
-- **[steveopen1/artex-ld](https://github.com/steveopen1/artex-ld)**  
-  ★ 7 — AI 自主渗透测试平台 —— ARTEX 二开优化版（整合 RuoJi6/ARTEX 与 AntiFox 的证据驱动交付能力）
-- **[rapttor/sparkbots](https://github.com/rapttor/sparkbots)**  
-  ★ 7 —  A calmer way to keep track of many AI coding agents: a tiny 3D office where every session is a robot at a desk. Free, open source, runs on your machine.
+- **[fluyeporlaweb/ai-agent-tools](https://github.com/fluyeporlaweb/ai-agent-tools)**  
+  ★ 6 — Curated directory of open-source AI tools for marketing and agents: MCP servers, skills, SDKs and workflows for Claude, Cursor, Windsurf and any MCP-compatible agent. Maintained by fluyeporlaweb.
 - **[AlphaLima/ha-drive-energy-doc](https://github.com/AlphaLima/ha-drive-energy-doc)**  
   ★ 6 — The smart, fully automated fuel log for Home Assistant
 - **[lucidrains/SEA-pytorch](https://github.com/lucidrains/SEA-pytorch)**  
   ★ 5 — Explorations into Scaling Empowered Agents, from Catherine Ji et al. of Eysenbach's group
 - **[BlankEngineers/Clyffe](https://github.com/BlankEngineers/Clyffe)**  
   ★ 5 — Clyffe (ARC-LB-01) — Native LittleBit-2 Language Model trained from random initialization by Blank Engineers (ARC III Ecosystem).
+- **[Cairn-Foundry/atlas](https://github.com/Cairn-Foundry/atlas)**  
+  ★ 5 — A factory of Claude Code agents, supervised by an orchestrating AI and steered by you.
 - **[pathbit/AgentModelKit](https://github.com/pathbit/AgentModelKit)**  
   ★ 4 — Repositório que configura provedores de modelos de IA nas ferramentas utilizadas em dispositivos locais e remotos.
 - **[RadLamine/ClaudGPT](https://github.com/RadLamine/ClaudGPT)**  
   ★ 3 — Open-source AI-powered Telegram bot for AI chat, image generation, document processing, code analysis, and voice interaction.
-- **[A220man/vector-lens-144](https://github.com/A220man/vector-lens-144)**  
-  ★ 2 — Ryan Vo | Work in progress: vector-lens-144
-- **[ALANDVO/nexus-studio-145](https://github.com/ALANDVO/nexus-studio-145)**  
-  ★ 2 — Alan Vo | Work in progress: nexus-studio-145
