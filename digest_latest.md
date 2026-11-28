@@ -1,30 +1,32 @@
-# AI Research Digest — 2026-11-27
+# AI Research Digest — 2026-11-28
 
 ## HF Daily Papers (Trending)
 - **[PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing](https://huggingface.co/papers/2604.05018)**  
-  ⬆ 19 upvotes — Synthesizing unstructured research materials into manuscripts is an essential yet under-explored challenge in AI-driven scientific discovery. Existing autonomous writers are rigidly coupled to specific experimental pipelines, and produce superficial literature reviews. We introduce PaperOrchestra, a
+  ⬆ 20 upvotes — Synthesizing unstructured research materials into manuscripts is an essential yet under-explored challenge in AI-driven scientific discovery. Existing autonomous writers are rigidly coupled to specific experimental pipelines, and produce superficial literature reviews. We introduce PaperOrchestra, a
 - **[Unlimited OCR Works](https://huggingface.co/papers/2606.23050)**  
   ⬆ 112 upvotes — Recently, end-to-end OCR models, exemplified by DeepSeek OCR, have once again thrust OCR into the spotlight. A widely held view is that employing a large language model (LLM) as the decoder allows the model to leverage the prior distribution of language, leading to improved OCR performance. However,
 - **[Harness^2: Recursive Agent Harnessing for an Open World](https://huggingface.co/papers/2610.14224)**  
-  ⬆ 72 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
-- **[Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth](https://huggingface.co/papers/2611.26603)**  
-  ⬆ 41 upvotes — We present Depth Pro 2, an approach to estimating dense metric depth for images and video at full resolution. By analyzing prior methods for monocular depth estimation, we find that they commonly trade off temporal consistency and boundary sharpness: multi-frame methods favor consistency, single-fra
+  ⬆ 73 upvotes — LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, o
+- **[OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms](https://huggingface.co/papers/2611.34232)**  
+  ⬆ 104 upvotes — Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span mu
+- **[InCoder-32B: Code Foundation Model for Industrial Scenarios](https://huggingface.co/papers/2603.16790)**  
+  ⬆ 170 upvotes — Recent code large language models have achieved remarkable progress on general programming tasks. Nevertheless, their performance degrades significantly in industrial scenarios that require reasoning about hardware semantics, specialized language constructs, and strict resource constraints. To addre
 - **[TradingAgents: Multi-Agents LLM Financial Trading Framework](https://huggingface.co/papers/2412.20138)**  
   ⬆ 168 upvotes — Significant progress has been made in automated problem-solving using
 societies of agents powered by large language models (LLMs). In finance,
 efforts have largely focused on single-agent systems handling specific tasks or
 multi-agent frameworks independently gathering data. However, the multi-agent
-- **[InCoder-32B: Code Foundation Model for Industrial Scenarios](https://huggingface.co/papers/2603.16790)**  
-  ⬆ 169 upvotes — Recent code large language models have achieved remarkable progress on general programming tasks. Nevertheless, their performance degrades significantly in industrial scenarios that require reasoning about hardware semantics, specialized language constructs, and strict resource constraints. To addre
 - **[Efficient Memory Management for Large Language Model Serving with
   PagedAttention](https://huggingface.co/papers/2309.06180)**  
-  ⬆ 76 upvotes — High throughput serving of large language models (LLMs) requires batching
+  ⬆ 77 upvotes — High throughput serving of large language models (LLMs) requires batching
 sufficiently many requests at a time. However, existing systems struggle
 because the key-value cache (KV cache) memory for each request is huge and
 grows and shrinks dynamically. When managed inefficiently, this memory can be
 
+- **[Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth](https://huggingface.co/papers/2611.26603)**  
+  ⬆ 41 upvotes — We present Depth Pro 2, an approach to estimating dense metric depth for images and video at full resolution. By analyzing prior methods for monocular depth estimation, we find that they commonly trade off temporal consistency and boundary sharpness: multi-frame methods favor consistency, single-fra
 - **[Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent](https://huggingface.co/papers/2611.18397)**  
-  ⬆ 166 upvotes — We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D gr
+  ⬆ 170 upvotes — We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D gr
 - **[OpenDevin: An Open Platform for AI Software Developers as Generalist
   Agents](https://huggingface.co/papers/2407.16741)**  
   ⬆ 87 upvotes — Software is one of the most powerful tools that we humans have at our
@@ -32,30 +34,10 @@ disposal; it allows a skilled programmer to interact with the world in complex
 and profound ways. At the same time, thanks to improvements in large language
 models (LLMs), there has also been a rapid development in AI agents that
 
-- **[ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration](https://huggingface.co/papers/2605.03042)**  
-  ⬆ 158 upvotes — This report describes ARIS (Auto-Research-in-sleep), an open-source research harness for autonomous research, including its architecture, assurance mechanisms, and early deployment experience. The performance of agent systems built on LLMs depends on both the model weights and the harness around the
 
 ## HF Daily Papers (Today, by Upvotes)
-- **[Stable Gated DeltaNet-2: Understanding and Mitigating Recurrent State Instability](https://huggingface.co/papers/2611.34051)**  
-  ⬆ 61 upvotes — Linear attention offers an efficient solution for long-sequence modeling via linear complexity and fixed-size recurrent states. Gated DeltaNet-2 (GDN-2) introduces independent channel-wise control over erasure and writing, enhancing state-update expressiveness and in-context retrieval, yet it suffer
-- **[OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms](https://huggingface.co/papers/2611.34232)**  
-  ⬆ 49 upvotes — Computer-using agents are increasingly expected to complete realistic user goals rather than isolated GUI actions. However, existing benchmarks typically isolate web, mobile, or desktop environments, leaving it unclear whether a single generalist agent can execute long-horizon workflows that span mu
-- **[ProxyGenBench: Benchmarking Proxy-Guided Video Generation](https://huggingface.co/papers/2611.34457)**  
-  ⬆ 33 upvotes — Recent video generators produce realistic videos, yet controlling how scenes unfold remains challenging. Structural proxies, such as animated 3D blockouts, guide generation by specifying scene layout, motion, camera behavior, and event order. However, these coarse inputs leave details unspecified an
-- **[StateWeaver: Multi-Agent Coordination of Story-State Transitions for Long-Horizon Video Generation](https://huggingface.co/papers/2611.34290)**  
-  ⬆ 21 upvotes — Modern video foundation models generate high-quality short clips, but preserving long-video consistency and correctly depicting event-driven state changes remain challenging. Existing agentic workflows face these challenges because continual planning and repair accumulate context, while reference up
-- **[ShowNow: Fine-Grained Speculative Streaming for Responsive World Models](https://huggingface.co/papers/2611.34693)**  
-  ⬆ 17 upvotes — Interactive world models must generate video continuously while responding promptly to user actions. Real-time throughput alone leaves input latency unresolved: coarse generation blocks delay action updates, and generation after input adds work to the response path. We introduce ShowNow, a fine-grai
-- **[DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents](https://huggingface.co/papers/2611.34852)**  
-  ⬆ 14 upvotes — Deep research agents gather information from multiple sources and synthesize it into reports on complex, open-ended questions. Existing benchmarks assess report quality along several dimensions, but lack a dedicated knowledge-centric evaluation of which research directions a report covers and how de
-- **[Boundary-Aware Policy Learning for Agent-Orchestrated Robot Manipulation](https://huggingface.co/papers/2611.32238)**  
-  ⬆ 5 upvotes — Agent-orchestrated robot systems combine the general reasoning capability of multimodal agents with the precise physical control of learned visuomotor policies. Yet such systems often fail at the moment of handoff: a policy is reliable only from a limited set of start states, while the agent may inv
-- **[Solve Vision with Code: Coding Agents Are Stronger Visual Reasoners Than Video Models](https://huggingface.co/papers/2611.34813)**  
-  ⬆ 5 upvotes — Video generation models are increasingly evaluated as visual reasoners: given a first frame and a natural-language prompt, can the model produce the video in which the specified task is carried out? The paradigm is considered advantageous because the reasoning is native to the visual medium, unfoldi
-- **[Reading, Not Adapting: Unlocking Frozen Visual Knowledge for AI-Generated Image Detection](https://huggingface.co/papers/2611.34719)**  
-  ⬆ 2 upvotes — Generalization to unseen image generators has driven efforts to adapt pretrained visual representations for detection. Yet recent findings show that vision foundation models already encode transferable detection knowledge, while further adaptation can impair generalization. This motivates a shift fr
-- **[Decision-Native Multimodal Clinical Modeling via Anatomical Grounding and Confidence Calibration](https://huggingface.co/papers/2611.32993)**  
-  ⬆ 1 upvotes — Structured clinical decisions from volumetric computed tomography (CT) require anatomically grounded predictions and calibrated confidence estimates. However, existing 3D medical multimodal models often suffer from uncalibrated autoregressive decoding and shortcut reliance on irrelevant anatomical r
+- **[No papers indexed yet for 2026-11-28 (HF submissions can lag up to 14 days behind arXiv)]()**  
+  
 
 ## arXiv (cs.AI/cs.LG/cs.CL, recent)
 - **[Spectrum Adaptation of AI-Native Autoencoder Communications with Transfer Learning](https://arxiv.org/abs/2611.34942v1)**  
@@ -144,18 +126,16 @@ models (LLMs), there has also been a rapid development in AI agents that
   <img alt="" class="webfeedsFeaturedVisual wp-post-image" height="432" src="https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image4-11-768x432.jpg" style="display: block; margin-bottom: 5px; clear: both;" title="image4" width="768" />Wher
 
 ## GitHub Trending (AI, new repos)
+- **[Red2076-arch/waifu2x-image-upscaler-windows](https://github.com/Red2076-arch/waifu2x-image-upscaler-windows)**  
+  ★ 776 — Free AI image upscaler and photo denoiser for Windows powered by Vulkan GPU acceleration and ncnn neural networks.
+- **[mvplab-ai/agentdream](https://github.com/mvplab-ai/agentdream)**  
+  ★ 19 — Open-source 'dreaming' for any AI agent: sleep-time memory consolidation that merges duplicates, fixes stale or wrong notes with transcript evidence, and surfaces insights. Any model, local-first.
 - **[R3DRUN3/reconai](https://github.com/R3DRUN3/reconai)**  
   ★ 14 — AI that knocks on your own front door 🛰️
-- **[mvplab-ai/agentdream](https://github.com/mvplab-ai/agentdream)**  
-  ★ 8 — Open-source 'dreaming' for any AI agent: sleep-time memory consolidation that merges duplicates, fixes stale or wrong notes with transcript evidence, and surfaces insights. Any model, local-first.
-- **[LEX310Dex/walid-slimani-ai-portfolio](https://github.com/LEX310Dex/walid-slimani-ai-portfolio)**  
-  ★ 8 — Portfolio of Walid Slimani — AI/ML engineer & AI PhD researcher (ELTE). Interactive WebGL site: GLSL particle morphing, GSAP scroll choreography, accessible motion, checksum-verified Vercel deploys.
+- **[zhou2040321-prog/free-ai-api](https://github.com/zhou2040321-prog/free-ai-api)**  
+  ★ 7 — Free AI API | 公益AI开发者测试平台 | 每日不限量 | 无充值入口
 - **[fluyeporlaweb/ai-agent-tools](https://github.com/fluyeporlaweb/ai-agent-tools)**  
-  ★ 6 — Curated directory of open-source AI tools for marketing and agents: MCP servers, skills, SDKs and workflows for Claude, Cursor, Windsurf and any MCP-compatible agent. Maintained by fluyeporlaweb.
-- **[AlphaLima/ha-drive-energy-doc](https://github.com/AlphaLima/ha-drive-energy-doc)**  
-  ★ 6 — The smart, fully automated fuel log for Home Assistant
-- **[lucidrains/SEA-pytorch](https://github.com/lucidrains/SEA-pytorch)**  
-  ★ 5 — Explorations into Scaling Empowered Agents, from Catherine Ji et al. of Eysenbach's group
+  ★ 7 — Curated directory of open-source AI tools for marketing and agents: MCP servers, skills, SDKs and workflows for Claude, Cursor, Windsurf and any MCP-compatible agent. Maintained by fluyeporlaweb.
 - **[BlankEngineers/Clyffe](https://github.com/BlankEngineers/Clyffe)**  
   ★ 5 — Clyffe (ARC-LB-01) — Native LittleBit-2 Language Model trained from random initialization by Blank Engineers (ARC III Ecosystem).
 - **[Cairn-Foundry/atlas](https://github.com/Cairn-Foundry/atlas)**  
@@ -164,3 +144,5 @@ models (LLMs), there has also been a rapid development in AI agents that
   ★ 4 — Repositório que configura provedores de modelos de IA nas ferramentas utilizadas em dispositivos locais e remotos.
 - **[RadLamine/ClaudGPT](https://github.com/RadLamine/ClaudGPT)**  
   ★ 3 — Open-source AI-powered Telegram bot for AI chat, image generation, document processing, code analysis, and voice interaction.
+- **[janvikamilla/Pair-Programming-Project](https://github.com/janvikamilla/Pair-Programming-Project)**  
+  ★ 3 — A Python-based Robot Apocalypse survival simulator featuring 15 interactive game modules, AI enemies, boss battles, missions and survival challenges.
